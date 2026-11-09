@@ -43,6 +43,7 @@ createdb kardee_development
 go run ./cmd/jobs -once                 # crawl every bank once
 go run ./cmd/jobs -once -bank ttb       # one bank
 go run ./cmd/jobs                       # on CRAWL_CRON (Thai time)
+go run ./cmd/jobs -renormalize          # re-extract cards/merchants/values after catalog or extractor changes
 go run ./cmd/api                        # :8090
 go run ./cmd/migrate status             # which migrations ran (api/jobs migrate on start)
 go run ./cmd/migrate create add_merchants  # new migration file; never edit one that ran
@@ -57,9 +58,18 @@ GET /v1/promotions/:id?lang=th      # adds the full conditions text
 GET /v1/banks?lang=en
 GET /v1/categories?lang=en          # categories + benefit types
 GET /v1/crawl-runs                  # last runs per bank, with errors
+GET /v1/merchants?q=บางจาก&category=fuel
+GET /v1/cards?bank=ttb&q=smart       # card catalog (for the "my cards" picker)
+GET /v1/networks
+GET /v1/recommend?merchant=bangchak&cards=ttb-so-smart,kbank-the-passion&amount=1500
 ```
 
 `active=true` (default) hides promotions whose dates we don't know yet.
+
+`/v1/recommend` ranks the merchant's promotions by baht value at `amount` (default per category,
+`amount_assumed: true`), says which held card to use (`best[].use_card`), lists cards worth
+applying for (`consider_applying`), and keeps promotions with no computable value apart (`no_value`).
+Cards, networks and merchants live in `app/catalog/*.yaml`; after editing them run `jobs -renormalize`.
 
 ## Crawling rules
 

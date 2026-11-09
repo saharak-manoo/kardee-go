@@ -7,6 +7,7 @@ import (
 	"github.com/gofiber/fiber/v3"
 
 	"github.com/saharak/kardee-go/app/api"
+	"github.com/saharak/kardee-go/app/catalog"
 	"github.com/saharak/kardee-go/app/config"
 	"github.com/saharak/kardee-go/app/database"
 )
@@ -17,7 +18,11 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	cat, err := catalog.Load()
+	if err != nil {
+		log.Fatal(err)
+	}
 	app := fiber.New(fiber.Config{AppName: "kardee-api"})
-	(&api.Server{DB: db}).Routes(app)
+	(&api.Server{DB: db, Catalog: cat}).Routes(app)
 	log.Fatal(app.Listen(":" + cfg.Port))
 }

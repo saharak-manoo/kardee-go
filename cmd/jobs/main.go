@@ -3,6 +3,7 @@
 //	jobs                 run on the schedule
 //	jobs -once           crawl every bank once and exit
 //	jobs -once -bank ttb crawl one bank once
+//	jobs -renormalize     extract conditions, cards and merchants again for every promotion
 package main
 
 import (
@@ -17,6 +18,7 @@ import (
 
 	"github.com/robfig/cron/v3"
 
+	"github.com/saharak/kardee-go/app/catalog"
 	"github.com/saharak/kardee-go/app/config"
 	"github.com/saharak/kardee-go/app/crawler"
 	"github.com/saharak/kardee-go/app/database"
@@ -27,19 +29,29 @@ import (
 func main() {
 	once := flag.Bool("once", false, "crawl once and exit")
 	bank := flag.String("bank", "", "only this bank (ktc, ttb, krungsri, kbank)")
+	renorm := flag.Bool("renormalize", false, "normalize every promotion again and exit")
 	flag.Parse()
-	if err := run(*once, *bank); err != nil {
+	if err := run(*once, *bank, *renorm); err != nil {
 		log.Fatal(err)
 	}
 }
 
-func run(once bool, bank string) error {
+func run(once bool, bank string, renorm bool) error {
 	cfg := config.Load()
 	db, err := database.Open(cfg.DatabaseURL)
 	if err != nil {
 		return err
 	}
-	cr := &crawler.Crawler{DB: db, Client: fetch.New(cfg.UserAgent, cfg.CrawlDelay), DetailLimit: cfg.DetailLimit}
+	cat, err := catalog.Load()
+	if err != nil {
+		return err
+	}
+	if renorm {
+		n, err := crawler.Renormalize(db, cat)
+		log.Printf("[jobs] renormalized %d promotions", n)
+		return err
+	}
+	cr := &crawler.Crawler{DB: db, Client: fetch.New(cfg.UserAgent, cfg.CrawlDelay), DetailLimit: cfg.DetailLimit, Catalog: cat}
 
 	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
 	defer stop()

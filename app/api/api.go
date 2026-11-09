@@ -11,11 +11,13 @@ import (
 	"github.com/gofiber/fiber/v3"
 	"gorm.io/gorm"
 
+	"github.com/saharak/kardee-go/app/catalog"
 	"github.com/saharak/kardee-go/app/models"
 )
 
 type Server struct {
-	DB *gorm.DB
+	DB      *gorm.DB
+	Catalog *catalog.Catalog
 }
 
 func (s *Server) Routes(app *fiber.App) {
@@ -26,6 +28,10 @@ func (s *Server) Routes(app *fiber.App) {
 	v1.Get("/promotions", s.promotions)
 	v1.Get("/promotions/:id", s.promotion)
 	v1.Get("/crawl-runs", s.crawlRuns)
+	v1.Get("/merchants", s.merchants)
+	v1.Get("/cards", s.cards)
+	v1.Get("/networks", s.networks)
+	v1.Get("/recommend", s.recommend)
 }
 
 // Lang picks the response language: ?lang= first, then Accept-Language, else Thai.

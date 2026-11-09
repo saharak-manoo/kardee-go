@@ -12,6 +12,7 @@ import (
 
 	"gorm.io/gorm"
 
+	"github.com/saharak/kardee-go/app/catalog"
 	"github.com/saharak/kardee-go/app/fetch"
 	"github.com/saharak/kardee-go/app/models"
 	"github.com/saharak/kardee-go/app/normalize"
@@ -22,6 +23,7 @@ type Crawler struct {
 	DB          *gorm.DB
 	Client      *fetch.Client
 	DetailLimit int // detail pages per run; the rest wait for the next run
+	Catalog     *catalog.Catalog
 }
 
 // Run crawls one bank and records the run. It returns the run even on error.
@@ -110,8 +112,7 @@ func (c *Crawler) Run(ctx context.Context, src sources.Source) models.CrawlRun {
 	}
 
 	for _, p := range saved {
-		normalize.Apply(p, normalize.Extract(p.TitleTH+"\n"+p.DescriptionTH, p.DetailTH+"\n"+p.DetailEN))
-		if err := c.DB.Save(p).Error; err != nil {
+		if err := Save(c.DB, p, normalize.Promotion(c.Catalog, p)); err != nil {
 			log.Printf("[crawl] %s %s: save: %v", src.Bank(), p.ExternalID, err)
 		}
 	}
@@ -190,4 +191,41 @@ func listingOf(p *models.Promotion) sources.Listing {
 		ExternalID: p.ExternalID, URLTH: p.URLTH, URLEN: p.URLEN,
 		TitleTH: p.TitleTH, TitleEN: p.TitleEN, Version: p.SourceVersion,
 	}
+}
+
+// Save stores p and replaces its merchant rows in one transaction.
+func Save(db *gorm.DB, p *models.Promotion, ms []models.PromotionMerchant) error {
+	return db.Transaction(func(tx *gorm.DB) error {
+		if err := tx.Save(p).Error; err != nil {
+			return err
+		}
+		if err := tx.Where("promotion_id = ?", p.ID).Delete(&models.PromotionMerchant{}).Error; err != nil {
+			return err
+		}
+		for i := range ms {
+			ms[i].PromotionID = p.ID
+		}
+		if len(ms) == 0 {
+			return nil
+		}
+		return tx.Create(&ms).Error
+	})
+}
+
+// Renormalize runs normalize again over every promotion (after the catalog or the
+// extractors change) and returns how many it saved.
+func Renormalize(db *gorm.DB, cat *catalog.Catalog) (int, error) {
+	n := 0
+	var batch []models.Promotion
+	res := db.Order("id").FindInBatches(&batch, 500, func(tx *gorm.DB, _ int) error {
+		for i := range batch {
+			p := &batch[i]
+			if err := Save(db, p, normalize.Promotion(cat, p)); err != nil {
+				return err
+			}
+			n++
+		}
+		return nil
+	})
+	return n, res.Error
 }
