@@ -28,7 +28,7 @@ import (
 
 func main() {
 	once := flag.Bool("once", false, "crawl once and exit")
-	bank := flag.String("bank", "", "only this bank (ktc, ttb, krungsri, kbank)")
+	bank := flag.String("bank", "", "only this source (ktc, ttb, krungsri, kbank, jcb)")
 	renorm := flag.Bool("renormalize", false, "normalize every promotion again and exit")
 	flag.Parse()
 	if err := run(*once, *bank, *renorm); err != nil {

@@ -59,6 +59,7 @@ func All(ktcMaxAgeDays int) []Source {
 		&TTB{},
 		&Krungsri{},
 		&KBank{},
+		&JCB{},
 	}
 }
 

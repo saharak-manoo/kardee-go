@@ -2,6 +2,7 @@ package sources
 
 import (
 	"encoding/json"
+	"os"
 	"strings"
 	"testing"
 	"time"
@@ -155,5 +156,59 @@ func TestParseTTBDetail_PayloadComponents(t *testing.T) {
 	}
 	if d.TextEN != "Shop at Power Buy\n0% for 10 months" {
 		t.Errorf("en = %q", d.TextEN)
+	}
+}
+
+func TestJCBListing(t *testing.T) {
+	b, err := os.ReadFile("testdata/jcb_list.json")
+	if err != nil {
+		t.Fatal(err)
+	}
+	ls, err := jcbListings(b)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(ls) != 3 {
+		t.Fatalf("got %d listings", len(ls))
+	}
+	l := ls[0]
+	if l.ExternalID != "A-00050769-06" || l.TitleTH != "Daidai" || l.Category != "dining" ||
+		l.URLTH != "https://www.specialoffers.jcb/th/offers/detail/A-00050769-06/" ||
+		l.ImageURL != "https://branddb.jcb.jp/images/merchant/WEB_00050769_2026081813160401.jpeg" ||
+		!strings.Contains(l.DescTH, "10% ส่วนลด") || l.Version == "" {
+		t.Errorf("%+v", l)
+	}
+}
+
+func TestJCBDetail(t *testing.T) {
+	b, err := os.ReadFile("testdata/jcb_detail.html")
+	if err != nil {
+		t.Fatal(err)
+	}
+	d := parseJCBDetail(b)
+	if d.StartAt == nil || d.StartAt.Format("2006-01-02") != "2026-10-01" {
+		t.Errorf("start = %v", d.StartAt)
+	}
+	if d.EndAt == nil || d.EndAt.Format("2006-01-02 15:04") != "2027-12-31 23:59" {
+		t.Errorf("end = %v", d.EndAt)
+	}
+	if !strings.Contains(d.TextTH, "สำหรับลูกค้าบัตรทั้งหมด") || !strings.Contains(d.TextTH, "รับส่วนลด 10%") {
+		t.Errorf("text missing conditions: %q", d.TextTH)
+	}
+	if strings.Contains(d.TextTH, "Back to the previous page") || strings.Contains(d.TextTH, "ค้นหาตามหมวดหมู่") {
+		t.Errorf("text has page chrome: %q", d.TextTH)
+	}
+}
+
+// "พักผ่อน" (relaxation) contains "ผ่อน" (installment); the category comes from base1.
+func TestJCBListing_CategoryFromBase(t *testing.T) {
+	b := []byte(`{"entries":[{"title":"My Spa","link":"/th/offers/detail/A-1/","base1":"relaxation","cat1":"พักผ่อน","disc":"20% ส่วนลด"},
+		{"title":"Shop","link":"/th/offers/detail/A-2/","base1":"retail_store","cat1":"ร้านค้า"}]}`)
+	ls, err := jcbListings(b)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if ls[0].Category != "health" || ls[1].Category != "shopping" {
+		t.Errorf("categories = %s, %s", ls[0].Category, ls[1].Category)
 	}
 }

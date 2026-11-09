@@ -76,6 +76,8 @@ Cards, networks and merchants live in `app/catalog/*.yaml`; after editing them r
 - Only pages robots.txt allows; one request at a time per bank with `CRAWL_DELAY_SECONDS` between.
 - A 403/429 stops that bank's run (`fetch.ErrBlocked`); no retries around it.
 - Detail pages are read again only when the bank's version (lastmod / modified date / content hash) changes.
+- Sources: KTC, ttb, Krungsri, JCB (network offers, any bank's JCB card). Left out: KBank (Akamai
+  bot challenge), Mastercard (403), Visa (offers API needs an OAuth token).
 
 ## Users
 

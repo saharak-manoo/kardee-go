@@ -15,6 +15,7 @@ var Banks = map[string]Label{
 	"kbank":    {TH: "กสิกรไทย", EN: "KBank"},
 	"krungsri": {TH: "กรุงศรี", EN: "Krungsri"},
 	"ttb":      {TH: "ทีทีบี", EN: "ttb"},
+	"jcb":      {TH: "เจซีบี (JCB)", EN: "JCB"},
 }
 
 // Categories are our own keys; each source maps its categories onto them.
