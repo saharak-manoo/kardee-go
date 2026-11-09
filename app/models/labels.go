@@ -29,6 +29,7 @@ var Categories = map[string]Label{
 	"home":        {TH: "บ้าน", EN: "Home"},
 	"entertain":   {TH: "บันเทิง", EN: "Entertainment"},
 	"points":      {TH: "แลกคะแนน", EN: "Points"},
+	"fuel":        {TH: "น้ำมัน", EN: "Fuel"},
 	"new-card":    {TH: "สมัครบัตรใหม่", EN: "New card"},
 	"other":       {TH: "อื่นๆ", EN: "Other"},
 }

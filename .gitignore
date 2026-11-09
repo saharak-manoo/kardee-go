@@ -3,3 +3,4 @@
 !.env.example
 /bin/
 *.log
+.superpowers/

@@ -1,0 +1,328 @@
+# Credit cards. network/tier are guesses until verified: true (checked against the
+# bank's own card page). aliases = how promotion text and bank data write the card.
+# Krungsri aliases are the exact CardType strings krungsricard.com sends.
+
+# --- Krungsri ---
+- key: krungsri-corporate
+  bank: krungsri
+  name_th: บัตรเครดิต กรุงศรี คอร์ปอเรท การ์ด
+  name_en: Krungsri Corporate Card
+  aliases: [บัตรเครดิต กรุงศรี คอร์ปอเรท การ์ด]
+  network: visa
+- key: krungsri-signature
+  bank: krungsri
+  name_th: บัตรเครดิต กรุงศรี ซิกเนเจอร์
+  name_en: Krungsri Signature
+  aliases: [บัตรเครดิต กรุงศรี ซิกเนเจอร์]
+  network: visa
+  tier: signature
+- key: krungsri-doctor-card
+  bank: krungsri
+  name_th: บัตรเครดิต กรุงศรี ดอกเตอร์การ์ด
+  name_en: Krungsri Doctor Card
+  aliases: [บัตรเครดิต กรุงศรี ดอกเตอร์การ์ด]
+  network: visa
+  tier: platinum
+- key: krungsri-now-platinum
+  bank: krungsri
+  name_th: บัตรเครดิต กรุงศรี นาว แพลทินัม
+  name_en: Krungsri NOW Platinum
+  aliases: [บัตรเครดิต กรุงศรี นาว แพลทินัม]
+  network: mastercard
+  tier: platinum
+- key: krungsri-classic
+  bank: krungsri
+  name_th: บัตรเครดิต กรุงศรี วีซ่า/มาสเตอร์การ์ด
+  name_en: Krungsri Visa/Mastercard
+  aliases: [บัตรเครดิต กรุงศรี วีซ่า/มาสเตอร์การ์ด]
+  network: visa
+  tier: classic
+- key: krungsri-jcb-ultimate
+  bank: krungsri
+  name_th: บัตรเครดิต กรุงศรี เจซีบี อัลติเมท
+  name_en: Krungsri JCB Ultimate
+  aliases: [บัตรเครดิต กรุงศรี เจซีบี อัลติเมท]
+  network: jcb
+  tier: ultimate
+- key: krungsri-jcb-platinum
+  bank: krungsri
+  name_th: บัตรเครดิต กรุงศรี เจซีบี แพลทินัม
+  name_en: Krungsri JCB Platinum
+  aliases: [บัตรเครดิต กรุงศรี เจซีบี แพลทินัม]
+  network: jcb
+  tier: platinum
+- key: krungsri-lady-titanium
+  bank: krungsri
+  name_th: บัตรเครดิต กรุงศรี เลดี้ ไทเทเนี่ยม
+  name_en: Krungsri Lady Titanium
+  aliases: [บัตรเครดิต กรุงศรี เลดี้ ไทเทเนี่ยม]
+  network: mastercard
+  tier: titanium
+- key: krungsri-exclusive-signature
+  bank: krungsri
+  name_th: บัตรเครดิต กรุงศรี เอ็กซ์คลูซีฟ ซิกเนเจอร์
+  name_en: Krungsri Exclusive Signature
+  aliases: [บัตรเครดิต กรุงศรี เอ็กซ์คลูซีฟ ซิกเนเจอร์]
+  network: visa
+  tier: signature
+- key: krungsri-platinum
+  bank: krungsri
+  name_th: บัตรเครดิต กรุงศรี แพลทินัม
+  name_en: Krungsri Platinum
+  aliases: [บัตรเครดิต กรุงศรี แพลทินัม]
+  network: visa
+  tier: platinum
+- key: krungsri-platinum-mastercard
+  bank: krungsri
+  name_th: บัตรเครดิต กรุงศรี แพลทินัม มาสเตอร์การ์ด
+  name_en: Krungsri Platinum Mastercard
+  aliases: [บัตรเครดิต กรุงศรี แพลทินัม มาสเตอร์การ์ด]
+  network: mastercard
+  tier: platinum
+- key: krungsri-homepro-corporate
+  bank: krungsri
+  name_th: บัตรเครดิต กรุงศรี โฮมโปร คอร์ปอเรท การ์ด
+  name_en: Krungsri HomePro Corporate Card
+  aliases: [บัตรเครดิต กรุงศรี โฮมโปร คอร์ปอเรท การ์ด]
+  network: visa
+  co_brand: homepro
+- key: krungsri-private-banking
+  bank: krungsri
+  name_th: บัตรเครดิต กรุงศรี ไพรเวท แบงก์กิ้ง
+  name_en: Krungsri Private Banking
+  aliases: [บัตรเครดิต กรุงศรี ไพรเวท แบงก์กิ้ง]
+  network: visa
+  tier: infinite
+- key: tcc-privilege
+  bank: krungsri
+  name_th: บัตรเครดิต ทีซีซี พริวิเลจ การ์ด
+  name_en: TCC Privilege Card
+  aliases: [บัตรเครดิต ทีซีซี พริวิเลจ การ์ด]
+  network: visa
+  tier: platinum
+- key: siam-takashimaya-visa
+  bank: krungsri
+  name_th: บัตรเครดิต สยาม ทาคาชิมายะ วีซ่า
+  name_en: Siam Takashimaya Visa
+  aliases: [บัตรเครดิต สยาม ทาคาชิมายะ วีซ่า]
+  network: visa
+  co_brand: siam-takashimaya
+- key: siam-takashimaya-jcb
+  bank: krungsri
+  name_th: บัตรเครดิต สยาม ทาคาชิมายะ เจซีบี
+  name_en: Siam Takashimaya JCB
+  aliases: [บัตรเครดิต สยาม ทาคาชิมายะ เจซีบี]
+  network: jcb
+  co_brand: siam-takashimaya
+- key: siam-takashimaya-finesse
+  bank: krungsri
+  name_th: บัตรเครดิต สยาม ทาคาชิมายะ ไฟน์เนส
+  name_en: Siam Takashimaya Finesse
+  aliases: [บัตรเครดิต สยาม ทาคาชิมายะ ไฟน์เนส]
+  network: visa
+  co_brand: siam-takashimaya
+- key: siam-takashimaya-finesse-invitation
+  bank: krungsri
+  name_th: บัตรเครดิต สยาม ทาคาชิมายะ ไฟน์เนส - อินวิเทชั่น โอนลี่
+  name_en: Siam Takashimaya Finesse Invitation Only
+  aliases: [บัตรเครดิต สยาม ทาคาชิมายะ ไฟน์เนส - อินวิเทชั่น โอนลี่]
+  network: visa
+  co_brand: siam-takashimaya
+- key: aia-visa
+  bank: krungsri
+  name_th: บัตรเครดิต เอไอเอ วีซ่า
+  name_en: AIA Visa
+  aliases: [บัตรเครดิต เอไอเอ วีซ่า]
+  network: visa
+  co_brand: aia
+- key: aia-visa-platinum
+  bank: krungsri
+  name_th: บัตรเครดิต เอไอเอ วีซ่า แพลทินัม
+  name_en: AIA Visa Platinum
+  aliases: [บัตรเครดิต เอไอเอ วีซ่า แพลทินัม]
+  network: visa
+  tier: platinum
+  co_brand: aia
+- key: homepro-visa-platinum
+  bank: krungsri
+  name_th: บัตรเครดิต โฮมโปร วีซ่า แพลทินัม
+  name_en: HomePro Visa Platinum
+  aliases: [บัตรเครดิต โฮมโปร วีซ่า แพลทินัม]
+  network: visa
+  tier: platinum
+  co_brand: homepro
+
+# --- KTC ---
+- key: ktc-x-visa-signature
+  bank: ktc
+  name_th: บัตรเครดิต KTC X VISA SIGNATURE
+  name_en: KTC X VISA SIGNATURE
+  aliases: [KTC X VISA SIGNATURE]
+  network: visa
+  tier: signature
+- key: ktc-x-world-rewards-mastercard
+  bank: ktc
+  name_th: บัตรเครดิต KTC X WORLD REWARDS MASTERCARD
+  name_en: KTC X WORLD REWARDS MASTERCARD
+  aliases: [KTC X WORLD REWARDS MASTERCARD]
+  network: mastercard
+  tier: world
+- key: ktc-visa-platinum
+  bank: ktc
+  name_th: บัตรเครดิต KTC VISA PLATINUM
+  name_en: KTC VISA PLATINUM
+  aliases: [KTC VISA PLATINUM]
+  network: visa
+  tier: platinum
+- key: ktc-mastercard-platinum
+  bank: ktc
+  name_th: บัตรเครดิต KTC MASTERCARD PLATINUM
+  name_en: KTC MASTERCARD PLATINUM
+  aliases: [KTC MASTERCARD PLATINUM]
+  network: mastercard
+  tier: platinum
+- key: ktc-jcb-platinum
+  bank: ktc
+  name_th: บัตรเครดิต KTC JCB PLATINUM
+  name_en: KTC JCB PLATINUM
+  aliases: [KTC JCB PLATINUM]
+  network: jcb
+  tier: platinum
+- key: ktc-jcb-ultimate
+  bank: ktc
+  name_th: บัตรเครดิต KTC JCB ULTIMATE
+  name_en: KTC JCB ULTIMATE
+  aliases: [KTC JCB ULTIMATE]
+  network: jcb
+  tier: ultimate
+- key: ktc-cash-back
+  bank: ktc
+  name_th: บัตรเครดิต KTC CASH BACK
+  name_en: KTC CASH BACK
+  aliases: [KTC CASH BACK]
+  network: visa
+  tier: platinum
+- key: ktc-royal-orchid-plus
+  bank: ktc
+  name_th: บัตรเครดิต KTC - ROYAL ORCHID PLUS
+  name_en: KTC - ROYAL ORCHID PLUS
+  aliases: [KTC - ROYAL ORCHID PLUS, KTC ROYAL ORCHID PLUS]
+  network: visa
+  tier: signature
+- key: ktc-visa-corporate
+  bank: ktc
+  name_th: บัตรเครดิต KTC VISA CORPORATE
+  name_en: KTC VISA CORPORATE
+  aliases: [KTC VISA CORPORATE]
+  network: visa
+- key: ktc-government-services
+  bank: ktc
+  name_th: บัตรเครดิต KTC GOVERNMENT SERVICES
+  name_en: KTC GOVERNMENT SERVICES
+  aliases: [KTC GOVERNMENT SERVICES]
+  network: visa
+- key: ktc-thai-red-cross
+  bank: ktc
+  name_th: บัตรเครดิต KTC - THAI RED CROSS NATIONAL BLOOD CENTRE
+  name_en: KTC - THAI RED CROSS NATIONAL BLOOD CENTRE
+  aliases: [KTC - THAI RED CROSS NATIONAL BLOOD CENTRE]
+  network: visa
+- key: ktc-bangchak-visa-platinum
+  bank: ktc
+  name_th: บัตรเครดิต KTC บางจาก วีซ่า แพลทินัม
+  name_en: KTC BANGCHAK VISA PLATINUM
+  aliases: [KTC BANGCHAK, เคทีซี บางจาก]
+  network: visa
+  tier: platinum
+  co_brand: bangchak
+
+# --- ttb ---
+- key: ttb-so-smart
+  bank: ttb
+  name_th: บัตรเครดิต ttb so smart
+  name_en: ttb so smart
+  aliases: [ttb so smart, ทีทีบี โซ สมาร์ท]
+  network: visa
+  tier: signature
+- key: ttb-so-fast
+  bank: ttb
+  name_th: บัตรเครดิต ttb so fast
+  name_en: ttb so fast
+  aliases: [ttb so fast, ทีทีบี โซ ฟาสต์]
+  network: visa
+  tier: platinum
+- key: ttb-so-chill
+  bank: ttb
+  name_th: บัตรเครดิต ttb so chill
+  name_en: ttb so chill
+  aliases: [ttb so chill, ทีทีบี โซ ชิล]
+  network: mastercard
+  tier: world
+- key: ttb-reserve-infinite
+  bank: ttb
+  name_th: บัตรเครดิต ttb reserve infinite
+  name_en: ttb reserve infinite
+  aliases: [ttb reserve infinite]
+  network: visa
+  tier: infinite
+- key: ttb-reserve-signature
+  bank: ttb
+  name_th: บัตรเครดิต ttb reserve signature
+  name_en: ttb reserve signature
+  aliases: [ttb reserve signature]
+  network: visa
+  tier: signature
+- key: ttb-absolute
+  bank: ttb
+  name_th: บัตรเครดิต ttb absolute
+  name_en: ttb absolute
+  aliases: [ttb absolute]
+  network: mastercard
+  tier: world-elite
+- key: ttb-disney
+  bank: ttb
+  name_th: บัตรเครดิต ทีทีบี ดิสนีย์
+  name_en: ttb Disney
+  aliases: [ttb Disney, ทีทีบี ดิสนีย์]
+  network: visa
+  tier: platinum
+
+# --- KBank (promotions not readable: kasikornbank.com blocks bots; cards kept for network offers) ---
+- key: kbank-the-passion
+  bank: kbank
+  name_th: บัตรเครดิต กสิกรไทย THE PASSION
+  name_en: KBank THE PASSION
+  aliases: [THE PASSION]
+  network: visa
+- key: kbank-the-wisdom
+  bank: kbank
+  name_th: บัตรเครดิต กสิกรไทย THE WISDOM
+  name_en: KBank THE WISDOM
+  aliases: [THE WISDOM]
+  network: visa
+  tier: infinite
+- key: kbank-the-premier
+  bank: kbank
+  name_th: บัตรเครดิต กสิกรไทย THE PREMIER
+  name_en: KBank THE PREMIER
+  aliases: [THE PREMIER]
+  network: visa
+  tier: signature
+- key: kbank-platinum
+  bank: kbank
+  name_th: บัตรเครดิต กสิกรไทย แพลทินัม
+  name_en: KBank Platinum
+  network: visa
+  tier: platinum
+- key: kbank-titanium
+  bank: kbank
+  name_th: บัตรเครดิต กสิกรไทย ไทเทเนียม
+  name_en: KBank Titanium
+  network: mastercard
+  tier: titanium
+- key: kbank-jcb-platinum
+  bank: kbank
+  name_th: บัตรเครดิต กสิกรไทย เจซีบี แพลทินัม
+  name_en: KBank JCB Platinum
+  network: jcb
+  tier: platinum

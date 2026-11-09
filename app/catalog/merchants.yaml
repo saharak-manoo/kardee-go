@@ -1,0 +1,105 @@
+# Merchants promotions are matched to. aliases = how promotion text writes them.
+# Aliases made only of ASCII letters/digits must stand alone (not inside a word).
+
+# --- Fuel ---
+- key: bangchak
+  name_th: บางจาก
+  name_en: Bangchak
+  category: fuel
+  aliases: [บางจาก, Bangchak, BCP]
+- key: ptt-station
+  name_th: ปตท.
+  name_en: PTT Station
+  category: fuel
+  aliases: [ปตท., ปตท, PTT Station, PTT, พีทีที]
+- key: shell
+  name_th: เชลล์
+  name_en: Shell
+  category: fuel
+  aliases: [เชลล์, Shell]
+- key: caltex
+  name_th: คาลเท็กซ์
+  name_en: Caltex
+  category: fuel
+  aliases: [คาลเท็กซ์, Caltex]
+- key: pt
+  name_th: พีที
+  name_en: PT
+  category: fuel
+  aliases: [พีที, PT]
+- key: susco
+  name_th: ซัสโก้
+  name_en: Susco
+  category: fuel
+  aliases: [ซัสโก้, Susco]
+
+# --- Shopping / online ---
+- key: shopee
+  name_th: ช้อปปี้
+  name_en: Shopee
+  category: online
+  aliases: [Shopee, ช้อปปี้]
+- key: lazada
+  name_th: ลาซาด้า
+  name_en: Lazada
+  category: online
+  aliases: [Lazada, ลาซาด้า]
+- key: central
+  name_th: เซ็นทรัล
+  name_en: Central
+  category: shopping
+  aliases: [เซ็นทรัล, Central]
+- key: the-mall
+  name_th: เดอะมอลล์
+  name_en: The Mall
+  category: shopping
+  aliases: [เดอะมอลล์, The Mall]
+- key: seven-eleven
+  name_th: เซเว่น อีเลฟเว่น
+  name_en: 7-Eleven
+  category: shopping
+  aliases: [เซเว่น, 7-Eleven, 7-11]
+- key: big-c
+  name_th: บิ๊กซี
+  name_en: Big C
+  category: shopping
+  aliases: [บิ๊กซี, Big C]
+- key: lotuss
+  name_th: โลตัส
+  name_en: Lotus's
+  category: shopping
+  aliases: [โลตัส, Lotus's, Lotus’s]
+- key: homepro
+  name_th: โฮมโปร
+  name_en: HomePro
+  category: home
+  aliases: [โฮมโปร, HomePro]
+
+# --- Dining ---
+- key: starbucks
+  name_th: สตาร์บัคส์
+  name_en: Starbucks
+  category: dining
+  aliases: [สตาร์บัคส์, Starbucks]
+- key: mcdonalds
+  name_th: แมคโดนัลด์
+  name_en: McDonald's
+  category: dining
+  aliases: [แมคโดนัลด์, McDonald's, McDonald’s]
+
+# --- Travel / entertainment ---
+- key: grab
+  name_th: แกร็บ
+  name_en: Grab
+  category: travel
+  aliases: [Grab, แกร็บ]
+- key: agoda
+  name_th: อโกด้า
+  name_en: Agoda
+  category: travel
+  aliases: [Agoda, อโกด้า]
+- key: major-cineplex
+  name_th: เมเจอร์ ซีนีเพล็กซ์
+  name_en: Major Cineplex
+  category: entertain
+  aliases: [เมเจอร์ ซีนีเพล็กซ์, Major Cineplex]
