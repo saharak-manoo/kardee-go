@@ -50,7 +50,7 @@
 
 ## 4. ข้อมูล (ตารางใหม่)
 
-ใช้ GORM AutoMigrate เหมือนเดิม (เพิ่มเท่านั้น ไม่เปลี่ยน type)
+ทุกการเปลี่ยน schema เป็น goose migration ใหม่ 1 ไฟล์ (`go run ./cmd/migrate create <name>`) ใน `app/database/migrations`
 
 ### `networks` — seed จากโค้ด
 | field | หมายเหตุ |

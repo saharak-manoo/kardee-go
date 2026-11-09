@@ -8,6 +8,7 @@ process and a jobs process.
 ```
 cmd/api     REST API (later: LINE webhook)
 cmd/jobs    crawls the banks on a schedule
+cmd/migrate schema migrations (goose, app/database/migrations)
 app/
   sources/    one file per bank: list + detail parsing
   normalize/  pulls numbers out of the text, writes TH/EN summaries
@@ -43,6 +44,9 @@ go run ./cmd/jobs -once                 # crawl every bank once
 go run ./cmd/jobs -once -bank ttb       # one bank
 go run ./cmd/jobs                       # on CRAWL_CRON (Thai time)
 go run ./cmd/api                        # :8090
+go run ./cmd/migrate status             # which migrations ran (api/jobs migrate on start)
+go run ./cmd/migrate create add_merchants  # new migration file; never edit one that ran
+go run ./cmd/migrate down               # undo the last one
 ```
 
 ## API
