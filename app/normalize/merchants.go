@@ -26,8 +26,9 @@ func ExtractMerchants(cat *catalog.Catalog, text string) []MerchantMatch {
 		aliases[m.Key] = append([]string{m.NameTH, m.NameEN}, m.Aliases...)
 	}
 	norm := normText(text)
-	var out []MerchantMatch
-	for _, k := range newMatcher(aliases).keys(norm) {
+	keys := newMatcher(aliases).keys(norm)
+	out := make([]MerchantMatch, 0, len(keys))
+	for _, k := range keys {
 		out = append(out, MerchantMatch{k, models.MatchMerchant})
 	}
 	if len(out) == 0 && fuelWordRe.MatchString(norm) && fuelStationRe.MatchString(norm) {
