@@ -25,6 +25,7 @@ type Conditions struct {
 	PercentTiers  bool // more than one percent in the text: the summary says "up to"
 	MinSpend      *int
 	MaxBenefit    *int
+	AmountOff     *int // fixed baht off
 	InstallMonths *int
 	NeedsRegister bool
 	PromoCode     string
@@ -43,8 +44,14 @@ var (
 		regexp.MustCompile(`(?:ครบ|ขั้นต่ำ|ตั้งแต่|ทุกยอด(?:ใช้จ่าย)?|ทุกๆ)\s*` + num + `\s*บาท`),
 		regexp.MustCompile(`(?i)(?:minimum(?: spend(?:ing)?)?(?: of)?|spend(?:ing)?(?: of)?|every)\s*(?:THB|฿)?\s*` + num + `\s*(?:THB|baht|฿)?\s*(?:or more|and above)?`),
 	}
-	noMinRe   = regexp.MustCompile(`(?i)ไม่มียอด(?:ใช้จ่าย)?ขั้นต่ำ|no minimum spend`)
-	installRe = []*regexp.Regexp{
+	amountOffRe = []*regexp.Regexp{
+		regexp.MustCompile(`ลด(?:ทันที)?\s*` + num + `\s*บาท`),
+		regexp.MustCompile(`(?i)(?:THB|฿)\s*` + num + `\s*off\b`),
+		regexp.MustCompile(`(?i)` + num + `\s*(?:THB|baht)\s*off\b`),
+	}
+	perMonthRe = regexp.MustCompile(`^\s*(?:/\s*เดือน|ต่อเดือน|per month|/\s*month)`)
+	noMinRe    = regexp.MustCompile(`(?i)ไม่มียอด(?:ใช้จ่าย)?ขั้นต่ำ|no minimum spend`)
+	installRe  = []*regexp.Regexp{
 		regexp.MustCompile(`ผ่อน\s*0\s*%[^\d]{0,40}?(\d{1,2})\s*(?:เดือน|งวด)`),
 		regexp.MustCompile(`(?i)0\s*%\s*instal{1,2}ment\D{0,40}?(\d{1,2})\s*months?`), //nolint:misspell // matches "installment" and British "instalment"
 	}
@@ -93,6 +100,7 @@ func Extract(headline, body string) Conditions {
 	c.PercentTiers = len(seen) > 1
 
 	c.MaxBenefit = pick(all, maxRe, true)
+	c.AmountOff = amountOff(all)
 	if noMinRe.MatchString(all) {
 		zero := 0
 		c.MinSpend = &zero
@@ -146,6 +154,7 @@ func Apply(p *models.Promotion, c Conditions) {
 	p.Percent = c.Percent
 	p.MinSpend = c.MinSpend
 	p.MaxBenefit = c.MaxBenefit
+	p.AmountOff = c.AmountOff
 	p.InstallMonths = c.InstallMonths
 	p.NeedsRegister = c.NeedsRegister
 	p.PromoCode = c.PromoCode
@@ -269,4 +278,26 @@ func firstLine(options ...string) string {
 		}
 	}
 	return ""
+}
+
+// amountOff is the highest fixed baht discount ("ลดทันที 200 บาท", "THB 200 off"),
+// leaving out monthly amounts.
+func amountOff(s string) *int {
+	var out *int
+	for _, re := range amountOffRe {
+		for _, m := range re.FindAllStringSubmatchIndex(s, -1) {
+			if perMonthRe.MatchString(s[m[1]:]) {
+				continue
+			}
+			n, err := strconv.Atoi(strings.ReplaceAll(s[m[2]:m[3]], ",", ""))
+			if err != nil || n <= 0 {
+				continue
+			}
+			if out == nil || n > *out {
+				v := n
+				out = &v
+			}
+		}
+	}
+	return out
 }
