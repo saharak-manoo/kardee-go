@@ -53,9 +53,13 @@ type Promotion struct {
 	Percent       *float64 `json:"percent"`
 	MinSpend      *int     `json:"min_spend"`   // baht
 	MaxBenefit    *int     `json:"max_benefit"` // baht
+	AmountOff     *int     `json:"amount_off"`  // baht off, when the discount is a fixed amount
 	InstallMonths *int     `json:"install_months"`
 	NeedsRegister bool     `json:"needs_register"`
 	PromoCode     string   `gorm:"size:50" json:"promo_code"`
+
+	// Which cards qualify, built by normalize from the catalog.
+	Eligibility Eligibility `gorm:"type:jsonb;serializer:json" json:"eligibility"`
 
 	// Crawl bookkeeping.
 	SourceVersion   string     `gorm:"size:100" json:"-"` // changes when the bank edits it
