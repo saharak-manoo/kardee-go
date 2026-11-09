@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"regexp"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/saharak/kardee-go/app/fetch"
@@ -133,6 +134,9 @@ type ttbDetailPage struct {
 				SeoDescEN string `json:"seo_description_en"`
 				StartDate string `json:"start_date"`
 				EndDate   string `json:"end_date"`
+				Payload   struct {
+					Components []ttbComponent `json:"components"`
+				} `json:"payload"`
 			} `json:"content"`
 		} `json:"pageProps"`
 	} `json:"props"`
@@ -157,6 +161,12 @@ func parseTTBDetail(body []byte) (Detail, error) {
 		DescTH: ct.SeoDescTH, DescEN: ct.SeoDescEN,
 		TextTH: HTMLText(ct.DetailTH), TextEN: HTMLText(ct.DetailEN),
 	}
+	if d.TextTH == "" {
+		d.TextTH = componentText(ct.Payload.Components, func(t ttbText) string { return t.TH })
+	}
+	if d.TextEN == "" {
+		d.TextEN = componentText(ct.Payload.Components, func(t ttbText) string { return t.EN })
+	}
 	if t, err := time.Parse(time.RFC3339, ct.StartDate); err == nil {
 		d.StartAt = &t
 	}
@@ -164,4 +174,46 @@ func parseTTBDetail(body []byte) (Detail, error) {
 		d.EndAt = &t
 	}
 	return d, nil
+}
+
+// ttbComponent is one block of the page builder newer ttb pages use. Only the top-level
+// components are read: payload.payload holds a copy.
+type ttbComponent struct {
+	Data struct {
+		Title   ttbText `json:"title"`
+		Content ttbText `json:"content"`
+	} `json:"data"`
+	Components []ttbComponent `json:"components"`
+}
+
+type ttbText struct {
+	TH string `json:"th"`
+	EN string `json:"en"`
+}
+
+// UnmarshalJSON accepts a {"th","en"} object and ignores anything else.
+func (t *ttbText) UnmarshalJSON(b []byte) error {
+	var v struct{ TH, EN string }
+	if json.Unmarshal(b, &v) == nil {
+		t.TH, t.EN = v.TH, v.EN
+	}
+	return nil
+}
+
+// componentText joins the titles and contents of the components in page order.
+func componentText(cs []ttbComponent, lang func(ttbText) string) string {
+	var parts []string
+	var walk func([]ttbComponent)
+	walk = func(cs []ttbComponent) {
+		for _, c := range cs {
+			for _, s := range []string{lang(c.Data.Title), lang(c.Data.Content)} {
+				if s != "" {
+					parts = append(parts, s)
+				}
+			}
+			walk(c.Components)
+		}
+	}
+	walk(cs)
+	return HTMLText(strings.Join(parts, "\n"))
 }

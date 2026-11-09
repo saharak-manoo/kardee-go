@@ -135,3 +135,25 @@ func TestHTMLText(t *testing.T) {
 		t.Fatalf("%q", got)
 	}
 }
+
+// Newer ttb pages leave detail_th empty and put the text in nested payload components.
+func TestParseTTBDetail_PayloadComponents(t *testing.T) {
+	data := `{"props":{"pageProps":{"content":{"title_th":"ไทย","detail_th":"","payload":{
+		"components":[{"name":"banner","data":{},"components":[
+			{"data":{"title":{"th":"ช้อปที่ Power Buy","en":"Shop at Power Buy"}},"components":[
+				{"data":{"content":{"th":"<div>แบ่งชำระ 0%</div><ul><li>นาน 10 เดือน</li></ul>","en":"<p>0% for 10 months</p>"}}}
+			]}
+		]}],
+		"payload":{"components":[{"data":{"content":{"th":"<p>ซ้ำ</p>"}}}]}
+	}}}}}`
+	d, err := parseTTBDetail([]byte(`<script id="__NEXT_DATA__" type="application/json">` + data + `</script>`))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if d.TextTH != "ช้อปที่ Power Buy\nแบ่งชำระ 0%\nนาน 10 เดือน" {
+		t.Errorf("th = %q", d.TextTH)
+	}
+	if d.TextEN != "Shop at Power Buy\n0% for 10 months" {
+		t.Errorf("en = %q", d.TextEN)
+	}
+}
