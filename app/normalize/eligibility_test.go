@@ -49,7 +49,11 @@ func TestEligibility_KTCExclusions(t *testing.T) {
 	if len(e.Rules) != 1 || e.Rules[0].Scope != models.ScopeBankAll {
 		t.Errorf("rules = %+v, want bank_all", e.Rules)
 	}
-	for _, k := range []string{"ktc-cash-back", "ktc-royal-orchid-plus", "ktc-visa-corporate", "ktc-government-services", "ktc-thai-red-cross"} {
+	for _, k := range []string{
+		"ktc-cash-back-visa-platinum", "ktc-cash-back-platinum-mastercard", // "KTC CASH BACK ทุกประเภท"
+		"ktc-royal-orchid-plus-visa-infinite", "ktc-royal-orchid-plus-jcb-platinum", // "KTC - ROYAL ORCHID PLUS ทุกประเภท"
+		"ktc-visa-corporate", "ktc-government-services-card", "ktc-thai-red-cross-national-blood-center-platinum-mastercard",
+	} {
 		if !slices.Contains(e.Excluded, k) {
 			t.Errorf("%s not excluded: %v", k, e.Excluded)
 		}

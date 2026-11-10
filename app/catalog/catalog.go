@@ -53,7 +53,7 @@ type Catalog struct {
 
 var networks = map[string]Network{
 	"visa":       {"visa", "วีซ่า", "Visa", []string{"classic", "gold", "platinum", "signature", "infinite"}},
-	"mastercard": {"mastercard", "มาสเตอร์การ์ด", "Mastercard", []string{"standard", "gold", "titanium", "platinum", "world", "world-elite"}},
+	"mastercard": {"mastercard", "มาสเตอร์การ์ด", "Mastercard", []string{"standard", "classic", "gold", "titanium", "platinum", "world", "world-elite"}},
 	"jcb":        {"jcb", "เจซีบี", "JCB", []string{"standard", "gold", "platinum", "ultimate"}},
 	"unionpay":   {"unionpay", "ยูเนี่ยนเพย์", "UnionPay", []string{"standard", "gold", "platinum", "diamond"}},
 	"amex":       {"amex", "อเมริกัน เอ็กซ์เพรส", "American Express", []string{"green", "gold", "platinum"}},

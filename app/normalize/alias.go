@@ -2,6 +2,7 @@ package normalize
 
 import (
 	"regexp"
+	"slices"
 	"sort"
 	"strings"
 )
@@ -64,6 +65,10 @@ func (m *matcher) find(s string) []aliasHit {
 				continue
 			}
 			if anyTaken(taken, start, end) {
+				// The same alias on several cards (a family name): every card gets the hit.
+				if slices.ContainsFunc(hits, func(h aliasHit) bool { return h.start == start && h.end == end }) {
+					hits = append(hits, aliasHit{e.key, start, end})
+				}
 				continue
 			}
 			for k := start; k < end; k++ {

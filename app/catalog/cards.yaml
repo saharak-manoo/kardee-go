@@ -4,12 +4,17 @@
 
 # --- Krungsri ---
 - key: krungsri-corporate
+  apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-corporate-card
+  image_url: "https://www.krungsricard.com/getattachment/17ae6c47-8272-4663-8f18-4e4ee18d95f9/Krungsri-Corporatecard-Card-(1).png?lang=th-TH&ext=.png"
   bank: krungsri
   name_th: บัตรเครดิต กรุงศรี คอร์ปอเรท การ์ด
   name_en: Krungsri Corporate Card
   aliases: [บัตรเครดิต กรุงศรี คอร์ปอเรท การ์ด]
   network: visa
 - key: krungsri-signature
+  apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-signature
+  image_url: "https://www.krungsricard.com/getattachment/d4769fba-412f-415e-9796-b71e274e6be5/Krungsri-Signature-header-(1).png?lang=th-TH&ext=.png"
+  verified: true
   bank: krungsri
   name_th: บัตรเครดิต กรุงศรี ซิกเนเจอร์
   name_en: Krungsri Signature
@@ -17,6 +22,8 @@
   network: visa
   tier: signature
 - key: krungsri-doctor-card
+  apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-doctor-card
+  image_url: "https://www.krungsricard.com/getattachment/54c3b67d-6d2c-4dd3-a9c0-d0098308a36f/Krungsri-Platinum-header-(1).png?lang=th-TH&ext=.png"
   bank: krungsri
   name_th: บัตรเครดิต กรุงศรี ดอกเตอร์การ์ด
   name_en: Krungsri Doctor Card
@@ -24,6 +31,8 @@
   network: visa
   tier: platinum
 - key: krungsri-now-platinum
+  apply_url: https://www.krungsricard.com/th/product/creditcard/now
+  image_url: "https://www.krungsricard.com/getattachment/e92351db-1d66-4773-873e-ed9dedb9661d/KCC-NOW-Card-product-ver2-(2).png?lang=th-TH&ext=.png"
   bank: krungsri
   name_th: บัตรเครดิต กรุงศรี นาว แพลทินัม
   name_en: Krungsri NOW Platinum
@@ -38,6 +47,9 @@
   network: visa
   tier: classic
 - key: krungsri-jcb-ultimate
+  apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-jcb-ultimate
+  image_url: "https://www.krungsricard.com/getmedia/f497411d-4f3b-45d4-a172-8a8c37f8d0bc/jcb-ultimate.png?width=335&height=230&ext=.png"
+  verified: true
   bank: krungsri
   name_th: บัตรเครดิต กรุงศรี เจซีบี อัลติเมท
   name_en: Krungsri JCB Ultimate
@@ -45,6 +57,9 @@
   network: jcb
   tier: ultimate
 - key: krungsri-jcb-platinum
+  apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-jcb
+  image_url: "https://www.krungsricard.com/getmedia/768ada72-96a0-4522-b8f0-ee4715eb9ed8/Krungsri-JCB-Platinum-(1).png?width=335&height=230&ext=.png"
+  verified: true
   bank: krungsri
   name_th: บัตรเครดิต กรุงศรี เจซีบี แพลทินัม
   name_en: Krungsri JCB Platinum
@@ -52,6 +67,9 @@
   network: jcb
   tier: platinum
 - key: krungsri-lady-titanium
+  apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-lady
+  image_url: "https://www.krungsricard.com/getattachment/ccd97b18-90a1-41a2-ae96-dcdd55fd8c8d/Krungsri-Lady-Titanium-Master-Card-2card-header-(2).png?lang=th-TH&ext=.png"
+  verified: true
   bank: krungsri
   name_th: บัตรเครดิต กรุงศรี เลดี้ ไทเทเนี่ยม
   name_en: Krungsri Lady Titanium
@@ -59,6 +77,9 @@
   network: mastercard
   tier: titanium
 - key: krungsri-exclusive-signature
+  apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-exclusive-signature
+  image_url: "https://www.krungsricard.com/getmedia/3a85e1c4-aac5-4eb9-91ad-d50f0659c799/Krungsri-Exclusive-Signature-(2)_1.png?width=335&height=230&ext=.png"
+  verified: true
   bank: krungsri
   name_th: บัตรเครดิต กรุงศรี เอ็กซ์คลูซีฟ ซิกเนเจอร์
   name_en: Krungsri Exclusive Signature
@@ -66,6 +87,9 @@
   network: visa
   tier: signature
 - key: krungsri-platinum
+  apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-visa-platinum
+  image_url: "https://www.krungsricard.com/getattachment/3cda886f-bf6a-407c-823d-337bf2945f21/Krungsri-Platinum-header-(1)-(3).png?lang=th-TH&ext=.png"
+  verified: true
   bank: krungsri
   name_th: บัตรเครดิต กรุงศรี แพลทินัม
   name_en: Krungsri Platinum
@@ -73,6 +97,9 @@
   network: visa
   tier: platinum
 - key: krungsri-platinum-mastercard
+  apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-platinum-mastercard
+  image_url: "https://www.krungsricard.com/getattachment/d627679b-f16d-47f6-9d81-54be26c0a5f0/Krungsri-Platinum-Mastercard-(3).png?lang=th-TH&ext=.png"
+  verified: true
   bank: krungsri
   name_th: บัตรเครดิต กรุงศรี แพลทินัม มาสเตอร์การ์ด
   name_en: Krungsri Platinum Mastercard
@@ -80,6 +107,8 @@
   network: mastercard
   tier: platinum
 - key: krungsri-homepro-corporate
+  apply_url: https://www.krungsricard.com/th/product/creditcard/homepro-corporate-card
+  image_url: "https://www.krungsricard.com/getattachment/7ae90141-dc1d-45dc-ba75-ae7d5b8f4c20/Homepro-Corporate-Card-(1).png?lang=th-TH&ext=.png"
   bank: krungsri
   name_th: บัตรเครดิต กรุงศรี โฮมโปร คอร์ปอเรท การ์ด
   name_en: Krungsri HomePro Corporate Card
@@ -87,6 +116,8 @@
   network: visa
   co_brand: homepro
 - key: krungsri-private-banking
+  apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-private-banking
+  image_url: "https://www.krungsricard.com/getmedia/a56c8c0b-4af0-4402-b7ef-49dfa4409eaf/Krungsri-Private-Banking-(2)_1.png?width=335&height=230&ext=.png"
   bank: krungsri
   name_th: บัตรเครดิต กรุงศรี ไพรเวท แบงก์กิ้ง
   name_en: Krungsri Private Banking
@@ -94,6 +125,8 @@
   network: visa
   tier: infinite
 - key: tcc-privilege
+  apply_url: https://www.krungsricard.com/th/product/creditcard/tcc-privilege
+  image_url: "https://www.krungsricard.com/getattachment/7383a8b6-7619-4463-89a3-a3a041f2744b/Tcc-privilegecard-(1).png?lang=th-TH&ext=.png"
   bank: krungsri
   name_th: บัตรเครดิต ทีซีซี พริวิเลจ การ์ด
   name_en: TCC Privilege Card
@@ -101,6 +134,8 @@
   network: visa
   tier: platinum
 - key: siam-takashimaya-visa
+  apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-siam-takashimaya-visa
+  image_url: "https://www.krungsricard.com/getattachment/01d5ae24-0b5b-49a6-864b-c82b06aefe67/STK-CARD-VISA-(1).png?lang=th-TH&ext=.png"
   bank: krungsri
   name_th: บัตรเครดิต สยาม ทาคาชิมายะ วีซ่า
   name_en: Siam Takashimaya Visa
@@ -108,6 +143,8 @@
   network: visa
   co_brand: siam-takashimaya
 - key: siam-takashimaya-jcb
+  apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-siam-takashimaya-jcb
+  image_url: "https://www.krungsricard.com/getattachment/f7fd5c55-265d-4551-8e58-7b9739540f35/STK-JCB-(1).png?lang=th-TH&ext=.png"
   bank: krungsri
   name_th: บัตรเครดิต สยาม ทาคาชิมายะ เจซีบี
   name_en: Siam Takashimaya JCB
@@ -115,6 +152,8 @@
   network: jcb
   co_brand: siam-takashimaya
 - key: siam-takashimaya-finesse
+  apply_url: https://www.krungsricard.com/th/product/creditcard/siam-takashimaya-credit-card-finest
+  image_url: "https://www.krungsricard.com/getattachment/8de5e15d-2c9c-4999-8229-be17f43c0e82/STK-Finest-(2).png?lang=th-TH&ext=.png"
   bank: krungsri
   name_th: บัตรเครดิต สยาม ทาคาชิมายะ ไฟน์เนส
   name_en: Siam Takashimaya Finesse
@@ -122,6 +161,8 @@
   network: visa
   co_brand: siam-takashimaya
 - key: siam-takashimaya-finesse-invitation
+  apply_url: https://www.krungsricard.com/th/product/creditcard/siam-takashimaya-credit-card-finest-invitation
+  image_url: "https://www.krungsricard.com/getattachment/098ce0bf-fedd-4de6-b90e-1f0d90977af7/STK-Finest-Invitation-(2).png?lang=th-TH&ext=.png"
   bank: krungsri
   name_th: บัตรเครดิต สยาม ทาคาชิมายะ ไฟน์เนส - อินวิเทชั่น โอนลี่
   name_en: Siam Takashimaya Finesse Invitation Only
@@ -136,6 +177,9 @@
   network: visa
   co_brand: aia
 - key: aia-visa-platinum
+  apply_url: https://www.krungsricard.com/th/product/creditcard/aia-visa-platinum
+  image_url: "https://www.krungsricard.com/getmedia/6f0b9942-ebe0-4589-a1f6-fae11bdb9fc6/Krungsri-AIA-Visa-Platinum_1.png?width=335&height=230&ext=.png"
+  verified: true
   bank: krungsri
   name_th: บัตรเครดิต เอไอเอ วีซ่า แพลทินัม
   name_en: AIA Visa Platinum
@@ -144,6 +188,9 @@
   tier: platinum
   co_brand: aia
 - key: homepro-visa-platinum
+  apply_url: https://www.krungsricard.com/th/product/creditcard/homepro-visa-platinum
+  image_url: "https://www.krungsricard.com/getattachment/4b91eb86-3383-4d60-bb09-9c6097e078a7/Homepro-Visa-Platinum-(2).png?lang=th-TH&ext=.png"
+  verified: true
   bank: krungsri
   name_th: บัตรเครดิต โฮมโปร วีซ่า แพลทินัม
   name_en: HomePro Visa Platinum
@@ -152,92 +199,846 @@
   tier: platinum
   co_brand: homepro
 
-# --- KTC ---
+# --- KTC (from ktc.co.th/credit-card, 2026-11-09; names state network and tier) ---
 - key: ktc-x-visa-signature
   bank: ktc
-  name_th: บัตรเครดิต KTC X VISA SIGNATURE
+  name_th: KTC X VISA SIGNATURE
   name_en: KTC X VISA SIGNATURE
-  aliases: [KTC X VISA SIGNATURE]
+  aliases: ["KTC X VISA SIGNATURE"]
   network: visa
   tier: signature
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-X-VISA-SIGNATURE.webp
+  verified: true
+- key: ktc-digital-visa-signature
+  bank: ktc
+  name_th: KTC DIGITAL VISA SIGNATURE
+  name_en: KTC DIGITAL VISA SIGNATURE
+  aliases: ["KTC DIGITAL VISA SIGNATURE"]
+  network: visa
+  tier: signature
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-DIGITAL-VISA-SIGNATURE.webp
+  verified: true
+- key: ktc-visa-signature
+  bank: ktc
+  name_th: KTC VISA SIGNATURE
+  name_en: KTC VISA SIGNATURE
+  aliases: ["KTC VISA SIGNATURE"]
+  network: visa
+  tier: signature
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-VISA-SIGNATURE-newdesign.webp
+  verified: true
 - key: ktc-x-world-rewards-mastercard
   bank: ktc
-  name_th: บัตรเครดิต KTC X WORLD REWARDS MASTERCARD
+  name_th: KTC X WORLD REWARDS MASTERCARD
   name_en: KTC X WORLD REWARDS MASTERCARD
-  aliases: [KTC X WORLD REWARDS MASTERCARD]
+  aliases: ["KTC X WORLD REWARDS MASTERCARD"]
   network: mastercard
   tier: world
-- key: ktc-visa-platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-X-WORLD-REWARDS-MASTERCARD-newdesign.webp
+  verified: true
+- key: ktc-digital-world-rewards-mastercard
   bank: ktc
-  name_th: บัตรเครดิต KTC VISA PLATINUM
-  name_en: KTC VISA PLATINUM
-  aliases: [KTC VISA PLATINUM]
-  network: visa
-  tier: platinum
-- key: ktc-mastercard-platinum
-  bank: ktc
-  name_th: บัตรเครดิต KTC MASTERCARD PLATINUM
-  name_en: KTC MASTERCARD PLATINUM
-  aliases: [KTC MASTERCARD PLATINUM]
+  name_th: KTC DIGITAL WORLD REWARDS MASTERCARD
+  name_en: KTC DIGITAL WORLD REWARDS MASTERCARD
+  aliases: ["KTC DIGITAL WORLD REWARDS MASTERCARD"]
   network: mastercard
-  tier: platinum
-- key: ktc-jcb-platinum
+  tier: world
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-DIGITAL-WORLD-REWARDS-MASTERCARD.webp
+  verified: true
+- key: ktc-world-rewards-mastercard
   bank: ktc
-  name_th: บัตรเครดิต KTC JCB PLATINUM
-  name_en: KTC JCB PLATINUM
-  aliases: [KTC JCB PLATINUM]
-  network: jcb
-  tier: platinum
+  name_th: KTC WORLD REWARDS MASTERCARD
+  name_en: KTC WORLD REWARDS MASTERCARD
+  aliases: ["KTC WORLD REWARDS MASTERCARD"]
+  network: mastercard
+  tier: world
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-WORLD-REWARDS-MASTERCARD-01.webp
+  verified: true
 - key: ktc-jcb-ultimate
   bank: ktc
-  name_th: บัตรเครดิต KTC JCB ULTIMATE
+  name_th: KTC JCB ULTIMATE
   name_en: KTC JCB ULTIMATE
-  aliases: [KTC JCB ULTIMATE]
+  aliases: ["KTC JCB ULTIMATE"]
   network: jcb
   tier: ultimate
-- key: ktc-cash-back
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-JCB-ULTIMATE-newdesign.webp
+  verified: true
+- key: ktc-unionpay-diamond
   bank: ktc
-  name_th: บัตรเครดิต KTC CASH BACK
-  name_en: KTC CASH BACK
-  aliases: [KTC CASH BACK]
+  name_th: KTC UNIONPAY DIAMOND
+  name_en: KTC UNIONPAY DIAMOND
+  aliases: ["KTC UNIONPAY DIAMOND"]
+  network: unionpay
+  tier: diamond
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/UPI_DIAMOND_512x324.png
+  verified: true
+- key: ktc-digital-platinum-visa
+  bank: ktc
+  name_th: KTC DIGITAL PLATINUM VISA
+  name_en: KTC DIGITAL PLATINUM VISA
+  aliases: ["KTC DIGITAL PLATINUM VISA"]
   network: visa
   tier: platinum
-- key: ktc-royal-orchid-plus
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-DIGITAL-PLATINUMVISA-new.webp
+  verified: true
+- key: ktc-visa-platinum
   bank: ktc
-  name_th: บัตรเครดิต KTC - ROYAL ORCHID PLUS
-  name_en: KTC - ROYAL ORCHID PLUS
-  aliases: [KTC - ROYAL ORCHID PLUS, KTC ROYAL ORCHID PLUS]
+  name_th: KTC VISA PLATINUM
+  name_en: KTC VISA PLATINUM
+  aliases: ["KTC VISA PLATINUM"]
   network: visa
-  tier: signature
-- key: ktc-visa-corporate
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-VISA-PLATINUM-newdesign.webp
+  verified: true
+- key: ktc-digital-platinum-mastercard
   bank: ktc
-  name_th: บัตรเครดิต KTC VISA CORPORATE
-  name_en: KTC VISA CORPORATE
-  aliases: [KTC VISA CORPORATE]
-  network: visa
-- key: ktc-government-services
+  name_th: KTC DIGITAL PLATINUM MASTERCARD
+  name_en: KTC DIGITAL PLATINUM MASTERCARD
+  aliases: ["KTC DIGITAL PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-DIGITAL-PLATINUM-MASTERCARD-NEW.webp
+  verified: true
+- key: ktc-platinum-mastercard
   bank: ktc
-  name_th: บัตรเครดิต KTC GOVERNMENT SERVICES
-  name_en: KTC GOVERNMENT SERVICES
-  aliases: [KTC GOVERNMENT SERVICES]
-  network: visa
-- key: ktc-thai-red-cross
+  name_th: KTC PLATINUM MASTERCARD
+  name_en: KTC PLATINUM MASTERCARD
+  aliases: ["KTC PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-PLATINUM-MASTERCARD-newdesign.webp
+  verified: true
+- key: ktc-jcb-platinum
   bank: ktc
-  name_th: บัตรเครดิต KTC - THAI RED CROSS NATIONAL BLOOD CENTRE
-  name_en: KTC - THAI RED CROSS NATIONAL BLOOD CENTRE
-  aliases: [KTC - THAI RED CROSS NATIONAL BLOOD CENTRE]
+  name_th: KTC JCB PLATINUM
+  name_en: KTC JCB PLATINUM
+  aliases: ["KTC JCB PLATINUM"]
+  network: jcb
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-JCB-PLATINUM-newdesign.webp
+  verified: true
+- key: ktc-unionpay-platinum
+  bank: ktc
+  name_th: KTC UNIONPAY PLATINUM
+  name_en: KTC UNIONPAY PLATINUM
+  aliases: ["KTC UNIONPAY PLATINUM"]
+  network: unionpay
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/creditcard/2024/image/KTC_UNIONPAY_PLATINUM_512x324.webp
+  verified: true
+- key: ktc-visa-gold
+  bank: ktc
+  name_th: KTC VISA GOLD
+  name_en: KTC VISA GOLD
+  aliases: ["KTC VISA GOLD"]
   network: visa
+  tier: gold
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/KTC-VISA-GOLD-512x324.webp
+  verified: true
+- key: ktc-gold-mastercard
+  bank: ktc
+  name_th: KTC GOLD MASTERCARD
+  name_en: KTC GOLD MASTERCARD
+  aliases: ["KTC GOLD MASTERCARD"]
+  network: mastercard
+  tier: gold
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-GOLD-MASTERCARD.webp
+  verified: true
+- key: ktc-visa-classic
+  bank: ktc
+  name_th: KTC VISA CLASSIC
+  name_en: KTC VISA CLASSIC
+  aliases: ["KTC VISA CLASSIC"]
+  network: visa
+  tier: classic
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-VISA-CLASSIC.webp
+  verified: true
+- key: ktc-classic-mastercard
+  bank: ktc
+  name_th: KTC CLASSIC MASTERCARD
+  name_en: KTC CLASSIC MASTERCARD
+  aliases: ["KTC CLASSIC MASTERCARD"]
+  network: mastercard
+  tier: classic
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-CLASSIC-MASTERCARD.webp
+  verified: true
+- key: ktc-x-agoda-world-rewards-mastercard
+  bank: ktc
+  name_th: KTC X - AGODA WORLD REWARDS MASTERCARD
+  name_en: KTC X - AGODA WORLD REWARDS MASTERCARD
+  aliases: ["KTC X - AGODA WORLD REWARDS MASTERCARD", "KTC AGODA"]
+  network: mastercard
+  tier: world
+  co_brand: agoda
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-X-AGODA-WORLD-REWARDSMASTERCARD.webp
+  verified: true
+- key: ktc-agoda-world-rewards-mastercard
+  bank: ktc
+  name_th: KTC - AGODA WORLD REWARDS MASTERCARD
+  name_en: KTC - AGODA WORLD REWARDS MASTERCARD
+  aliases: ["KTC - AGODA WORLD REWARDS MASTERCARD", "KTC AGODA"]
+  network: mastercard
+  tier: world
+  co_brand: agoda
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-AGODA-WORLD-REWARDS-MASTERCARD.webp
+  verified: true
+- key: ktc-agoda-platinum-mastercard
+  bank: ktc
+  name_th: KTC - AGODA PLATINUM MASTERCARD
+  name_en: KTC - AGODA PLATINUM MASTERCARD
+  aliases: ["KTC - AGODA PLATINUM MASTERCARD", "KTC AGODA"]
+  network: mastercard
+  tier: platinum
+  co_brand: agoda
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/creditcard/2024/image/KTC_-_AGODA_PLATINUM_MASTERCARD.webp
+  verified: true
 - key: ktc-bangchak-visa-platinum
   bank: ktc
-  name_th: บัตรเครดิต KTC บางจาก วีซ่า แพลทินัม
-  name_en: KTC BANGCHAK VISA PLATINUM
-  aliases: [KTC BANGCHAK, เคทีซี บางจาก]
+  name_th: KTC - BANGCHAK VISA PLATINUM
+  name_en: KTC - BANGCHAK VISA PLATINUM
+  aliases: ["KTC - BANGCHAK VISA PLATINUM", "KTC BANGCHAK", "เคทีซี บางจาก"]
   network: visa
   tier: platinum
   co_brand: bangchak
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGCHAK-VISA-PLATINUM.webp
+  verified: true
+- key: ktc-bangchak-suankularb-visa-platinum
+  bank: ktc
+  name_th: KTC - BANGCHAK - SUANKULARB VISA PLATINUM
+  name_en: KTC - BANGCHAK - SUANKULARB VISA PLATINUM
+  aliases: ["KTC - BANGCHAK - SUANKULARB VISA PLATINUM", "KTC BANGCHAK", "เคทีซี บางจาก"]
+  network: visa
+  tier: platinum
+  co_brand: bangchak
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGCHAK-SUANKULARB-VISA-PLATINUM.webp
+  verified: true
+- key: ktc-bangchak-platinum-mastercard
+  bank: ktc
+  name_th: KTC - BANGCHAK PLATINUM MASTERCARD
+  name_en: KTC - BANGCHAK PLATINUM MASTERCARD
+  aliases: ["KTC - BANGCHAK PLATINUM MASTERCARD", "KTC BANGCHAK", "เคทีซี บางจาก"]
+  network: mastercard
+  tier: platinum
+  co_brand: bangchak
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGCHAK-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-x-bangkok-airways-visa-signature
+  bank: ktc
+  name_th: KTC X - BANGKOK AIRWAYS VISA SIGNATURE
+  name_en: KTC X - BANGKOK AIRWAYS VISA SIGNATURE
+  aliases: ["KTC X - BANGKOK AIRWAYS VISA SIGNATURE", "KTC BANGKOK AIRWAYS"]
+  network: visa
+  tier: signature
+  co_brand: bangkok-airways
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-X-BANGKOK-AIRWAYS-VISA-SIGNATURE.webp
+  verified: true
+- key: ktc-x-bangkok-airways-world-rewards-mastercard
+  bank: ktc
+  name_th: KTC X - BANGKOK AIRWAYS WORLD REWARDS MASTERCARD
+  name_en: KTC X - BANGKOK AIRWAYS WORLD REWARDS MASTERCARD
+  aliases: ["KTC X - BANGKOK AIRWAYS WORLD REWARDS MASTERCARD", "KTC BANGKOK AIRWAYS"]
+  network: mastercard
+  tier: world
+  co_brand: bangkok-airways
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-X-BANGKOK-AIRWAYS-WORLD-REWARDS-MASTERCARD.webp
+  verified: true
+- key: ktc-bangkok-airways-visa-signature
+  bank: ktc
+  name_th: KTC - BANGKOK AIRWAYS VISA SIGNATURE
+  name_en: KTC - BANGKOK AIRWAYS VISA SIGNATURE
+  aliases: ["KTC - BANGKOK AIRWAYS VISA SIGNATURE", "KTC BANGKOK AIRWAYS"]
+  network: visa
+  tier: signature
+  co_brand: bangkok-airways
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGKOK-AIRWAYS-VISA-SIGNATURE.webp
+  verified: true
+- key: ktc-bangkok-airways-world-rewards-mastercard
+  bank: ktc
+  name_th: KTC - BANGKOK AIRWAYS WORLD REWARDS MASTERCARD
+  name_en: KTC - BANGKOK AIRWAYS WORLD REWARDS MASTERCARD
+  aliases: ["KTC - BANGKOK AIRWAYS WORLD REWARDS MASTERCARD", "KTC BANGKOK AIRWAYS"]
+  network: mastercard
+  tier: world
+  co_brand: bangkok-airways
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGKOK-AIRWAYS-WORLD-REWARDS-MASTERCARD.webp
+  verified: true
+- key: ktc-bangkok-airways-visa-platinum
+  bank: ktc
+  name_th: KTC - BANGKOK AIRWAYS VISA PLATINUM
+  name_en: KTC - BANGKOK AIRWAYS VISA PLATINUM
+  aliases: ["KTC - BANGKOK AIRWAYS VISA PLATINUM", "KTC BANGKOK AIRWAYS"]
+  network: visa
+  tier: platinum
+  co_brand: bangkok-airways
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGKOK-AIRWAYS-VISA-PLATINUM.webp
+  verified: true
+- key: ktc-bangkok-airways-platinum-mastercard
+  bank: ktc
+  name_th: KTC - BANGKOK AIRWAYS PLATINUM MASTERCARD
+  name_en: KTC - BANGKOK AIRWAYS PLATINUM MASTERCARD
+  aliases: ["KTC - BANGKOK AIRWAYS PLATINUM MASTERCARD", "KTC BANGKOK AIRWAYS"]
+  network: mastercard
+  tier: platinum
+  co_brand: bangkok-airways
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGKOK-AIRWAYS-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-bangkok-airways-jcb-platinum
+  bank: ktc
+  name_th: KTC - BANGKOK AIRWAYS JCB PLATINUM
+  name_en: KTC - BANGKOK AIRWAYS JCB PLATINUM
+  aliases: ["KTC - BANGKOK AIRWAYS JCB PLATINUM", "KTC BANGKOK AIRWAYS"]
+  network: jcb
+  tier: platinum
+  co_brand: bangkok-airways
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGKOK-AIRWAYS-JCB-PLATINUM.webp
+  verified: true
+- key: ktc-bangkok-hospital-group-visa-platinum
+  bank: ktc
+  name_th: KTC - BANGKOK HOSPITAL GROUP VISA PLATINUM
+  name_en: KTC - BANGKOK HOSPITAL GROUP VISA PLATINUM
+  aliases: ["KTC - BANGKOK HOSPITAL GROUP VISA PLATINUM"]
+  network: visa
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGKOK-HOSPITAL-GROUP-VISA-PLATINUM.webp
+  verified: true
+- key: ktc-bangkok-hospital-group-platinum-mastercard
+  bank: ktc
+  name_th: KTC - BANGKOK HOSPITAL GROUP PLATINUM MASTERCARD
+  name_en: KTC - BANGKOK HOSPITAL GROUP PLATINUM MASTERCARD
+  aliases: ["KTC - BANGKOK HOSPITAL GROUP PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGKOK-HOSPITAL-GROUP-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-best-western-platinum-mastercard
+  bank: ktc
+  name_th: KTC - BEST WESTERN PLATINUM MASTERCARD
+  name_en: KTC - BEST WESTERN PLATINUM MASTERCARD
+  aliases: ["KTC - BEST WESTERN PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/generic/KTC-BEST-WESTERN-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-big-camera-visa-platinum
+  bank: ktc
+  name_th: KTC - BIG CAMERA VISA PLATINUM
+  name_en: KTC - BIG CAMERA VISA PLATINUM
+  aliases: ["KTC - BIG CAMERA VISA PLATINUM"]
+  network: visa
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC_-_BIG_CAMERA_VISA_PLATINUM_512x324px.webp
+  verified: true
+- key: ktc-big-camera-platinum-mastercard
+  bank: ktc
+  name_th: KTC - BIG CAMERA PLATINUM MASTERCARD
+  name_en: KTC - BIG CAMERA PLATINUM MASTERCARD
+  aliases: ["KTC - BIG CAMERA PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC_-_BIG_CAMERA_PLATINUM_MASTERCARD.webp
+  verified: true
+- key: ktc-bnh-hospital-visa-platinum
+  bank: ktc
+  name_th: KTC - BNH HOSPITAL VISA PLATINUM
+  name_en: KTC - BNH HOSPITAL VISA PLATINUM
+  aliases: ["KTC - BNH HOSPITAL VISA PLATINUM"]
+  network: visa
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/creditcard_img_cards/KTC-BNH-HOSPITAL-VISA-PLATINUM-1.webp
+  verified: true
+- key: ktc-bnh-hospital-platinum-mastercard
+  bank: ktc
+  name_th: KTC - BNH HOSPITAL PLATINUM MASTERCARD
+  name_en: KTC - BNH HOSPITAL PLATINUM MASTERCARD
+  aliases: ["KTC - BNH HOSPITAL PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BNH-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-dhipaya-insurance-platinum-mastercard
+  bank: ktc
+  name_th: KTC - DHIPAYA INSURANCE PLATINUM MASTERCARD
+  name_en: KTC - DHIPAYA INSURANCE PLATINUM MASTERCARD
+  aliases: ["KTC - DHIPAYA INSURANCE PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC_-_DHIPAYA_INSURANCE_PLATINUM_MASTERCARD_Redesign_512x324px.png
+  verified: true
+- key: ktc-fairy-plaza-platinum-mastercard
+  bank: ktc
+  name_th: KTC - FAIRY PLAZA PLATINUM MASTERCARD
+  name_en: KTC - FAIRY PLAZA PLATINUM MASTERCARD
+  aliases: ["KTC - FAIRY PLAZA PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/creditcard/img/KTC_-_FAIRY_PLAZA_PLATINUM_MASTERCARD.webp
+  verified: true
+- key: ktc-fico-visa-platinum
+  bank: ktc
+  name_th: KTC - FICO VISA PLATINUM
+  name_en: KTC - FICO VISA PLATINUM
+  aliases: ["KTC - FICO VISA PLATINUM"]
+  network: visa
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-FICO-VISA-PLATINUM.webp
+  verified: true
+- key: ktc-klang-plaza-platinum-mastercard
+  bank: ktc
+  name_th: KTC - KLANG PLAZA PLATINUM MASTERCARD
+  name_en: KTC - KLANG PLAZA PLATINUM MASTERCARD
+  aliases: ["KTC - KLANG PLAZA PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-KLANG-PLAZA-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-mini-platinum-mastercard
+  bank: ktc
+  name_th: KTC - MINI PLATINUM MASTERCARD
+  name_en: KTC - MINI PLATINUM MASTERCARD
+  aliases: ["KTC - MINI PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-MINI-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-rev-visa-platinum
+  bank: ktc
+  name_th: KTC - REV VISA PLATINUM
+  name_en: KTC - REV VISA PLATINUM
+  aliases: ["KTC - REV VISA PLATINUM"]
+  network: visa
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/creditcard/2024/image/JUL23-375_CARD_Co_Brand_Packshot_2023_KTC_-_REV_VISA_PLATINUM.webp
+  verified: true
+- key: ktc-rev-platinum-mastercard
+  bank: ktc
+  name_th: KTC - REV PLATINUM MASTERCARD
+  name_en: KTC - REV PLATINUM MASTERCARD
+  aliases: ["KTC - REV PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC_-_REV_PLATINUM_MASTERCARD.webp
+  verified: true
+- key: ktc-royal-orchid-plus-visa-platinum
+  bank: ktc
+  name_th: KTC - ROYAL ORCHID PLUS VISA PLATINUM
+  name_en: KTC - ROYAL ORCHID PLUS VISA PLATINUM
+  aliases: ["KTC - ROYAL ORCHID PLUS VISA PLATINUM", "KTC - ROYAL ORCHID PLUS", "KTC ROYAL ORCHID PLUS"]
+  network: visa
+  tier: platinum
+  co_brand: thai-airways
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-ROYAL-ORCHID-PLUS-VISA-PLATINUM.webp
+  verified: true
+- key: ktc-royal-orchid-plus-platinum-mastercard
+  bank: ktc
+  name_th: KTC - ROYAL ORCHID PLUS PLATINUM MASTERCARD
+  name_en: KTC - ROYAL ORCHID PLUS PLATINUM MASTERCARD
+  aliases: ["KTC - ROYAL ORCHID PLUS PLATINUM MASTERCARD", "KTC - ROYAL ORCHID PLUS", "KTC ROYAL ORCHID PLUS"]
+  network: mastercard
+  tier: platinum
+  co_brand: thai-airways
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-ROYAL-ORCHID-PLUS-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-royal-orchid-plus-jcb-platinum
+  bank: ktc
+  name_th: KTC - ROYAL ORCHID PLUS JCB PLATINUM
+  name_en: KTC - ROYAL ORCHID PLUS JCB PLATINUM
+  aliases: ["KTC - ROYAL ORCHID PLUS JCB PLATINUM", "KTC - ROYAL ORCHID PLUS", "KTC ROYAL ORCHID PLUS"]
+  network: jcb
+  tier: platinum
+  co_brand: thai-airways
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/generic/KTC-ROYAL-ORCHID-PLUS-JCB-PLATINUM.webp
+  verified: true
+- key: ktc-samitivej-hospital-visa-platinum
+  bank: ktc
+  name_th: KTC - SAMITIVEJ HOSPITAL VISA PLATINUM
+  name_en: KTC - SAMITIVEJ HOSPITAL VISA PLATINUM
+  aliases: ["KTC - SAMITIVEJ HOSPITAL VISA PLATINUM"]
+  network: visa
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-SAMITIVEJ-HOSPITAL-VISA-PLATINUM.webp
+  verified: true
+- key: ktc-samitivej-hospital-platinum-mastercard
+  bank: ktc
+  name_th: KTC - SAMITIVEJ HOSPITAL PLATINUM MASTERCARD
+  name_en: KTC - SAMITIVEJ HOSPITAL PLATINUM MASTERCARD
+  aliases: ["KTC - SAMITIVEJ HOSPITAL PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-SAMITIVEJ-HOSPITAL-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-snp2000-visa-platinum
+  bank: ktc
+  name_th: KTC - SNP2000 VISA PLATINUM
+  name_en: KTC - SNP2000 VISA PLATINUM
+  aliases: ["KTC - SNP2000 VISA PLATINUM"]
+  network: visa
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC_-_SNP2000_VISA_PLATINUM_512x324px.webp
+  verified: true
+- key: ktc-snp2000-platinum-mastercard
+  bank: ktc
+  name_th: KTC - SNP2000 PLATINUM MASTERCARD
+  name_en: KTC - SNP2000 PLATINUM MASTERCARD
+  aliases: ["KTC - SNP2000 PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-SNP2000-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-ssc-platinum-mastercard
+  bank: ktc
+  name_th: KTC - SSC PLATINUM MASTERCARD
+  name_en: KTC - SSC PLATINUM MASTERCARD
+  aliases: ["KTC - SSC PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/generic/KTC-SSC-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-subaru-platinum-mastercard
+  bank: ktc
+  name_th: KTC - SUBARU PLATINUM MASTERCARD
+  name_en: KTC - SUBARU PLATINUM MASTERCARD
+  aliases: ["KTC - SUBARU PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/creditcard/2024/image/JUL23_375_CARD_Co-Brand_KTC_SUBARU_PLATINUM_MASTERCARD.webp
+  verified: true
+- key: ktc-taweekit-complex-platinum-mastercard
+  bank: ktc
+  name_th: KTC - TAWEEKIT COMPLEX PLATINUM MASTERCARD
+  name_en: KTC - TAWEEKIT COMPLEX PLATINUM MASTERCARD
+  aliases: ["KTC - TAWEEKIT COMPLEX PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/generic/KTC-TAWEEKIT-COMPLEX-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-taweekit-supercenter-platinum-mastercard
+  bank: ktc
+  name_th: KTC - TAWEEKIT SUPERCENTER PLATINUM MASTERCARD
+  name_en: KTC - TAWEEKIT SUPERCENTER PLATINUM MASTERCARD
+  aliases: ["KTC - TAWEEKIT SUPERCENTER PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/generic/KTC-TAWEEKIT-SUPERCENTER-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-thonburi-auto-visa-platinum
+  bank: ktc
+  name_th: KTC - THONBURI AUTO VISA PLATINUM
+  name_en: KTC - THONBURI AUTO VISA PLATINUM
+  aliases: ["KTC - THONBURI AUTO VISA PLATINUM"]
+  network: visa
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-THONBURI-AUTO-VISA-PLATINUM.webp
+  verified: true
+- key: ktc-thonburi-auto-platinum-mastercard
+  bank: ktc
+  name_th: KTC - THONBURI AUTO PLATINUM MASTERCARD
+  name_en: KTC - THONBURI AUTO PLATINUM MASTERCARD
+  aliases: ["KTC - THONBURI AUTO PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-THONBURI-AUTO-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-toyota-sasa-platinum-mastercard
+  bank: ktc
+  name_th: KTC - TOYOTA SASA PLATINUM MASTERCARD
+  name_en: KTC - TOYOTA SASA PLATINUM MASTERCARD
+  aliases: ["KTC - TOYOTA SASA PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-TOYOTA-SASA-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-vejthani-hospital-visa-signature
+  bank: ktc
+  name_th: KTC - VEJTHANI HOSPITAL VISA SIGNATURE
+  name_en: KTC - VEJTHANI HOSPITAL VISA SIGNATURE
+  aliases: ["KTC - VEJTHANI HOSPITAL VISA SIGNATURE"]
+  network: visa
+  tier: signature
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/creditcard/2024/image/JUL23-375_CARD_Co_Brand_Packshot_2023_KTC_-_VEJTHANI_VISA_SIGNATURE.webp
+  verified: true
+- key: ktc-vejthani-hospital-platinum-mastercard
+  bank: ktc
+  name_th: KTC - VEJTHANI HOSPITAL PLATINUM MASTERCARD
+  name_en: KTC - VEJTHANI HOSPITAL PLATINUM MASTERCARD
+  aliases: ["KTC - VEJTHANI HOSPITAL PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-VEJTHANI-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-chula-engineer-alumni-platinum-mastercard
+  bank: ktc
+  name_th: KTC - CHULA ENGINEER ALUMNI PLATINUM MASTERCARD
+  name_en: KTC - CHULA ENGINEER ALUMNI PLATINUM MASTERCARD
+  aliases: ["KTC - CHULA ENGINEER ALUMNI PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-CHULA-ENGINEER-ALUMNI-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-national-defence-studies-institute-platinum-mastercard
+  bank: ktc
+  name_th: KTC - NATIONAL DEFENCE STUDIES INSTITUTE PLATINUM MASTERCARD
+  name_en: KTC - NATIONAL DEFENCE STUDIES INSTITUTE PLATINUM MASTERCARD
+  aliases: ["KTC - NATIONAL DEFENCE STUDIES INSTITUTE PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-NATIONAL-DEFENCE-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-thai-pilot-association-visa-platinum
+  bank: ktc
+  name_th: KTC - THAI PILOT ASSOCIATION VISA PLATINUM
+  name_en: KTC - THAI PILOT ASSOCIATION VISA PLATINUM
+  aliases: ["KTC - THAI PILOT ASSOCIATION VISA PLATINUM"]
+  network: visa
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-THAI-PILOT-ASSOCIATION-VISA-PLATINUM.webp
+  verified: true
+- key: ktc-thai-red-cross-national-blood-center-platinum-mastercard
+  bank: ktc
+  name_th: KTC - THAI RED CROSS NATIONAL BLOOD CENTER PLATINUM MASTERCARD
+  name_en: KTC - THAI RED CROSS NATIONAL BLOOD CENTER PLATINUM MASTERCARD
+  aliases: ["KTC - THAI RED CROSS NATIONAL BLOOD CENTER PLATINUM MASTERCARD", "KTC - THAI RED CROSS NATIONAL BLOOD CENTRE", "KTC - THAI RED CROSS NATIONAL BLOOD CENTER"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/generic/KTC-THAI-RED-CROSS-MASTERCARD.webp
+  verified: true
+- key: ktc-gmm-grammy-visa
+  bank: ktc
+  name_th: KTC - GMM GRAMMY VISA
+  name_en: KTC - GMM GRAMMY VISA
+  aliases: ["KTC - GMM GRAMMY VISA"]
+  network: visa
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-GMM-GRAMMY-VISA.webp
+  verified: true
+- key: ktc-i-am-platinum-mastercard
+  bank: ktc
+  name_th: KTC I AM PLATINUM MASTERCARD
+  name_en: KTC I AM PLATINUM MASTERCARD
+  aliases: ["KTC I AM PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-I-AM-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-cash-back-visa-platinum
+  bank: ktc
+  name_th: KTC CASH BACK VISA PLATINUM
+  name_en: KTC CASH BACK VISA PLATINUM
+  aliases: ["KTC CASH BACK VISA PLATINUM", "KTC CASH BACK"]
+  network: visa
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-CASH-BACK-PLATINUM-VISA.webp
+  verified: true
+- key: ktc-cash-back-platinum-mastercard
+  bank: ktc
+  name_th: KTC CASH BACK PLATINUM MASTERCARD
+  name_en: KTC CASH BACK PLATINUM MASTERCARD
+  aliases: ["KTC CASH BACK PLATINUM MASTERCARD", "KTC CASH BACK"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-CASH-BACK-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-senior-visa-platinum
+  bank: ktc
+  name_th: KTC SENIOR VISA PLATINUM
+  name_en: KTC SENIOR VISA PLATINUM
+  aliases: ["KTC SENIOR VISA PLATINUM"]
+  network: visa
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-SENIOR-VISA-PLATINUM_1.webp
+  verified: true
+- key: ktc-senior-platinum-mastercard
+  bank: ktc
+  name_th: KTC SENIOR PLATINUM MASTERCARD
+  name_en: KTC SENIOR PLATINUM MASTERCARD
+  aliases: ["KTC SENIOR PLATINUM MASTERCARD"]
+  network: mastercard
+  tier: platinum
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-SENIOR-PLATINUM-MASTERCARD.webp
+  verified: true
+- key: ktc-visa-infinite
+  bank: ktc
+  name_th: KTC VISA INFINITE
+  name_en: KTC VISA INFINITE
+  aliases: ["KTC VISA INFINITE"]
+  network: visa
+  tier: infinite
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-VISA-INFINITE.webp
+  verified: true
+- key: ktc-world-mastercard
+  bank: ktc
+  name_th: KTC WORLD MASTERCARD
+  name_en: KTC WORLD MASTERCARD
+  aliases: ["KTC WORLD MASTERCARD"]
+  network: mastercard
+  tier: world
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/KTC-WORLD-MASTERCARD.webp
+  verified: true
+- key: ktc-unionpay-asia-prestige-diamond
+  bank: ktc
+  name_th: KTC UNIONPAY ASIA PRESTIGE DIAMOND
+  name_en: KTC UNIONPAY ASIA PRESTIGE DIAMOND
+  aliases: ["KTC UNIONPAY ASIA PRESTIGE DIAMOND"]
+  network: unionpay
+  tier: diamond
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/invitation-card/images/KTC_-_UNIONPAY_AP_DIAMOND_512x324_.webp
+  verified: true
+- key: ktc-fico-visa-infinite
+  bank: ktc
+  name_th: KTC - FICO VISA INFINITE
+  name_en: KTC - FICO VISA INFINITE
+  aliases: ["KTC - FICO VISA INFINITE"]
+  network: visa
+  tier: infinite
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-FICO-VISA_-NFINITE.webp
+  verified: true
+- key: ktc-royal-orchid-plus-visa-infinite
+  bank: ktc
+  name_th: KTC - ROYAL ORCHID PLUS VISA INFINITE
+  name_en: KTC - ROYAL ORCHID PLUS VISA INFINITE
+  aliases: ["KTC - ROYAL ORCHID PLUS VISA INFINITE", "KTC - ROYAL ORCHID PLUS", "KTC ROYAL ORCHID PLUS"]
+  network: visa
+  tier: infinite
+  co_brand: thai-airways
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-ROYAL-ORCHID-PLUS-VISA-INFINITE.webp
+  verified: true
+- key: ktc-royal-orchid-plus-world-mastercard
+  bank: ktc
+  name_th: KTC - ROYAL ORCHID PLUS WORLD MASTERCARD
+  name_en: KTC - ROYAL ORCHID PLUS WORLD MASTERCARD
+  aliases: ["KTC - ROYAL ORCHID PLUS WORLD MASTERCARD", "KTC - ROYAL ORCHID PLUS", "KTC ROYAL ORCHID PLUS"]
+  network: mastercard
+  tier: world
+  co_brand: thai-airways
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC_ROYAL_-_ORCHID_PLUS_WORLD_MASTERCARD_512x324px.png
+  verified: true
+- key: ktc-ktb-precious-plus-visa-infinite
+  bank: ktc
+  name_th: KTC - KTB PRECIOUS PLUS VISA INFINITE
+  name_en: KTC - KTB PRECIOUS PLUS VISA INFINITE
+  aliases: ["KTC - KTB PRECIOUS PLUS VISA INFINITE"]
+  network: visa
+  tier: infinite
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/KTC-KTB-PRECIOUS-PLUS-VISA-INFINITE-CREDITCARD-1.png
+  verified: true
+- key: ktc-krungthai-private-banking-visa-infinite
+  bank: ktc
+  name_th: KTC - KRUNGTHAI PRIVATE BANKING VISA INFINITE
+  name_en: KTC - KRUNGTHAI PRIVATE BANKING VISA INFINITE
+  aliases: ["KTC - KRUNGTHAI PRIVATE BANKING VISA INFINITE"]
+  network: visa
+  tier: infinite
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/invitation-card/images/AW_NOV24-502_-_KTB_-_Krungthai_Private_Banking_Infinite_rv_Chip_512x324.webp
+  verified: true
+- key: ktc-visa-commercial
+  bank: ktc
+  name_th: KTC VISA COMMERCIAL
+  name_en: KTC VISA COMMERCIAL
+  aliases: ["KTC VISA COMMERCIAL"]
+  network: visa
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/KTC-VISA-COMMERCIAL-1.webp
+  verified: true
+- key: ktc-visa-corporate
+  bank: ktc
+  name_th: KTC VISA CORPORATE
+  name_en: KTC VISA CORPORATE
+  aliases: ["KTC VISA CORPORATE"]
+  network: visa
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-VISA-CORPORATE.webp
+  verified: true
+- key: ktc-government-services-card
+  bank: ktc
+  name_th: KTC GOVERNMENT SERVICES CARD
+  name_en: KTC GOVERNMENT SERVICES CARD
+  aliases: ["KTC GOVERNMENT SERVICES CARD", "KTC GOVERNMENT SERVICES"]
+  network: visa
+  apply_url: https://www.ktc.co.th/credit-card
+  image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-GOVERNMENT-SERVICES-CARD.webp
+  verified: false
 
 # --- ttb ---
 - key: ttb-so-smart
+  apply_url: https://www.ttbbank.com/th/personal/credit-cards/card-type/ttb-so-smart
+  image_url: "https://media.ttbbank.com/1/product-detail-v2/ttb-so-smart/card/droplead/so%20smart-apply.png"
   bank: ttb
   name_th: บัตรเครดิต ttb so smart
   name_en: ttb so smart
@@ -245,6 +1046,7 @@
   network: visa
   tier: signature
 - key: ttb-so-fast
+  apply_url: https://www.ttbbank.com/th/personal/credit-cards/card-type/ttb-so-fast
   bank: ttb
   name_th: บัตรเครดิต ttb so fast
   name_en: ttb so fast
@@ -252,6 +1054,8 @@
   network: visa
   tier: platinum
 - key: ttb-so-chill
+  apply_url: https://www.ttbbank.com/th/personal/credit-cards/card-type/ttb-so-chill
+  image_url: "https://media.ttbbank.com/1/product-detail-v2/ttb-so-chill/card/droplead/so%20chill-apply.png"
   bank: ttb
   name_th: บัตรเครดิต ttb so chill
   name_en: ttb so chill
@@ -259,6 +1063,7 @@
   network: mastercard
   tier: world
 - key: ttb-reserve-infinite
+  apply_url: https://www.ttbbank.com/th/ttb-reserve
   bank: ttb
   name_th: บัตรเครดิต ttb reserve infinite
   name_en: ttb reserve infinite
@@ -266,6 +1071,7 @@
   network: visa
   tier: infinite
 - key: ttb-reserve-signature
+  apply_url: https://www.ttbbank.com/th/ttb-reserve
   bank: ttb
   name_th: บัตรเครดิต ttb reserve signature
   name_en: ttb reserve signature
@@ -273,6 +1079,8 @@
   network: visa
   tier: signature
 - key: ttb-absolute
+  apply_url: https://www.ttbbank.com/th/personal/credit-cards/card-type/ttb-absolute
+  image_url: "https://media.ttbbank.com/1/product-detail-v2/ttb-absolute/card/droplead/absolute-apply.png"
   bank: ttb
   name_th: บัตรเครดิต ttb absolute
   name_en: ttb absolute
