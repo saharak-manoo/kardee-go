@@ -96,3 +96,27 @@ func TestSummary_NothingFoundUsesDescription(t *testing.T) {
 }
 
 func ptr[T any](v T) *T { return &v }
+
+// Redeeming points is not free money: these must not rank as cashback or discounts.
+func TestExtract_PointsRedemptionIsPoints(t *testing.T) {
+	for _, s := range []string{
+		"แลก 999 คะแนน KTC FOREVER รับส่วนลดบุฟเฟ่ต์ 210 บาท/ท่าน",
+		"แลกคะแนนรับเครดิตเงินคืน 100 บาท เมื่อใช้ 800 คะแนน KTC FOREVER",
+		"แลกพอยต์ลดบุฟเฟต์ 120 บาท* ที่ร้าน Kouen Premium Buffet",
+		"399 คะแนน KTC FOREVER แลกรับ e-Coupon ส่วนลด มูลค่า 50 บาท",
+	} {
+		if c := Extract(s, ""); c.BenefitType != models.BenefitPoints {
+			t.Errorf("%q → %s", s, c.BenefitType)
+		}
+	}
+	if c := Extract("รับเครดิตเงินคืน 5% เมื่อใช้จ่ายครบ 3,000 บาท พร้อมรับคะแนนสะสม", ""); c.BenefitType != models.BenefitCashback {
+		t.Errorf("earning points is still cashback, got %s", c.BenefitType)
+	}
+}
+
+func TestExtract_MinSpendEvery(t *testing.T) {
+	c := Extract("เติมน้ำมันครบทุก 700 บาท/สลิป รับเครดิตเงินคืนรวมสูงสุด 5%", "")
+	if c.MinSpend == nil || *c.MinSpend != 700 {
+		t.Errorf("min = %v", c.MinSpend)
+	}
+}

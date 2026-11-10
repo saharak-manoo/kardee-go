@@ -41,7 +41,7 @@ var (
 		regexp.MustCompile(`(?i)(?:up to|maximum(?: of)?|max\.?)\s*(?:THB|฿)?\s*` + num + `\s*(?:THB|baht|฿)?`),
 	}
 	minRe = []*regexp.Regexp{
-		regexp.MustCompile(`(?:ครบ|ขั้นต่ำ|ตั้งแต่|ทุกยอด(?:ใช้จ่าย)?|ทุกๆ)\s*` + num + `\s*บาท`),
+		regexp.MustCompile(`(?:ครบทุก|ครบ|ขั้นต่ำ|ตั้งแต่|ทุกยอด(?:ใช้จ่าย)?|ทุกๆ)\s*` + num + `\s*บาท`),
 		regexp.MustCompile(`(?i)(?:minimum(?: spend(?:ing)?)?(?: of)?|spend(?:ing)?(?: of)?|every)\s*(?:THB|฿)?\s*` + num + `\s*(?:THB|baht|฿)?\s*(?:or more|and above)?`),
 	}
 	amountOffRe = []*regexp.Regexp{
@@ -50,8 +50,10 @@ var (
 		regexp.MustCompile(`(?i)` + num + `\s*(?:THB|baht)\s*off\b`),
 	}
 	perMonthRe = regexp.MustCompile(`^\s*(?:/\s*เดือน|ต่อเดือน|per month|/\s*month)`)
-	noMinRe    = regexp.MustCompile(`(?i)ไม่มียอด(?:ใช้จ่าย)?ขั้นต่ำ|no minimum spend`)
-	installRe  = []*regexp.Regexp{
+	// Spending points for a discount or cashback ("แลก 999 คะแนน รับส่วนลด 210 บาท").
+	redeemRe  = regexp.MustCompile(`(?i)แลก\s*(?:รับ)?\s*(?:[\d,]+\s*)?(?:คะแนน|พอยต์|point)|(?:คะแนน|พอยต์)[^\n]{0,40}แลก|redeem`)
+	noMinRe   = regexp.MustCompile(`(?i)ไม่มียอด(?:ใช้จ่าย)?ขั้นต่ำ|no minimum spend`)
+	installRe = []*regexp.Regexp{
 		regexp.MustCompile(`ผ่อน\s*0\s*%[^\d]{0,40}?(\d{1,2})\s*(?:เดือน|งวด)`),
 		regexp.MustCompile(`(?i)0\s*%\s*instal{1,2}ment\D{0,40}?(\d{1,2})\s*months?`), //nolint:misspell // matches "installment" and British "instalment"
 	}
@@ -76,6 +78,9 @@ var benefitWords = []struct {
 func Extract(headline, body string) Conditions {
 	all := headline + "\n" + body
 	c := Conditions{BenefitType: benefitType(headline)}
+	if redeemRe.MatchString(redeemScope(headline, body)) {
+		c.BenefitType = models.BenefitPoints
+	}
 	if c.BenefitType == models.BenefitOther {
 		c.BenefitType = benefitType(body)
 	}
@@ -300,4 +305,14 @@ func amountOff(s string) *int {
 		}
 	}
 	return out
+}
+
+// redeemScope is where a points redemption is announced: the headline, or the start of
+// the conditions when the headline is empty.
+func redeemScope(headline, body string) string {
+	if strings.TrimSpace(headline) != "" {
+		return headline
+	}
+	r := []rune(body)
+	return string(r[:min(len(r), 300)])
 }
