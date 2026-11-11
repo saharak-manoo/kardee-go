@@ -2,5 +2,6 @@
 .env.*
 !.env.example
 /bin/
+jobs
 *.log
 .superpowers/
