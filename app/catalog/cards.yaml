@@ -2598,6 +2598,10 @@
 # --- CardX (ex-SCB cards; from cardx.co.th/th-TH/credit-card/details/*, 2026-11-11).
 # Card pages don't state the network; verified only where the name does. ---
 - key: cardx-king-power-platinum-mastercard
+  benefits:
+    - type: cashback
+      text: "เครดิตเงินคืนจาก Mastercard Travel Rewards ต้องลงทะเบียนและกด \"เปิดใช้งานข้อเสนอ\" ก่อนใช้จ่าย"
+      provider: "Mastercard Travel Rewards"
   bank: cardx
   name_th: บัตรเครดิต CardX KING POWER PLATINUM Mastercard
   name_en: CardX KING POWER PLATINUM Mastercard
@@ -2609,6 +2613,9 @@
   image_url: https://cdx-prod-ssc-frontend.cardx.co.th/Card_X_KPW_MC_1056x666_5f1f06baa9.png
   verified: true
 - key: cardx-king-power-platinum-visa
+  benefits:
+    - type: annual_fee
+      text: "ไม่เรียกเก็บค่าธรรมเนียมแรกเข้าและรายปี ทั้งปีแรกและปีถัดไป (ตามเงื่อนไขที่กำหนด)"
   bank: cardx
   name_th: บัตรเครดิต CardX KING POWER PLATINUM VISA
   name_en: CardX KING POWER PLATINUM VISA
@@ -2620,6 +2627,10 @@
   image_url: https://cdx-prod-ssc-frontend.cardx.co.th/Card_X_KING_POWER_PLATINUM_VISA_with_Chip_19_Sep_c840426b54.png
   verified: true
 - key: cardx-jcb-platinum
+  benefits:
+    - type: lounge
+      text: "LoungeKey ในจีน ไต้หวัน เกาหลีใต้ มาเลเซีย สิงคโปร์ เวียดนาม เยอรมนี สหราชอาณาจักร และห้องรับรองในญี่ปุ่นและฮาวาย เฉพาะผู้ถือบัตร (ไม่รวมผู้ติดตาม) ชื่อบน Boarding Pass ต้องตรงกับบัตร ถึง 31 ธ.ค. 69"
+      provider: "LoungeKey"
   bank: cardx
   name_th: บัตรเครดิต CardX JCB PLATINUM
   name_en: CardX JCB PLATINUM
@@ -2630,6 +2641,15 @@
   image_url: https://cdx-prod-ssc-frontend.cardx.co.th/Card_X_JCB_PLATINUM_Horizontal_1056x666_362cd573d4.png
   verified: true
 - key: cardx-my-travel
+  benefits:
+    - type: points
+      text: "ใช้จ่ายทุก 25 บาท/เซลส์สลิป รับ 1 คะแนน POINTX"
+    - type: travel_insurance
+      text: "ประกันภัยการเดินทางทั้งในและต่างประเทศ คุ้มครองสูงสุด 8 ล้านบาท"
+      amount: 8000000
+    - type: annual_fee
+      text: "ไม่คิดค่าธรรมเนียมแรกเข้า ค่าธรรมเนียมรายปีปีถัดไป 3,000 บาท/ปี"
+      amount: 3000
   bank: cardx
   name_th: บัตรเครดิต CardX MY TRAVEL
   name_en: CardX MY TRAVEL
@@ -2638,6 +2658,11 @@
   apply_url: https://www.cardx.co.th/th-TH/credit-card/details/cardx-my-travel
   image_url: https://cdx-prod-ssc-frontend.cardx.co.th/Card_X_MC_TRAVEL_Revised_Oct_28_with_Chip_95f676d207.png
 - key: cardx-beyond
+  benefits:
+    - type: lounge
+      text: "Miracle Lounge (ดอนเมือง/สุวรรณภูมิ) 2 ครั้ง/ปี เมื่อใช้จ่ายสะสม 1 ล้านบาทขึ้นไป (1 ม.ค.–30 พ.ย. 69) ใช้ได้ 1 ครั้ง/วัน สูงสุด 2 ชม./ครั้ง โอนสิทธิ์ไม่ได้"
+      provider: "Miracle Lounge"
+      count: 2
   bank: cardx
   name_th: บัตรเครดิต CardX BEYOND
   name_en: CardX BEYOND
@@ -2646,6 +2671,11 @@
   apply_url: https://www.cardx.co.th/th-TH/credit-card/details/cardx-beyond
   image_url: https://cdx-prod-ssc-frontend.cardx.co.th/Card_X_BEYOND_1056x666_ad525c4cb5.png
 - key: cardx-up2me
+  benefits:
+    - type: points
+      text: "ใช้จ่ายทุก 25 บาท/เซลส์สลิป รับสูงสุด 3 คะแนน POINTX ในหมวดที่เลือกเอง (5 คะแนนในเดือนเกิด)"
+    - type: annual_fee
+      text: "ฟรีค่าธรรมเนียมรายปีตลอดชีพ"
   bank: cardx
   name_th: บัตรเครดิต CardX UP2ME
   name_en: CardX UP2ME
@@ -2654,6 +2684,9 @@
   apply_url: https://www.cardx.co.th/th-TH/credit-card/details/cardx-up2me
   image_url: https://cdx-prod-ssc-frontend.cardx.co.th/Card_X_UP_2_ME_Horizontal_1056x666_009fc5af4d.png
 - key: cardx-family-plus
+  benefits:
+    - type: annual_fee
+      text: "ไม่เรียกเก็บค่าธรรมเนียมแรกเข้าและรายปี ทั้งปีแรกและปีถัดไป (ตามเงื่อนไขที่กำหนด)"
   bank: cardx
   name_th: บัตรเครดิต CardX FAMILY PLUS
   name_en: CardX FAMILY PLUS
@@ -2662,6 +2695,11 @@
   apply_url: https://www.cardx.co.th/th-TH/credit-card/details/family-plus
   image_url: https://cdx-prod-ssc-frontend.cardx.co.th/Card_X_FAMILYPLUS_1056x666_7c7b824858.png
 - key: cardx-ultra-platinum
+  benefits:
+    - type: points
+      text: "ใช้จ่ายทุก 25 บาท/เซลส์สลิป รับ 1 คะแนน POINTX"
+    - type: annual_fee
+      text: "ไม่เรียกเก็บค่าธรรมเนียมแรกเข้าและรายปี ทั้งปีแรกและปีถัดไป (ตามเงื่อนไขที่กำหนด)"
   bank: cardx
   name_th: บัตรเครดิต CardX ULTRA PLATINUM
   name_en: CardX ULTRA PLATINUM
@@ -2671,6 +2709,9 @@
   apply_url: https://www.cardx.co.th/th-TH/credit-card/details/ultra-platinum
   image_url: https://cdx-prod-ssc-frontend.cardx.co.th/Card_X_ULTRA_PLATINUM_1056x666_2d868fd037.png
 - key: cardx-toyota-platinum
+  benefits:
+    - type: annual_fee
+      text: "ไม่เรียกเก็บค่าธรรมเนียมแรกเข้าและรายปี ทั้งปีแรกและปีถัดไป (ตามเงื่อนไขที่กำหนด)"
   bank: cardx
   name_th: บัตรเครดิต CardX TOYOTA PLATINUM
   name_en: CardX TOYOTA PLATINUM
@@ -2681,15 +2722,20 @@
   apply_url: https://www.cardx.co.th/th-TH/credit-card/details/cardx-toyota-platinum-tyg
   image_url: https://cdx-prod-ssc-frontend.cardx.co.th/Card_X_TOYOTA_PLATINUM_with_Chip_19_Sep_ff7ed62a8e.png
 - key: scb-first
+  benefits:
+    - type: travel_insurance
+      text: "ประกันภัยการเดินทางในและต่างประเทศ เมื่อชำระค่าบัตรโดยสารด้วยบัตร (หน้าบัตรไม่ระบุวงเงิน)"
   bank: cardx
   name_th: บัตรเครดิต SCB FIRST
   name_en: SCB FIRST
   aliases: [SCB FIRST]
-  network: visa
-  tier: infinite
+  network: mastercard
   apply_url: https://www.cardx.co.th/th-TH/credit-card/details/first
   image_url: https://cdx-prod-ssc-frontend.cardx.co.th/SCB_FIRST_810x510_c267ac1e0a.png
 - key: scb-prime
+  benefits:
+    - type: travel_insurance
+      text: "ประกันภัยการเดินทางในประเทศและต่างประเทศ (หน้าบัตรไม่ระบุวงเงิน)"
   bank: cardx
   name_th: บัตรเครดิต SCB PRIME
   name_en: SCB PRIME
@@ -2699,6 +2745,12 @@
   apply_url: https://www.cardx.co.th/th-TH/credit-card/details/prime
   image_url: https://cdx-prod-ssc-frontend.cardx.co.th/SCB_PRIME_810x510_00ecca86fb.png
 - key: scb-private-banking
+  benefits:
+    - type: lounge
+      text: "สถานะสมาชิก คิง เพาเวอร์ CROWN: ส่วนลดสูงสุด 20% ที่คิง เพาเวอร์ และห้องรับรองสมาชิกคิง เพาเวอร์"
+      provider: "King Power"
+    - type: travel_insurance
+      text: "ประกันภัยการเดินทางในและต่างประเทศ เมื่อชำระค่าบัตรโดยสารด้วยบัตร (หน้าบัตรไม่ระบุวงเงิน)"
   bank: cardx
   name_th: บัตรเครดิต SCB PRIVATE BANKING
   name_en: SCB PRIVATE BANKING
