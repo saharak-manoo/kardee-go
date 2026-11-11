@@ -62,6 +62,11 @@ GET /v1/merchants?q=บางจาก&category=fuel
 GET /v1/cards?bank=ttb&q=smart       # card catalog (for the "my cards" picker)
 GET /v1/networks
 GET /v1/recommend?merchant=bangchak&cards=ttb-so-smart,kbank-the-passion&amount=1500
+POST   /v1/auth/line   {"id_token": "<LIFF ID token>"}  → {"token", "expires_at", "user"}
+GET    /v1/me/cards    (Bearer) the user's cards, in their order
+PUT    /v1/me/cards    (Bearer) {"cards": ["ttb-so-smart", …]}  replaces the list; order = preference
+DELETE /v1/me          (Bearer) delete the account (cards, sessions, identities)
+GET    /v1/go/apply?card=…&promotion=…  logs the tap, 302 to the card's catalog apply URL
 ```
 
 `active=true` (default) hides promotions whose dates we don't know yet.
@@ -70,6 +75,13 @@ GET /v1/recommend?merchant=bangchak&cards=ttb-so-smart,kbank-the-passion&amount=
 `amount_assumed: true`), says which held card to use (`best[].use_card`), lists cards worth
 applying for (`consider_applying`), and keeps promotions with no computable value apart (`no_value`).
 Cards, networks and merchants live in `app/catalog/*.yaml`; after editing them run `jobs -renormalize`.
+
+Users: the server never trusts a user ID from the client. A client signs in with a provider
+token (LIFF ID token, checked with LINE using `LINE_LOGIN_CHANNEL_ID`), gets a Kardee session
+token, and sends `Authorization: Bearer <token>`. `X-Kardee-Channel: line|web|app` tags logs.
+One user can have several identities (`user_identities`: LINE now, Google/Apple later).
+`/v1/recommend` writes `search_logs`; `/v1/go/apply` writes `affiliate_clicks`.
+DB tests need a database they may wipe: `TEST_DATABASE_URL=postgres://localhost:5432/kardee_test?sslmode=disable go test ./...`
 
 ## Crawling rules
 

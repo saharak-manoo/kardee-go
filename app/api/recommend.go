@@ -191,16 +191,20 @@ func (s *Server) recommend(c fiber.Ctx) error {
 		cands[i] = recommend.Candidate{Promotion: &rows[i], Match: match[rows[i].ID]}
 	}
 
+	// Signed-in users get their saved cards when ?cards= is empty. A stale token is
+	// treated as signed out: recommend works without an account.
+	user, _ := s.currentUser(c)
 	cards := parseCards(c.Query("cards"))
-	if len(cards) == 0 {
-		if u, err := resolveUser(c, s.DB); err == nil && u != nil {
-			if saved, err := loadUserCardKeys(s.DB, u.ID); err == nil && len(saved) > 0 {
-				cards = saved
-			}
+	if len(cards) == 0 && user != nil {
+		saved, err := s.savedCards(user.ID)
+		if err != nil {
+			return fiber.NewError(fiber.StatusInternalServerError, err.Error())
 		}
+		cards = saved
 	}
 
 	res := recommend.Recommend(s.Catalog, recommend.Input{Cards: cards, Amount: amount, Now: time.Now()}, cands)
+	s.logSearch(c, user, m.Key, amount, len(cards), len(res.Best)+len(res.NoValue))
 	apply := make([]suggestionView, len(res.ConsiderApplying))
 	for i, sg := range res.ConsiderApplying {
 		apply[i] = suggestionView{viewCard(sg.Card, lang), sg.ValueBaht, sg.ExtraVsBestHeld, View(sg.Promotion, lang, false)}

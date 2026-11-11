@@ -7,6 +7,7 @@ import (
 	"github.com/gofiber/fiber/v3"
 
 	"github.com/saharak/kardee-go/app/api"
+	"github.com/saharak/kardee-go/app/auth"
 	"github.com/saharak/kardee-go/app/catalog"
 	"github.com/saharak/kardee-go/app/config"
 	"github.com/saharak/kardee-go/app/database"
@@ -23,6 +24,10 @@ func main() {
 		log.Fatal(err)
 	}
 	app := fiber.New(fiber.Config{AppName: "kardee-api"})
-	(&api.Server{DB: db, Catalog: cat}).Routes(app)
+	srv := &api.Server{DB: db, Catalog: cat}
+	if cfg.LINELoginChannelID != "" {
+		srv.Verifier = &auth.LINEVerifier{ChannelID: cfg.LINELoginChannelID}
+	}
+	srv.Routes(app)
 	log.Fatal(app.Listen(":" + cfg.Port))
 }

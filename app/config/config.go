@@ -19,6 +19,9 @@ type Config struct {
 	DetailLimit   int
 	KTCMaxAgeDays int
 	CrawlCron     string
+	// LINE Login channel of the LIFF app (empty = LINE login off). Must be under the same
+	// LINE provider as the Messaging API channel so user IDs match.
+	LINELoginChannelID string
 }
 
 // Load reads .env (if any) and the environment.
@@ -27,13 +30,14 @@ func Load() Config {
 		log.Printf("[config] .env: %v", err)
 	}
 	return Config{
-		DatabaseURL:   env("DATABASE_URL", "postgres://localhost:5432/kardee_development?sslmode=disable"),
-		Port:          env("PORT", "8090"),
-		UserAgent:     env("CRAWL_USER_AGENT", "Mozilla/5.0 (compatible; KardeeBot/0.1; +https://kardee.app)"),
-		CrawlDelay:    time.Duration(envFloat("CRAWL_DELAY_SECONDS", 1.5) * float64(time.Second)),
-		DetailLimit:   envInt("CRAWL_DETAIL_LIMIT", 150),
-		KTCMaxAgeDays: envInt("KTC_MAX_AGE_DAYS", 180),
-		CrawlCron:     env("CRAWL_CRON", "0 6,18 * * *"),
+		DatabaseURL:        env("DATABASE_URL", "postgres://localhost:5432/kardee_development?sslmode=disable"),
+		Port:               env("PORT", "8090"),
+		UserAgent:          env("CRAWL_USER_AGENT", "Mozilla/5.0 (compatible; KardeeBot/0.1; +https://kardee.app)"),
+		CrawlDelay:         time.Duration(envFloat("CRAWL_DELAY_SECONDS", 1.5) * float64(time.Second)),
+		DetailLimit:        envInt("CRAWL_DETAIL_LIMIT", 150),
+		KTCMaxAgeDays:      envInt("KTC_MAX_AGE_DAYS", 180),
+		CrawlCron:          env("CRAWL_CRON", "0 6,18 * * *"),
+		LINELoginChannelID: env("LINE_LOGIN_CHANNEL_ID", ""),
 	}
 }
 

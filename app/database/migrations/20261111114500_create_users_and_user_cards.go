@@ -28,4 +28,3 @@ func downCreateUsersAndUserCards(_ context.Context, db *sql.DB) error {
 	}
 	return gdb.Migrator().DropTable(&models.UserCard{}, &models.User{})
 }
-

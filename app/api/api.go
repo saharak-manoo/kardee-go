@@ -11,13 +11,15 @@ import (
 	"github.com/gofiber/fiber/v3"
 	"gorm.io/gorm"
 
+	"github.com/saharak/kardee-go/app/auth"
 	"github.com/saharak/kardee-go/app/catalog"
 	"github.com/saharak/kardee-go/app/models"
 )
 
 type Server struct {
-	DB      *gorm.DB
-	Catalog *catalog.Catalog
+	DB       *gorm.DB
+	Catalog  *catalog.Catalog
+	Verifier auth.Verifier // LIFF ID tokens; nil = LINE login off
 }
 
 func (s *Server) Routes(app *fiber.App) {
@@ -32,8 +34,11 @@ func (s *Server) Routes(app *fiber.App) {
 	v1.Get("/cards", s.cards)
 	v1.Get("/networks", s.networks)
 	v1.Get("/recommend", s.recommend)
-	v1.Get("/user/cards", s.getUserCards)
-	v1.Put("/user/cards", s.updateUserCards)
+	v1.Post("/auth/line", s.loginLINE)
+	v1.Get("/me/cards", s.getMyCards)
+	v1.Put("/me/cards", s.putMyCards)
+	v1.Delete("/me", s.deleteMe)
+	v1.Get("/go/apply", s.goApply)
 }
 
 // Lang picks the response language: ?lang= first, then Accept-Language, else Thai.
