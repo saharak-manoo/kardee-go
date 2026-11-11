@@ -174,6 +174,12 @@ func fromDetail(p *models.Promotion, d sources.Detail) {
 	set(&p.DescriptionEN, d.DescEN)
 	set(&p.DetailTH, d.TextTH)
 	set(&p.DetailEN, d.TextEN)
+	if len(d.Cards) > 0 {
+		p.Cards = strings.Join(d.Cards, "|")
+	}
+	if p.ImageURL == "" {
+		set(&p.ImageURL, d.ImageURL)
+	}
 	// The detail page's own dates are more exact than the list's period text.
 	if d.StartAt != nil {
 		p.StartAt = d.StartAt

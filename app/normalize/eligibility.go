@@ -13,6 +13,8 @@ import (
 var (
 	bankWords = map[string][]string{
 		"ktc":      {"KTC", "เคทีซี"},
+		"cardx":    {"CARDX", "การ์ดเอ็กซ์", "SCB"},
+		"aeon":     {"อิออน", "AEON"},
 		"ttb":      {"TTB", "ทีทีบี"},
 		"krungsri": {"กรุงศรี", "KRUNGSRI"},
 		"kbank":    {"กสิกร", "KBANK"},

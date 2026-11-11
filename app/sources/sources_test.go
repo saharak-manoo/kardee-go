@@ -212,3 +212,101 @@ func TestJCBListing_CategoryFromBase(t *testing.T) {
 		t.Errorf("categories = %s, %s", ls[0].Category, ls[1].Category)
 	}
 }
+
+func TestCardXListings_PairsLanguages(t *testing.T) {
+	set := urlSet{}
+	for _, u := range []string{
+		"https://www.cardx.co.th/th-TH/credit-card/promotion",
+		"https://www.cardx.co.th/th-TH/credit-card/promotion/7eleven-oct26-usc02",
+		"https://www.cardx.co.th/en/credit-card/promotion/7eleven-oct26-usc02",
+		"https://www.cardx.co.th/th-TH/credit-card/promotion/aana-kohchang-nov26-usc11",
+		"https://www.cardx.co.th/th-TH/credit-card/details/cardx-beyond",
+	} {
+		set.URLs = append(set.URLs, struct {
+			Loc     string `xml:"loc"`
+			LastMod string `xml:"lastmod"`
+		}{Loc: u})
+	}
+	ls := cardxListings(set)
+	if len(ls) != 2 {
+		t.Fatalf("got %d: %+v", len(ls), ls)
+	}
+	l := ls[0]
+	if l.ExternalID != "7eleven-oct26-usc02" || l.URLEN != "https://www.cardx.co.th/en/credit-card/promotion/7eleven-oct26-usc02" ||
+		l.URLTH != "https://www.cardx.co.th/th-TH/credit-card/promotion/7eleven-oct26-usc02" || l.Version == "" {
+		t.Errorf("%+v", l)
+	}
+	if ls[1].URLEN != "" {
+		t.Errorf("no English page listed, got %q", ls[1].URLEN)
+	}
+}
+
+func TestParseCardXPage(t *testing.T) {
+	b, err := os.ReadFile("testdata/cardx_detail.html")
+	if err != nil {
+		t.Fatal(err)
+	}
+	d, img, err := parseCardXPage(string(b))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if d.TitleTH != "ช้อป 7-Eleven สุดฟินคุ้มสุดปัง" {
+		t.Errorf("title = %q", d.TitleTH)
+	}
+	if d.StartAt == nil || d.StartAt.Format("2006-01-02 15:04") != "2026-10-01 00:00" || d.StartAt.Location() != config.Thai {
+		t.Errorf("start = %v", d.StartAt)
+	}
+	if d.EndAt == nil || d.EndAt.Format("2006-01-02 15:04") != "2027-01-31 23:59" {
+		t.Errorf("end = %v", d.EndAt)
+	}
+	if !strings.Contains(d.TextTH, "รับเครดิตเงินคืนสูงสุด 260 บาท") || !strings.Contains(d.TextTH, "ตั้งแต่ 1,000 บาทขึ้นไป") {
+		t.Errorf("text missing the offer: %.300q", d.TextTH)
+	}
+	if strings.Contains(d.TextTH, "<") {
+		t.Errorf("text has HTML: %.200q", d.TextTH)
+	}
+	if !strings.HasPrefix(img, "https://cdx-prod-ssc-frontend.cardx.co.th/") {
+		t.Errorf("image = %q", img)
+	}
+}
+
+func TestAEONListings(t *testing.T) {
+	b := []byte(`<urlset><url><loc>https://www.aeon.co.th/aeon/promotions/an-an-lao</loc><lastmod>2026-09-07T13:59:02+07:00</lastmod></url>
+		<url><loc>https://www.aeon.co.th/aeon/promotions</loc></url></urlset>`)
+	ls, err := aeonListings(b)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(ls) != 1 || ls[0].ExternalID != "an-an-lao" || ls[0].URLTH != "https://www.aeon.co.th/aeon/promotions/an-an-lao" || ls[0].Version != "2026-09-07T13:59:02+07:00" {
+		t.Errorf("%+v", ls)
+	}
+}
+
+func TestParseAEONPage(t *testing.T) {
+	b, err := os.ReadFile("testdata/aeon_detail.html")
+	if err != nil {
+		t.Fatal(err)
+	}
+	d := parseAEONPage(string(b))
+	if d.TitleTH != "An An Lao ( อัน อัน เหลา )" {
+		t.Errorf("title = %q", d.TitleTH)
+	}
+	if d.StartAt == nil || d.StartAt.Format("2006-01-02") != "2026-07-01" || d.EndAt == nil || d.EndAt.Format("2006-01-02") != "2026-12-31" {
+		t.Errorf("dates %v – %v", d.StartAt, d.EndAt)
+	}
+	want := []string{"บัตรเครดิตอิออน รอยัล ออร์คิด พลัส", "บัตรเครดิตอิออนโกลด์", "บัตรอิออนคลาสสิค"}
+	if strings.Join(d.Cards, "|") != strings.Join(want, "|") {
+		t.Errorf("cards = %q", d.Cards)
+	}
+	if !strings.Contains(d.TextTH, "รับส่วนลด 50% สำหรับเมนูเป็ดปักกิ่ง") || !strings.Contains(d.TextTH, "ข้อกำหนดและเงื่อนไข") {
+		t.Errorf("text missing offer: %.300q", d.TextTH)
+	}
+	for _, junk := range []string{"สมัครผ่านแอป", "TEST SERVER", "ใช้เท่าที่จำเป็น"} {
+		if strings.Contains(d.TextTH, junk) {
+			t.Errorf("text has %q", junk)
+		}
+	}
+	if d.ImageURL != "https://www.aeon.co.th/contentAsset/raw-data/5d3588b3fb05a4c0aea4339575c96366/banner" {
+		t.Errorf("image = %q", d.ImageURL)
+	}
+}

@@ -43,6 +43,8 @@ type Detail struct {
 	StartAt, EndAt   *time.Time
 	NeedsRegister    *bool
 	PromoCode        string
+	ImageURL         string   // when the list has none (sitemap-only sources)
+	Cards            []string // participating cards as the bank names them
 }
 
 // Source is one bank.
@@ -60,6 +62,8 @@ func All(ktcMaxAgeDays int) []Source {
 		&Krungsri{},
 		&KBank{},
 		&JCB{},
+		&CardX{},
+		&AEON{},
 	}
 }
 
