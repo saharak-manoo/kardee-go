@@ -43,6 +43,7 @@ var (
 	issuedInThaiRe = regexp.MustCompile(`ที่ออกในประเทศไทย|ISSUED IN THAILAND`)
 	exceptRe       = regexp.MustCompile(`ยกเว้น|EXCEPT`)
 	onlyRe         = regexp.MustCompile(`เฉพาะ`)
+	notCreditRe    = regexp.MustCompile(`^(?:บัตรกดเงินสด|สินเชื่อ|คะแนนสะสม)`)
 )
 
 func alt(words []string) string {
@@ -99,14 +100,32 @@ func ExtractEligibility(cat *catalog.Catalog, bank string, cardTypes []string, t
 	var e models.Eligibility
 	if len(cardTypes) > 0 {
 		var keys []string
+		bankAll := false
 		for _, name := range cardTypes {
-			if k := exactAlias(m, name); k != "" {
-				keys = appendNew(keys, k)
-			} else {
-				e.Unmatched = append(e.Unmatched, name)
+			n := normText(name)
+			switch {
+			case notCreditRe.MatchString(n):
+				// cash cards, loans, points: not credit cards
+			case genericCard(n, bank):
+				bankAll = true
+				if loc := exceptRe.FindStringIndex(n); loc != nil {
+					for _, k := range m.keys(n[loc[1]:]) {
+						e.Excluded = appendNew(e.Excluded, k)
+					}
+				}
+			default:
+				if k := exactAlias(m, name); k != "" {
+					keys = appendNew(keys, k)
+				} else {
+					e.Unmatched = append(e.Unmatched, name)
+				}
 			}
 		}
 		e.Confidence = models.ConfHigh
+		if bankAll {
+			e.Rules = []models.EligibilityRule{{Scope: models.ScopeBankAll}}
+			return e
+		}
 		if len(keys) > 0 {
 			e.Rules = []models.EligibilityRule{{Scope: models.ScopeCards, CardKeys: keys}}
 		} else {
@@ -221,4 +240,18 @@ func appendRule(rules []models.EligibilityRule, r models.EligibilityRule) []mode
 		}
 	}
 	return append(rules, r)
+}
+
+// genericCard reports whether a bank's card-list entry means every card of the bank:
+// "บัตรเครดิตอิออน", "บัตรเครดิตอิออนทุกประเภท (ยกเว้น …)".
+func genericCard(n, bank string) bool {
+	if loc := exceptRe.FindStringIndex(n); loc != nil {
+		n = n[:loc[0]]
+	}
+	n = strings.TrimSpace(strings.Trim(n, " ("))
+	if strings.Contains(n, "ทุกประเภท") || strings.Contains(n, "ทุกใบ") {
+		return true
+	}
+	rest := strings.TrimSpace(strings.TrimPrefix(strings.TrimPrefix(n, "บัตรเครดิต"), "บัตร"))
+	return slices.Contains(bankWords[bank], rest)
 }

@@ -310,3 +310,12 @@ func TestParseAEONPage(t *testing.T) {
 		t.Errorf("image = %q", d.ImageURL)
 	}
 }
+
+// Commas inside "(ยกเว้น …)" belong to the exclusion, not the card list.
+func TestSplitAEONCards_KeepsParentheses(t *testing.T) {
+	got := splitAEONCards("บัตรเครดิตอิออนทุกประเภท (ยกเว้นบัตรเครดิตอิออน เจ-พรีเมียร์ แพลทินัม, บัตรเครดิตบิ๊กซี) และบัตรกดเงินสดอิออน")
+	want := []string{"บัตรเครดิตอิออนทุกประเภท (ยกเว้นบัตรเครดิตอิออน เจ-พรีเมียร์ แพลทินัม, บัตรเครดิตบิ๊กซี)", "บัตรกดเงินสดอิออน"}
+	if strings.Join(got, "|") != strings.Join(want, "|") {
+		t.Errorf("got %q", got)
+	}
+}

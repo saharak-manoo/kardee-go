@@ -116,12 +116,53 @@ func parseAEONPage(page string) Detail {
 		d.StartAt, d.EndAt = ParseThaiPeriod(m[1])
 	}
 	if m := aeonCardsRe.FindStringSubmatch(d.TextTH); m != nil {
-		for _, c := range aeonSplitRe.Split(m[1], -1) {
-			c = strings.TrimSpace(strings.TrimSuffix(strings.TrimSpace(c), "ทุกประเภท"))
-			if c != "" {
-				d.Cards = append(d.Cards, c)
+		d.Cards = splitAEONCards(m[1])
+	}
+	return d
+}
+
+// splitAEONCards splits "A, B และ C" into names, keeping commas inside parentheses
+// ("ทุกประเภท (ยกเว้น X, Y)") with their entry. A trailing "ทุกประเภท" on a named card
+// is dropped ("บัตรอิออนคลาสสิคทุกประเภท" = every kind of that card).
+func splitAEONCards(s string) []string {
+	var parts []string
+	depth, start := 0, 0
+	cut := func(end int) {
+		for _, p := range aeonSplitRe.Split(s[start:end], -1) {
+			if p = strings.TrimSpace(p); p != "" {
+				parts = append(parts, p)
 			}
 		}
 	}
-	return d
+	for i, r := range s {
+		switch r {
+		case '(':
+			if depth == 0 {
+				cut(i)
+				start = i
+			}
+			depth++
+		case ')':
+			if depth--; depth == 0 {
+				// glue the bracket to the entry before it
+				if n := len(parts); n > 0 {
+					parts[n-1] += " " + strings.TrimSpace(s[start:i+1])
+				} else {
+					parts = append(parts, strings.TrimSpace(s[start:i+1]))
+				}
+				start = i + 1
+			}
+		}
+	}
+	cut(len(s))
+	out := parts[:0]
+	for _, p := range parts {
+		if !strings.Contains(p, "(") {
+			p = strings.TrimSpace(strings.TrimSuffix(p, "ทุกประเภท"))
+		}
+		if p != "" {
+			out = append(out, p)
+		}
+	}
+	return out
 }

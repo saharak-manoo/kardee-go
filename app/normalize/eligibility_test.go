@@ -104,3 +104,17 @@ func TestEligibility_VisaSource(t *testing.T) {
 		t.Errorf("rules = %+v", e.Rules)
 	}
 }
+
+// "บัตรเครดิตอิออน" / "…ทุกประเภท" name every card of the bank; cash cards and loans
+// are not credit cards and are not "unmatched".
+func TestEligibility_AEONGenericCardTypes(t *testing.T) {
+	c := testCatalog(t)
+	e := ExtractEligibility(c, "aeon", []string{"บัตรเครดิตอิออน", "บัตรกดเงินสดอิออน", "สินเชื่อดิจิทัล ยัวร์แคช"}, "")
+	if len(e.Rules) != 1 || e.Rules[0].Scope != models.ScopeBankAll || e.Confidence != models.ConfHigh || len(e.Unmatched) != 0 {
+		t.Errorf("generic: %+v", e)
+	}
+	e = ExtractEligibility(c, "aeon", []string{"บัตรเครดิตอิออนทุกประเภท (ยกเว้นบัตรเครดิตอิออน เจ-พรีเมียร์ แพลทินัม)"}, "")
+	if len(e.Rules) != 1 || e.Rules[0].Scope != models.ScopeBankAll || !slices.Contains(e.Excluded, "aeon-j-premier-platinum") {
+		t.Errorf("all types except: %+v", e)
+	}
+}
