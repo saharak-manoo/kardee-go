@@ -66,3 +66,33 @@ func TestParse_Rejects(t *testing.T) {
 		}
 	}
 }
+
+func TestParse_Benefits(t *testing.T) {
+	cards := `- key: k1
+  bank: ktc
+  name_th: x
+  network: visa
+  tier: signature
+  details_url: https://bank/k1
+  min_income: 50000
+  benefits:
+    - type: lounge
+      provider: MIRACLE LOUNGE
+      text: 2 ครั้ง/ปี เฉพาะบัตรหลัก
+    - type: travel_insurance
+      amount: 8000000
+      text: ประกันอุบัติเหตุการเดินทาง`
+	c, err := Parse([]byte(cards), []byte("[]"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	k, _ := c.Card("k1")
+	if k.MinIncome != 50000 || k.DetailsURL != "https://bank/k1" || len(k.Benefits) != 2 ||
+		k.Benefits[0].Provider != "MIRACLE LOUNGE" || k.Benefits[1].Amount != 8000000 {
+		t.Errorf("%+v", k)
+	}
+	bad := strings.Replace(cards, "type: lounge", "type: spa", 1)
+	if _, err := Parse([]byte(bad), []byte("[]")); err == nil || !strings.Contains(err.Error(), "spa") {
+		t.Errorf("unknown benefit type accepted: %v", err)
+	}
+}

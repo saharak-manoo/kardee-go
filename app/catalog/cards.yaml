@@ -4,6 +4,15 @@
 
 # --- Krungsri ---
 - key: krungsri-corporate
+  details_url: https://www.krungsricard.com/th/product/creditcard/krungsri-corporate-card
+  benefits:
+    - type: travel_insurance
+      text: "ประกันภัยการเดินทาง วงเงินคุ้มครองสูงสุด 10 ล้านบาท"
+      amount: 10000000
+    - type: lounge
+      text: "Orchid Access Lounge 2 ครั้ง/ปีปฏิทิน/บัญชี เมื่อเดินทางกับการบินไทย แสดงบัตรและ Boarding Pass การบินไทย"
+      provider: "Orchid Access Lounge"
+      count: 2
   apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-corporate-card
   image_url: "https://www.krungsricard.com/getattachment/17ae6c47-8272-4663-8f18-4e4ee18d95f9/Krungsri-Corporatecard-Card-(1).png?lang=th-TH&ext=.png"
   bank: krungsri
@@ -12,6 +21,13 @@
   aliases: [บัตรเครดิต กรุงศรี คอร์ปอเรท การ์ด]
   network: visa
 - key: krungsri-signature
+  details_url: https://www.krungsricard.com/th/product/creditcard/krungsri-signature
+  min_income: 70000
+  benefits:
+    - type: lounge
+      text: "Dragonpass ห้องรับรองสนามบินทั่วโลก 2 ครั้ง/ปีปฏิทิน เมื่อใช้จ่ายสะสมผ่านบัตร 300,000 บาทขึ้นไปในปีนั้น เฉพาะบัตรหลัก ใช้ผ่านแอป UCHOOSE ใช้โดยไม่ผ่านเงื่อนไขจะถูกเรียกเก็บค่าบริการย้อนหลัง"
+      provider: "Dragonpass"
+      count: 2
   apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-signature
   image_url: "https://www.krungsricard.com/getattachment/d4769fba-412f-415e-9796-b71e274e6be5/Krungsri-Signature-header-(1).png?lang=th-TH&ext=.png"
   verified: true
@@ -22,6 +38,8 @@
   network: visa
   tier: signature
 - key: krungsri-doctor-card
+  details_url: https://www.krungsricard.com/th/product/creditcard/krungsri-doctor-card
+  min_income: 15000
   apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-doctor-card
   image_url: "https://www.krungsricard.com/getattachment/54c3b67d-6d2c-4dd3-a9c0-d0098308a36f/Krungsri-Platinum-header-(1).png?lang=th-TH&ext=.png"
   bank: krungsri
@@ -31,6 +49,12 @@
   network: visa
   tier: platinum
 - key: krungsri-now-platinum
+  details_url: https://www.krungsricard.com/th/product/creditcard/now
+  min_income: 15000
+  benefits:
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทาง ทั้งในและต่างประเทศ วงเงินสูงสุด 6 ล้านบาท"
+      amount: 6000000
   apply_url: https://www.krungsricard.com/th/product/creditcard/now
   image_url: "https://www.krungsricard.com/getattachment/e92351db-1d66-4773-873e-ed9dedb9661d/KCC-NOW-Card-product-ver2-(2).png?lang=th-TH&ext=.png"
   bank: krungsri
@@ -47,6 +71,13 @@
   network: visa
   tier: classic
 - key: krungsri-jcb-ultimate
+  details_url: https://www.krungsricard.com/th/product/creditcard/krungsri-jcb-ultimate
+  min_income: 70000
+  benefits:
+    - type: lounge
+      text: "Dragonpass ห้องรับรองสนามบินทั่วโลก 2 ครั้ง/ปีปฏิทิน เมื่อใช้จ่ายสะสมผ่านบัตร 300,000 บาทขึ้นไปในปีนั้น เฉพาะบัตรหลัก ใช้ผ่านแอป UCHOOSE ใช้โดยไม่ผ่านเงื่อนไขจะถูกเรียกเก็บค่าบริการย้อนหลัง"
+      provider: "Dragonpass"
+      count: 2
   apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-jcb-ultimate
   image_url: "https://www.krungsricard.com/getmedia/f497411d-4f3b-45d4-a172-8a8c37f8d0bc/jcb-ultimate.png?width=335&height=230&ext=.png"
   verified: true
@@ -57,6 +88,8 @@
   network: jcb
   tier: ultimate
 - key: krungsri-jcb-platinum
+  details_url: https://www.krungsricard.com/th/product/creditcard/krungsri-jcb
+  min_income: 15000
   apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-jcb
   image_url: "https://www.krungsricard.com/getmedia/768ada72-96a0-4522-b8f0-ee4715eb9ed8/Krungsri-JCB-Platinum-(1).png?width=335&height=230&ext=.png"
   verified: true
@@ -67,6 +100,14 @@
   network: jcb
   tier: platinum
 - key: krungsri-lady-titanium
+  details_url: https://www.krungsricard.com/th/product/creditcard/krungsri-lady
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้า และยกเว้นค่าธรรมเนียมรายปี (ตามเงื่อนไขที่ธนาคารกำหนด)"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทาง ทั้งในและต่างประเทศ วงเงินสูงสุด 6 ล้านบาท"
+      amount: 6000000
   apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-lady
   image_url: "https://www.krungsricard.com/getattachment/ccd97b18-90a1-41a2-ae96-dcdd55fd8c8d/Krungsri-Lady-Titanium-Master-Card-2card-header-(2).png?lang=th-TH&ext=.png"
   verified: true
@@ -77,6 +118,12 @@
   network: mastercard
   tier: titanium
 - key: krungsri-exclusive-signature
+  details_url: https://www.krungsricard.com/th/product/creditcard/krungsri-exclusive-signature
+  min_income: 70000
+  benefits:
+    - type: lounge
+      text: "Orchid Access Lounge / Royal Orchid Lounge และ Dragonpass จำนวนครั้งตามระดับเงินฝาก/เงินลงทุนกับกรุงศรี (5, 10 หรือ 30 ล้านบาทขึ้นไป) ใช้ผ่านแอป UCHOOSE เกินสิทธิ์หรือไม่ตรงเงื่อนไขจะถูกเรียกเก็บย้อนหลัง"
+      provider: "Orchid Access Lounge, Royal Orchid Lounge, Dragonpass"
   apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-exclusive-signature
   image_url: "https://www.krungsricard.com/getmedia/3a85e1c4-aac5-4eb9-91ad-d50f0659c799/Krungsri-Exclusive-Signature-(2)_1.png?width=335&height=230&ext=.png"
   verified: true
@@ -87,6 +134,11 @@
   network: visa
   tier: signature
 - key: krungsri-platinum
+  details_url: https://www.krungsricard.com/th/product/creditcard/krungsri-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ยกเว้นค่าธรรมเนียมแรกเข้าและรายปี หรืออาจยกเว้นเมื่อมียอดใช้จ่ายตามที่กำหนด (ตรวจสอบกับธนาคาร)"
   apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-visa-platinum
   image_url: "https://www.krungsricard.com/getattachment/3cda886f-bf6a-407c-823d-337bf2945f21/Krungsri-Platinum-header-(1)-(3).png?lang=th-TH&ext=.png"
   verified: true
@@ -97,6 +149,11 @@
   network: visa
   tier: platinum
 - key: krungsri-platinum-mastercard
+  details_url: https://www.krungsricard.com/th/product/creditcard/krungsri-platinum-mastercard
+  benefits:
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทาง ทั้งในและต่างประเทศ วงเงินสูงสุด 6 ล้านบาท"
+      amount: 6000000
   apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-platinum-mastercard
   image_url: "https://www.krungsricard.com/getattachment/d627679b-f16d-47f6-9d81-54be26c0a5f0/Krungsri-Platinum-Mastercard-(3).png?lang=th-TH&ext=.png"
   verified: true
@@ -107,6 +164,12 @@
   network: mastercard
   tier: platinum
 - key: krungsri-homepro-corporate
+  details_url: https://www.krungsricard.com/th/product/creditcard/homepro-corporate-card
+  benefits:
+    - type: lounge
+      text: "Orchid Access Lounge 2 ครั้ง/ปีปฏิทิน/บัญชี เมื่อเดินทางกับการบินไทย แสดงบัตรและ Boarding Pass การบินไทย"
+      provider: "Orchid Access Lounge"
+      count: 2
   apply_url: https://www.krungsricard.com/th/product/creditcard/homepro-corporate-card
   image_url: "https://www.krungsricard.com/getattachment/7ae90141-dc1d-45dc-ba75-ae7d5b8f4c20/Homepro-Corporate-Card-(1).png?lang=th-TH&ext=.png"
   bank: krungsri
@@ -116,6 +179,11 @@
   network: visa
   co_brand: homepro
 - key: krungsri-private-banking
+  details_url: https://www.krungsricard.com/th/product/creditcard/krungsri-private-banking
+  min_income: 500000
+  benefits:
+    - type: lounge
+      text: "สิทธิ์ห้องรับรองสำหรับลูกค้ากรุงศรี ไพรเวท แบงก์กิ้ง ที่มีเงินฝาก/เงินลงทุนรวม 50 ล้านบาทขึ้นไป"
   apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-private-banking
   image_url: "https://www.krungsricard.com/getmedia/a56c8c0b-4af0-4402-b7ef-49dfa4409eaf/Krungsri-Private-Banking-(2)_1.png?width=335&height=230&ext=.png"
   bank: krungsri
@@ -125,6 +193,12 @@
   network: visa
   tier: infinite
 - key: tcc-privilege
+  details_url: https://www.krungsricard.com/th/product/creditcard/tcc-privilege
+  benefits:
+    - type: lounge
+      text: "Orchid Access Lounge 2 ครั้ง/ปีปฏิทิน/บัญชี เมื่อเดินทางกับการบินไทย ไม่รวมบัตรกลุ่มแฟมิลี่ (White Pearl) และกลุ่มผู้บริหาร (Graphite)"
+      provider: "Orchid Access Lounge"
+      count: 2
   apply_url: https://www.krungsricard.com/th/product/creditcard/tcc-privilege
   image_url: "https://www.krungsricard.com/getattachment/7383a8b6-7619-4463-89a3-a3a041f2744b/Tcc-privilegecard-(1).png?lang=th-TH&ext=.png"
   bank: krungsri
@@ -134,6 +208,12 @@
   network: visa
   tier: platinum
 - key: siam-takashimaya-visa
+  details_url: https://www.krungsricard.com/th/product/creditcard/krungsri-siam-takashimaya-visa
+  min_income: 15000
+  benefits:
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทาง ทั้งในและต่างประเทศ วงเงินสูงสุด 6 ล้านบาท"
+      amount: 6000000
   apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-siam-takashimaya-visa
   image_url: "https://www.krungsricard.com/getattachment/01d5ae24-0b5b-49a6-864b-c82b06aefe67/STK-CARD-VISA-(1).png?lang=th-TH&ext=.png"
   bank: krungsri
@@ -143,6 +223,12 @@
   network: visa
   co_brand: siam-takashimaya
 - key: siam-takashimaya-jcb
+  details_url: https://www.krungsricard.com/th/product/creditcard/krungsri-siam-takashimaya-jcb
+  min_income: 15000
+  benefits:
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทาง ทั้งในและต่างประเทศ วงเงินสูงสุด 6 ล้านบาท"
+      amount: 6000000
   apply_url: https://www.krungsricard.com/th/product/creditcard/krungsri-siam-takashimaya-jcb
   image_url: "https://www.krungsricard.com/getattachment/f7fd5c55-265d-4551-8e58-7b9739540f35/STK-JCB-(1).png?lang=th-TH&ext=.png"
   bank: krungsri
@@ -152,6 +238,12 @@
   network: jcb
   co_brand: siam-takashimaya
 - key: siam-takashimaya-finesse
+  details_url: https://www.krungsricard.com/th/product/creditcard/siam-takashimaya-credit-card-finest
+  min_income: 70000
+  benefits:
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทาง ทั้งในและต่างประเทศ วงเงินสูงสุด 20 ล้านบาท"
+      amount: 20000000
   apply_url: https://www.krungsricard.com/th/product/creditcard/siam-takashimaya-credit-card-finest
   image_url: "https://www.krungsricard.com/getattachment/8de5e15d-2c9c-4999-8229-be17f43c0e82/STK-Finest-(2).png?lang=th-TH&ext=.png"
   bank: krungsri
@@ -161,6 +253,12 @@
   network: visa
   co_brand: siam-takashimaya
 - key: siam-takashimaya-finesse-invitation
+  details_url: https://www.krungsricard.com/th/product/creditcard/siam-takashimaya-credit-card-finest-invitation
+  min_income: 70000
+  benefits:
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทาง ทั้งในและต่างประเทศ วงเงินสูงสุด 20 ล้านบาท"
+      amount: 20000000
   apply_url: https://www.krungsricard.com/th/product/creditcard/siam-takashimaya-credit-card-finest-invitation
   image_url: "https://www.krungsricard.com/getattachment/098ce0bf-fedd-4de6-b90e-1f0d90977af7/STK-Finest-Invitation-(2).png?lang=th-TH&ext=.png"
   bank: krungsri
@@ -177,6 +275,12 @@
   network: visa
   co_brand: aia
 - key: aia-visa-platinum
+  details_url: https://www.krungsricard.com/th/product/creditcard/aia-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทาง ทั้งในและต่างประเทศ วงเงินสูงสุด 6 ล้านบาท"
+      amount: 6000000
   apply_url: https://www.krungsricard.com/th/product/creditcard/aia-visa-platinum
   image_url: "https://www.krungsricard.com/getmedia/6f0b9942-ebe0-4589-a1f6-fae11bdb9fc6/Krungsri-AIA-Visa-Platinum_1.png?width=335&height=230&ext=.png"
   verified: true
@@ -188,6 +292,12 @@
   tier: platinum
   co_brand: aia
 - key: homepro-visa-platinum
+  details_url: https://www.krungsricard.com/th/product/creditcard/homepro-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทาง ทั้งในและต่างประเทศ วงเงินสูงสุด 6 ล้านบาท"
+      amount: 6000000
   apply_url: https://www.krungsricard.com/th/product/creditcard/homepro-visa-platinum
   image_url: "https://www.krungsricard.com/getattachment/4b91eb86-3383-4d60-bb09-9c6097e078a7/Homepro-Visa-Platinum-(2).png?lang=th-TH&ext=.png"
   verified: true
@@ -201,6 +311,30 @@
 
 # --- KTC (from ktc.co.th/credit-card, 2026-11-09; names state network and tier) ---
 - key: ktc-x-visa-signature
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-x-visa-signature
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ค่าธรรมเนียมรายปี 5,000 บาท (ไม่รวม VAT)"
+      amount: 5000
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 100,000 บาท"
+      amount: 100000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: annual_fee
+      text: "ยกเว้นค่าธรรมเนียมรายปี สำหรับปีแรก 5,000 บาท ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: other
+      text: "รับคะแนน KTC FOREVER สูงสุด x3 เมื่อใช้จ่ายตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: lounge
+      text: "สิทธิ์การใช้บริการห้องรับรองพิเศษ MIRACLE LOUNGE 2 ครั้ง/ปี เงื่อนไขตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69 (เฉพาะสมาชิกบัตรหลัก)"
+      provider: "MIRACLE LOUNGE"
+      count: 2
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC X VISA SIGNATURE
   name_en: KTC X VISA SIGNATURE
@@ -211,6 +345,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-X-VISA-SIGNATURE.webp
   verified: true
 - key: ktc-digital-visa-signature
+  details_url: https://www.ktc.co.th/ktc-digitalcard/ktc-digital-visa-signature
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ปลอดภัยกว่า ช้อปออนไลน์มั่นใจขั้นสุดด้วย Dynamic CVV รหัสหลังบัตรที่เปลี่ยนทุกครั้งที่ขอ"
+    - type: other
+      text: "สบายใจกว่า เมื่อใช้จ่ายที่ร้านค้าทั่วไป ด้วย Numberless Physical Credit Card บัตรพลาสติกไร้หมายเลขที่สามารถขอได้ผ่านแอป KTC Mobile"
+    - type: other
+      text: "รับคะแนน KTC FOREVER x2 เมื่อใช้จ่ายเป็นสกุลเงินต่างประเทศตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
   bank: ktc
   name_th: KTC DIGITAL VISA SIGNATURE
   name_en: KTC DIGITAL VISA SIGNATURE
@@ -221,6 +374,27 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-DIGITAL-VISA-SIGNATURE.webp
   verified: true
 - key: ktc-visa-signature
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-visa-signature
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับคะแนน KTC FOREVER x2 เมื่อใช้จ่ายเป็นสกุลเงินต่างประเทศตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: lounge
+      text: "สิทธิ์การใช้บริการห้องรับรองพิเศษ MIRACLE LOUNGE 2 ครั้ง/ปี เงื่อนไขตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69 (เฉพาะสมาชิกบัตรหลัก)"
+      provider: "MIRACLE LOUNGE"
+      count: 2
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC VISA SIGNATURE
   name_en: KTC VISA SIGNATURE
@@ -231,6 +405,30 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-VISA-SIGNATURE-newdesign.webp
   verified: true
 - key: ktc-x-world-rewards-mastercard
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-x-world-rewards-mastercard
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ค่าธรรมเนียมรายปี 5,000 บาท (ไม่รวม VAT)"
+      amount: 5000
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 100,000 บาท"
+      amount: 100000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: annual_fee
+      text: "ยกเว้นค่าธรรมเนียมรายปี สำหรับปีแรก 5,000 บาท ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: other
+      text: "รับคะแนน KTC FOREVER สูงสุด x3 เมื่อใช้จ่ายตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: lounge
+      text: "สิทธิ์การใช้บริการห้องรับรองพิเศษ MIRACLE LOUNGE 2 ครั้ง/ปี เงื่อนไขตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69 (เฉพาะสมาชิกบัตรหลัก)"
+      provider: "MIRACLE LOUNGE"
+      count: 2
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC X WORLD REWARDS MASTERCARD
   name_en: KTC X WORLD REWARDS MASTERCARD
@@ -241,6 +439,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-X-WORLD-REWARDS-MASTERCARD-newdesign.webp
   verified: true
 - key: ktc-digital-world-rewards-mastercard
+  details_url: https://www.ktc.co.th/ktc-digitalcard/ktc-digital-world-rewards-mastercard
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ปลอดภัยกว่า ช้อปออนไลน์มั่นใจขั้นสุดด้วย Dynamic CVC2 รหัสหลังบัตรที่เปลี่ยนทุกครั้งที่ขอ"
+    - type: other
+      text: "สบายใจกว่า เมื่อใช้จ่ายที่ร้านค้าทั่วไป ด้วย Numberless Physical Credit Card บัตรพลาสติกไร้หมายเลขที่สามารถขอได้ผ่านแอป KTC Mobile"
+    - type: other
+      text: "รับคะแนน KTC FOREVER x2 เมื่อใช้จ่ายเป็นสกุลเงินต่างประเทศตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
   bank: ktc
   name_th: KTC DIGITAL WORLD REWARDS MASTERCARD
   name_en: KTC DIGITAL WORLD REWARDS MASTERCARD
@@ -251,6 +468,27 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-DIGITAL-WORLD-REWARDS-MASTERCARD.webp
   verified: true
 - key: ktc-world-rewards-mastercard
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-world-rewards-mastercard
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับคะแนน KTC FOREVER x2 เมื่อใช้จ่ายเป็นสกุลเงินต่างประเทศตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: lounge
+      text: "สิทธิ์การใช้บริการห้องรับรองพิเศษ MIRACLE LOUNGE 2 ครั้ง/ปี เงื่อนไขตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69 (เฉพาะสมาชิกบัตรหลัก)"
+      provider: "MIRACLE LOUNGE"
+      count: 2
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC WORLD REWARDS MASTERCARD
   name_en: KTC WORLD REWARDS MASTERCARD
@@ -261,6 +499,27 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-WORLD-REWARDS-MASTERCARD-01.webp
   verified: true
 - key: ktc-jcb-ultimate
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-jcb-ultimate
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับคะแนน KTC FOREVER x2 เมื่อใช้จ่ายเป็นสกุลเงินต่างประเทศตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: lounge
+      text: "สิทธิ์การใช้บริการห้องรับรองพิเศษ MIRACLE LOUNGE 2 ครั้ง/ปี เงื่อนไขตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69 (เฉพาะสมาชิกบัตรหลัก) และห้องรับรองสนามบินประเทศที่กำหนด"
+      provider: "MIRACLE LOUNGE"
+      count: 2
+    - type: other
+      text: "รับส่วนลดสุดคุ้มที่ญี่ปุ่น พร้อมเอนจอยกิน ช้อป เที่ยวในไทย"
   bank: ktc
   name_th: KTC JCB ULTIMATE
   name_en: KTC JCB ULTIMATE
@@ -271,6 +530,27 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-JCB-ULTIMATE-newdesign.webp
   verified: true
 - key: ktc-unionpay-diamond
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-unionpay-diamond
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับคะแนน KTC FOREVER x2 เมื่อใช้จ่ายเป็นสกุลเงินต่างประเทศตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: lounge
+      text: "สิทธิ์การใช้บริการห้องรับรองพิเศษ MIRACLE LOUNGE 2 ครั้ง/ปี เงื่อนไขตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69 (เฉพาะสมาชิกบัตรหลัก)"
+      provider: "MIRACLE LOUNGE"
+      count: 2
+    - type: other
+      text: "รับส่วนลดที่จีน ฮ่องกง มาเก๊า และไต้หวัน​"
   bank: ktc
   name_th: KTC UNIONPAY DIAMOND
   name_en: KTC UNIONPAY DIAMOND
@@ -281,6 +561,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/UPI_DIAMOND_512x324.png
   verified: true
 - key: ktc-digital-platinum-visa
+  details_url: https://www.ktc.co.th/ktc-digitalcard/ktc-digital-platinum-visa
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ปลอดภัยกว่า ช้อปออนไลน์มั่นใจขั้นสุดด้วย Dynamic CVV รหัสหลังบัตรที่เปลี่ยนทุกครั้งที่ขอ"
+    - type: other
+      text: "สบายใจกว่า เมื่อใช้จ่ายที่ร้านค้าทั่วไป ด้วย Numberless Physical Credit Card บัตรพลาสติกไร้หมายเลขที่สามารถขอได้ผ่านแอป KTC Mobile"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC DIGITAL PLATINUM VISA
   name_en: KTC DIGITAL PLATINUM VISA
@@ -291,6 +590,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-DIGITAL-PLATINUMVISA-new.webp
   verified: true
 - key: ktc-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ผ่อนชำระด้วยอัตราดอกเบี้ยพิเศษ 0.74% ต่อเดือน สูงสุด 10 เดือน ผ่านแอป KTC Mobile หรือ KTC PHONE"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC VISA PLATINUM
   name_en: KTC VISA PLATINUM
@@ -301,6 +619,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-VISA-PLATINUM-newdesign.webp
   verified: true
 - key: ktc-digital-platinum-mastercard
+  details_url: https://www.ktc.co.th/ktc-digitalcard/ktc-digital-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ปลอดภัยกว่า ช้อปออนไลน์มั่นใจขั้นสุดด้วย Dynamic CVC2 รหัสหลังบัตรที่เปลี่ยนทุกครั้งที่ขอ"
+    - type: other
+      text: "สบายใจกว่า เมื่อใช้จ่ายที่ร้านค้าทั่วไป ด้วย Numberless Physical Card บัตรพลาสติกไร้หมายเลขที่สามารถขอได้ผ่านแอป KTC Mobile"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC DIGITAL PLATINUM MASTERCARD
   name_en: KTC DIGITAL PLATINUM MASTERCARD
@@ -311,6 +648,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-DIGITAL-PLATINUM-MASTERCARD-NEW.webp
   verified: true
 - key: ktc-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ผ่อนชำระด้วยอัตราดอกเบี้ยพิเศษ 0.74% ต่อเดือน สูงสุด 10 เดือน ผ่านแอป KTC Mobile หรือ KTC PHONE"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC PLATINUM MASTERCARD
   name_en: KTC PLATINUM MASTERCARD
@@ -321,6 +677,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-PLATINUM-MASTERCARD-newdesign.webp
   verified: true
 - key: ktc-jcb-platinum
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-jcb-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับคะแนน KTC FOREVER x2 เมื่อใช้จ่ายที่ญี่ปุ่นตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: lounge
+      text: "สิทธิ์การใช้บริการห้องรับรองสนามบินประเทศที่กำหนด"
+    - type: other
+      text: "รับส่วนลดสุดคุ้มที่ญี่ปุ่น พร้อมเอนจอยกิน ช้อป เที่ยวในไทย"
   bank: ktc
   name_th: KTC JCB PLATINUM
   name_en: KTC JCB PLATINUM
@@ -331,6 +706,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-JCB-PLATINUM-newdesign.webp
   verified: true
 - key: ktc-unionpay-platinum
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-unionpay-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับคะแนน KTC FOREVER x2 เมื่อใช้จ่ายที่ฮ่องกง มาเก๊า และไต้หวันตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: other
+      text: "U Collection รับส่วนลด และสิทธิพิเศษหลากหลาย"
+    - type: other
+      text: "รับส่วนลดที่จีน ฮ่องกง มาเก๊า และไต้หวัน​"
   bank: ktc
   name_th: KTC UNIONPAY PLATINUM
   name_en: KTC UNIONPAY PLATINUM
@@ -341,6 +735,19 @@
   image_url: https://www.ktc.co.th/upload/pub/media/creditcard/2024/image/KTC_UNIONPAY_PLATINUM_512x324.webp
   verified: true
 - key: ktc-visa-gold
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-visa-gold
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 4,000,000 บาท"
+      amount: 4000000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ประกันการเดินทาง 4 ล้านบาท"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC VISA GOLD
   name_en: KTC VISA GOLD
@@ -351,6 +758,19 @@
   image_url: https://www.ktc.co.th/upload/KTC-VISA-GOLD-512x324.webp
   verified: true
 - key: ktc-gold-mastercard
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-gold-mastercard
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 4,000,000 บาท"
+      amount: 4000000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ประกันการเดินทาง 4 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC GOLD MASTERCARD
   name_en: KTC GOLD MASTERCARD
@@ -361,6 +781,19 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-GOLD-MASTERCARD.webp
   verified: true
 - key: ktc-visa-classic
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-visa-classic
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 1,000,000 บาท"
+      amount: 1000000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ประกันการเดินทาง 4 ล้านบาท"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC VISA CLASSIC
   name_en: KTC VISA CLASSIC
@@ -371,6 +804,19 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-VISA-CLASSIC.webp
   verified: true
 - key: ktc-classic-mastercard
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-classic-mastercard
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 1,000,000 บาท"
+      amount: 1000000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ประกันการเดินทาง 4 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC CLASSIC MASTERCARD
   name_en: KTC CLASSIC MASTERCARD
@@ -381,6 +827,28 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-CLASSIC-MASTERCARD.webp
   verified: true
 - key: ktc-x-agoda-world-rewards-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-x-agoda-world-rewards-mastercard
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ค่าธรรมเนียมรายปี 5,000 บาท (ไม่รวม VAT)"
+      amount: 5000
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 100,000 บาท"
+      amount: 100000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับสิทธิ์ AgodaVIP Platinum"
+    - type: other
+      text: "รับเพิ่ม 400 คะแนน KTC FOREVER เมื่อใช้จ่ายที่ Agoda ตามกำหนด"
+    - type: other
+      text: "ใช้คะแนนน้อยกว่า 800 คะแนน KTC FOREVER แลกได้ 100 บาท AgodaCash"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC X - AGODA WORLD REWARDS MASTERCARD
   name_en: KTC X - AGODA WORLD REWARDS MASTERCARD
@@ -392,6 +860,27 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-X-AGODA-WORLD-REWARDSMASTERCARD.webp
   verified: true
 - key: ktc-agoda-world-rewards-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-agoda-world-rewards-mastercard
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับสิทธิ์ AgodaVIP Platinum"
+    - type: other
+      text: "รับเพิ่ม 300 คะแนน KTC FOREVER เมื่อใช้จ่ายที่ Agoda ตามกำหนด"
+    - type: other
+      text: "ใช้คะแนนน้อยกว่า 800 คะแนน KTC FOREVER แลกได้ 100 บาท AgodaCash"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - AGODA WORLD REWARDS MASTERCARD
   name_en: KTC - AGODA WORLD REWARDS MASTERCARD
@@ -403,6 +892,27 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-AGODA-WORLD-REWARDS-MASTERCARD.webp
   verified: true
 - key: ktc-agoda-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-agoda-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับสิทธิ์ AgodaVIP Platinum"
+    - type: other
+      text: "รับเพิ่ม 250 คะแนน KTC FOREVER เมื่อใช้จ่ายที่ Agoda ตามกำหนด"
+    - type: other
+      text: "ใช้คะแนนน้อยกว่า 800 คะแนน KTC FOREVER แลกได้ 100 บาท AgodaCash"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - AGODA PLATINUM MASTERCARD
   name_en: KTC - AGODA PLATINUM MASTERCARD
@@ -414,6 +924,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/creditcard/2024/image/KTC_-_AGODA_PLATINUM_MASTERCARD.webp
   verified: true
 - key: ktc-bangchak-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-bangchak-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: cashback
+      text: "รับเครดิตเงินคืน 1% เมื่อเติมน้ำมันที่ปั๊มบางจาก"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - BANGCHAK VISA PLATINUM
   name_en: KTC - BANGCHAK VISA PLATINUM
@@ -425,6 +954,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGCHAK-VISA-PLATINUM.webp
   verified: true
 - key: ktc-bangchak-suankularb-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-bangchak-suankularb-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: cashback
+      text: "รับเครดิตเงินคืน 1% เมื่อเติมน้ำมันที่ปั๊มบางจาก"
+    - type: other
+      text: "คะแนนแทนเงินบริจาคเข้าสมาคมศิษย์เก่าสวนกุหลาบฯ"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - BANGCHAK - SUANKULARB VISA PLATINUM
   name_en: KTC - BANGCHAK - SUANKULARB VISA PLATINUM
@@ -436,6 +984,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGCHAK-SUANKULARB-VISA-PLATINUM.webp
   verified: true
 - key: ktc-bangchak-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-bangchak-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: cashback
+      text: "รับเครดิตเงินคืน 1% เมื่อเติมน้ำมันที่ปั๊มบางจาก"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - BANGCHAK PLATINUM MASTERCARD
   name_en: KTC - BANGCHAK PLATINUM MASTERCARD
@@ -447,6 +1014,29 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGCHAK-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-x-bangkok-airways-visa-signature
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-x-bangkok-airways-visa-signature
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ค่าธรรมเนียมรายปี 5,000 บาท (ไม่รวม VAT)"
+      amount: 5000
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 100,000 บาท"
+      amount: 100000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ใช้คะแนน 1.5 คะแนน KTC FOREVER แลก 1 คะแนนฟลายเออร์โบนัส"
+    - type: lounge
+      text: "สิทธิ์การใช้บริการ Blue Ribbon Club Lounge ที่สนามบินสมุย 4 ครั้ง/ปี ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69 (เฉพาะสมาชิกบัตรหลัก)"
+      count: 4
+    - type: other
+      text: "รับคะแนน KTC FOREVER สูงสุด x4 เมื่อใช้จ่ายตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC X - BANGKOK AIRWAYS VISA SIGNATURE
   name_en: KTC X - BANGKOK AIRWAYS VISA SIGNATURE
@@ -458,6 +1048,29 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-X-BANGKOK-AIRWAYS-VISA-SIGNATURE.webp
   verified: true
 - key: ktc-x-bangkok-airways-world-rewards-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-x-bangkok-airways-world-rewards-mastercard
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ค่าธรรมเนียมรายปี 5,000 บาท (ไม่รวม VAT)"
+      amount: 5000
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 100,000 บาท"
+      amount: 100000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ใช้คะแนน 1.5 คะแนน KTC FOREVER แลก 1 คะแนนฟลายเออร์โบนัส"
+    - type: lounge
+      text: "สิทธิ์การใช้บริการ Blue Ribbon Club Lounge ที่สนามบินสมุย 4 ครั้ง/ปี ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69 (เฉพาะสมาชิกบัตรหลัก)"
+      count: 4
+    - type: other
+      text: "รับคะแนน KTC FOREVER สูงสุด x4 เมื่อใช้จ่ายตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC X - BANGKOK AIRWAYS WORLD REWARDS MASTERCARD
   name_en: KTC X - BANGKOK AIRWAYS WORLD REWARDS MASTERCARD
@@ -469,6 +1082,28 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-X-BANGKOK-AIRWAYS-WORLD-REWARDS-MASTERCARD.webp
   verified: true
 - key: ktc-bangkok-airways-visa-signature
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-bangkok-airways-visa-signature
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ใช้คะแนน 1.5 คะแนน KTC FOREVER แลก 1 คะแนนฟลายเออร์โบนัส"
+    - type: lounge
+      text: "สิทธิ์การใช้บริการ Blue Ribbon Club Lounge ที่สนามบินสมุย 2 ครั้ง/ปี ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69 (เฉพาะสมาชิกบัตรหลัก)"
+      count: 2
+    - type: other
+      text: "รับคะแนน KTC FOREVER สูงสุด x3 เมื่อใช้จ่ายตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - BANGKOK AIRWAYS VISA SIGNATURE
   name_en: KTC - BANGKOK AIRWAYS VISA SIGNATURE
@@ -480,6 +1115,28 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGKOK-AIRWAYS-VISA-SIGNATURE.webp
   verified: true
 - key: ktc-bangkok-airways-world-rewards-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-bangkok-airways-world-rewards-mastercard
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ใช้คะแนน 1.5 คะแนน KTC FOREVER แลก 1 คะแนนฟลายเออร์โบนัส"
+    - type: lounge
+      text: "สิทธิ์การใช้บริการ Blue Ribbon Club Lounge ที่สนามบินสมุย 2 ครั้ง/ปี ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69 (เฉพาะสมาชิกบัตรหลัก)"
+      count: 2
+    - type: other
+      text: "รับคะแนน KTC FOREVER สูงสุด x3 เมื่อใช้จ่ายตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - BANGKOK AIRWAYS WORLD REWARDS MASTERCARD
   name_en: KTC - BANGKOK AIRWAYS WORLD REWARDS MASTERCARD
@@ -491,6 +1148,27 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGKOK-AIRWAYS-WORLD-REWARDS-MASTERCARD.webp
   verified: true
 - key: ktc-bangkok-airways-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-bangkok-airways-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ใช้คะแนน 1.5 คะแนน KTC FOREVER แลก 1 คะแนนฟลายเออร์โบนัส"
+    - type: other
+      text: "รับส่วนลด 15% เมื่อใช้คะแนนฟลายเออร์โบนัสแลกรับบัตรโดยสาร"
+    - type: other
+      text: "รับคะแนน KTC FOREVER สูงสุด x1.5 เมื่อใช้จ่ายตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - BANGKOK AIRWAYS VISA PLATINUM
   name_en: KTC - BANGKOK AIRWAYS VISA PLATINUM
@@ -502,6 +1180,27 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGKOK-AIRWAYS-VISA-PLATINUM.webp
   verified: true
 - key: ktc-bangkok-airways-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-bangkok-airways-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ใช้คะแนน 1.5 คะแนน KTC FOREVER แลก 1 คะแนนฟลายเออร์โบนัส"
+    - type: other
+      text: "รับส่วนลด 15% เมื่อใช้คะแนนฟลายเออร์โบนัสแลกรับบัตรโดยสาร"
+    - type: other
+      text: "รับคะแนน KTC FOREVER สูงสุด x1.5 เมื่อใช้จ่ายตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - BANGKOK AIRWAYS PLATINUM MASTERCARD
   name_en: KTC - BANGKOK AIRWAYS PLATINUM MASTERCARD
@@ -513,6 +1212,27 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGKOK-AIRWAYS-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-bangkok-airways-jcb-platinum
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-bangkok-airways-jcb-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ใช้คะแนน 1.5 คะแนน KTC FOREVER แลก 1 คะแนนฟลายเออร์โบนัส"
+    - type: other
+      text: "รับส่วนลด 15% เมื่อใช้คะแนนฟลายเออร์โบนัสแลกรับบัตรโดยสาร"
+    - type: other
+      text: "รับคะแนน KTC FOREVER สูงสุด x1.5 เมื่อใช้จ่ายตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: other
+      text: "รับส่วนลดสุดคุ้มที่ญี่ปุ่น พร้อมเอนจอยกิน ช้อป เที่ยวในไทย"
   bank: ktc
   name_th: KTC - BANGKOK AIRWAYS JCB PLATINUM
   name_en: KTC - BANGKOK AIRWAYS JCB PLATINUM
@@ -524,6 +1244,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGKOK-AIRWAYS-JCB-PLATINUM.webp
   verified: true
 - key: ktc-bangkok-hospital-group-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-bangkok-hospital-group-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลดสูงสุด 20% ค่าห้อง และค่ายา"
+    - type: other
+      text: "รับส่วนลดสูงสุด 15% ค่าทันตกรรม"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - BANGKOK HOSPITAL GROUP VISA PLATINUM
   name_en: KTC - BANGKOK HOSPITAL GROUP VISA PLATINUM
@@ -534,6 +1273,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGKOK-HOSPITAL-GROUP-VISA-PLATINUM.webp
   verified: true
 - key: ktc-bangkok-hospital-group-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-bangkok-hospital-group-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลดสูงสุด 20% ค่าห้อง และค่ายา"
+    - type: other
+      text: "รับส่วนลดสูงสุด 15% ค่าทันตกรรม"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - BANGKOK HOSPITAL GROUP PLATINUM MASTERCARD
   name_en: KTC - BANGKOK HOSPITAL GROUP PLATINUM MASTERCARD
@@ -544,6 +1302,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BANGKOK-HOSPITAL-GROUP-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-best-western-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-best-western-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ห้องพัก 1 แถม 1"
+    - type: other
+      text: "รับส่วนลดสูงสุด 20% ค่าห้องพักและค่าอาหาร"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - BEST WESTERN PLATINUM MASTERCARD
   name_en: KTC - BEST WESTERN PLATINUM MASTERCARD
@@ -554,6 +1331,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/generic/KTC-BEST-WESTERN-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-big-camera-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-big-camera-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับคะแนน KTC FOREVER x2 ที่ร้าน Big Camera"
+    - type: other
+      text: "รับส่วนลดสูงสุด 50% บริการและอุปกรณ์ถ่ายภาพ"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - BIG CAMERA VISA PLATINUM
   name_en: KTC - BIG CAMERA VISA PLATINUM
@@ -564,6 +1360,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC_-_BIG_CAMERA_VISA_PLATINUM_512x324px.webp
   verified: true
 - key: ktc-big-camera-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-big-camera-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับคะแนน KTC FOREVER x2 ที่ร้าน Big Camera"
+    - type: other
+      text: "รับส่วนลดสูงสุด 50% บริการและอุปกรณ์ถ่ายภาพ"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - BIG CAMERA PLATINUM MASTERCARD
   name_en: KTC - BIG CAMERA PLATINUM MASTERCARD
@@ -574,6 +1389,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC_-_BIG_CAMERA_PLATINUM_MASTERCARD.webp
   verified: true
 - key: ktc-bnh-hospital-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-bnh-hospital-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลด 20% ค่าห้อง"
+    - type: other
+      text: "รับส่วนลด 10% ค่ายา"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - BNH HOSPITAL VISA PLATINUM
   name_en: KTC - BNH HOSPITAL VISA PLATINUM
@@ -584,6 +1418,25 @@
   image_url: https://www.ktc.co.th/upload/creditcard_img_cards/KTC-BNH-HOSPITAL-VISA-PLATINUM-1.webp
   verified: true
 - key: ktc-bnh-hospital-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-bnh-hospital-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลด 20% ค่าห้อง"
+    - type: other
+      text: "รับส่วนลด 10% ค่ายา"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - BNH HOSPITAL PLATINUM MASTERCARD
   name_en: KTC - BNH HOSPITAL PLATINUM MASTERCARD
@@ -594,6 +1447,27 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-BNH-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-dhipaya-insurance-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-dhipaya-insurance-titanium-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "บริการช่วยเหลือฉุกเฉิน 24 ชั่วโมง ทั่วประเทศ"
+    - type: cashback
+      text: "รับเครดิตเงินคืน 2% เมื่อชำระค่าเบี้ยประกันภัยทุกประเภท ตามกำหนด"
+    - type: other
+      text: "ผ่อนชำระ 0% นาน 6 เดือน ค่าเบี้ยประกันภัยตามกำหนด"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - DHIPAYA INSURANCE PLATINUM MASTERCARD
   name_en: KTC - DHIPAYA INSURANCE PLATINUM MASTERCARD
@@ -604,6 +1478,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC_-_DHIPAYA_INSURANCE_PLATINUM_MASTERCARD_Redesign_512x324px.png
   verified: true
 - key: ktc-fairy-plaza-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-fairy-plaza-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลดสูงสุด 15% แผนกดีพาร์ทเมนท์สโตร์"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - FAIRY PLAZA PLATINUM MASTERCARD
   name_en: KTC - FAIRY PLAZA PLATINUM MASTERCARD
@@ -614,6 +1507,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/creditcard/img/KTC_-_FAIRY_PLAZA_PLATINUM_MASTERCARD.webp
   verified: true
 - key: ktc-fico-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-fico-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลดสูงสุด 15% ค่าห้องที่โรงแรมที่ร่วมรายการ"
+    - type: other
+      text: "รับส่วนลดสูงสุด 15% ค่าอาหารและเครื่องดื่มที่ร้านอาหารที่ร่วมรายการ"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - FICO VISA PLATINUM
   name_en: KTC - FICO VISA PLATINUM
@@ -624,6 +1536,23 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-FICO-VISA-PLATINUM.webp
   verified: true
 - key: ktc-klang-plaza-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-klang-plaza-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - KLANG PLAZA PLATINUM MASTERCARD
   name_en: KTC - KLANG PLAZA PLATINUM MASTERCARD
@@ -634,6 +1563,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-KLANG-PLAZA-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-mini-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-mini-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลดสูงสุด 10% สินค้าไลฟ์สไตล์"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - MINI PLATINUM MASTERCARD
   name_en: KTC - MINI PLATINUM MASTERCARD
@@ -644,6 +1592,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-MINI-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-rev-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-rev-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลด 25% สินค้าที่ร้านในเครือ REV"
+    - type: other
+      text: "ลด 10% สินค้าที่ร่วมรายการ"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - REV VISA PLATINUM
   name_en: KTC - REV VISA PLATINUM
@@ -654,6 +1621,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/creditcard/2024/image/JUL23-375_CARD_Co_Brand_Packshot_2023_KTC_-_REV_VISA_PLATINUM.webp
   verified: true
 - key: ktc-rev-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-rev-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลด 25% สินค้าที่ร้านในเครือ REV"
+    - type: other
+      text: "รับส่วนลด 10% สินค้าที่ร่วมรายการ"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - REV PLATINUM MASTERCARD
   name_en: KTC - REV PLATINUM MASTERCARD
@@ -664,6 +1650,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC_-_REV_PLATINUM_MASTERCARD.webp
   verified: true
 - key: ktc-royal-orchid-plus-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-royal-orchid-plus-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับ 500 รอยัล ออร์คิด พลัส ไมล์ เมื่อสะสมไมล์ตามกำหนด"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - ROYAL ORCHID PLUS VISA PLATINUM
   name_en: KTC - ROYAL ORCHID PLUS VISA PLATINUM
@@ -675,6 +1680,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-ROYAL-ORCHID-PLUS-VISA-PLATINUM.webp
   verified: true
 - key: ktc-royal-orchid-plus-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-royal-orchid-plus-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับ 500 รอยัล ออร์คิด พลัส ไมล์ เมื่อสะสมไมล์ตามกำหนด"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - ROYAL ORCHID PLUS PLATINUM MASTERCARD
   name_en: KTC - ROYAL ORCHID PLUS PLATINUM MASTERCARD
@@ -686,6 +1710,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-ROYAL-ORCHID-PLUS-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-royal-orchid-plus-jcb-platinum
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-royal-orchid-plus-jcb-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับ 500 รอยัล ออร์คิด พลัส ไมล์ เมื่อสะสมไมล์ตามกำหนด"
+    - type: other
+      text: "รับคะแนน KTC ROP x2 เมื่อใช้จ่ายที่ญี่ปุ่นตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: other
+      text: "รับส่วนลดสุดคุ้มที่ญี่ปุ่น พร้อมเอนจอยกิน ช้อป เที่ยวในไทย"
   bank: ktc
   name_th: KTC - ROYAL ORCHID PLUS JCB PLATINUM
   name_en: KTC - ROYAL ORCHID PLUS JCB PLATINUM
@@ -697,6 +1740,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/generic/KTC-ROYAL-ORCHID-PLUS-JCB-PLATINUM.webp
   verified: true
 - key: ktc-samitivej-hospital-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-samitivej-hospitals-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลด 50% ค่าบริการรถพยาบาลฉุกเฉิน"
+    - type: other
+      text: "รับส่วนลดสูงสุด 20% ค่าห้อง ค่ายา"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - SAMITIVEJ HOSPITAL VISA PLATINUM
   name_en: KTC - SAMITIVEJ HOSPITAL VISA PLATINUM
@@ -707,6 +1769,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-SAMITIVEJ-HOSPITAL-VISA-PLATINUM.webp
   verified: true
 - key: ktc-samitivej-hospital-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-samitivej-hospitals-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลด 50% ค่าบริการรถพยาบาลฉุกเฉิน"
+    - type: other
+      text: "รับส่วนลดสูงสุด 20% ค่าห้อง ค่ายา"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - SAMITIVEJ HOSPITAL PLATINUM MASTERCARD
   name_en: KTC - SAMITIVEJ HOSPITAL PLATINUM MASTERCARD
@@ -717,6 +1798,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-SAMITIVEJ-HOSPITAL-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-snp2000-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-snp2000-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ผ่อนชำระด้วยอัตราดอกเบี้ยพิเศษ 0.74% ต่อเดือน สูงสุด 10 เดือน ผ่านแอป KTC Mobile หรือ KTC PHONE"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - SNP2000 VISA PLATINUM
   name_en: KTC - SNP2000 VISA PLATINUM
@@ -727,6 +1827,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC_-_SNP2000_VISA_PLATINUM_512x324px.webp
   verified: true
 - key: ktc-snp2000-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-snp2000-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ผ่อนชำระด้วยอัตราดอกเบี้ยพิเศษ 0.74% ต่อเดือน สูงสุด 10 เดือน ผ่านแอป KTC Mobile หรือ KTC PHONE"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - SNP2000 PLATINUM MASTERCARD
   name_en: KTC - SNP2000 PLATINUM MASTERCARD
@@ -737,6 +1856,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-SNP2000-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-ssc-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-ssc-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ผ่อนชำระด้วยอัตราดอกเบี้ยพิเศษ 0.74% ต่อเดือน สูงสุด 10 เดือน ผ่านแอป KTC Mobile หรือ KTC PHONE"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - SSC PLATINUM MASTERCARD
   name_en: KTC - SSC PLATINUM MASTERCARD
@@ -747,6 +1885,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/generic/KTC-SSC-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-subaru-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-subaru-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ผ่อนชำระด้วยอัตราดอกเบี้ยพิเศษ 0.74% ต่อเดือน สูงสุด 10 เดือน ผ่านแอป KTC Mobile หรือ KTC PHONE"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - SUBARU PLATINUM MASTERCARD
   name_en: KTC - SUBARU PLATINUM MASTERCARD
@@ -757,6 +1914,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/creditcard/2024/image/JUL23_375_CARD_Co-Brand_KTC_SUBARU_PLATINUM_MASTERCARD.webp
   verified: true
 - key: ktc-taweekit-complex-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-taweekit-complex-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลดสูงสุด 15% แผนกดีพาร์ทเมนท์สโตร์"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - TAWEEKIT COMPLEX PLATINUM MASTERCARD
   name_en: KTC - TAWEEKIT COMPLEX PLATINUM MASTERCARD
@@ -767,6 +1943,24 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/generic/KTC-TAWEEKIT-COMPLEX-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-taweekit-supercenter-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-taweekit-supercenter-platinum-mastercard
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลดสูงสุด 10% แผนกดีพาร์ทเมนท์สโตร์"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - TAWEEKIT SUPERCENTER PLATINUM MASTERCARD
   name_en: KTC - TAWEEKIT SUPERCENTER PLATINUM MASTERCARD
@@ -777,6 +1971,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/generic/KTC-TAWEEKIT-SUPERCENTER-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-thonburi-auto-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-thonburi-auto-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลด 15% ค่าแรง"
+    - type: other
+      text: "รับส่วนลด 15% ค่าอะไหล่"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - THONBURI AUTO VISA PLATINUM
   name_en: KTC - THONBURI AUTO VISA PLATINUM
@@ -787,6 +2000,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-THONBURI-AUTO-VISA-PLATINUM.webp
   verified: true
 - key: ktc-thonburi-auto-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-thonburi-auto-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลด 15% ค่าแรง"
+    - type: other
+      text: "รับส่วนลด 15% ค่าอะไหล่"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - THONBURI AUTO PLATINUM MASTERCARD
   name_en: KTC - THONBURI AUTO PLATINUM MASTERCARD
@@ -797,6 +2029,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-THONBURI-AUTO-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-toyota-sasa-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-toyota-sasa-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลดสูงสุด 20% ค่าแรง ค่าอะไหล่"
+    - type: other
+      text: "ผ่อน 0% นาน 3 เดือน ค่าอะไหล่, ค่าแรงและอุปกรณ์ต่างๆ"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - TOYOTA SASA PLATINUM MASTERCARD
   name_en: KTC - TOYOTA SASA PLATINUM MASTERCARD
@@ -807,6 +2058,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-TOYOTA-SASA-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-vejthani-hospital-visa-signature
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-vejthani-hospital-visa-signature
+  min_income: 50000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 20,000,000 บาท"
+      amount: 20000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลด 50% ค่าบริการรถพยาบาลฉุกเฉิน"
+    - type: other
+      text: "รับคะแนน KTC FOREVER x2 เมื่อใช้จ่ายเป็นสกุลเงินต่างประเทศตามกำหนด ตั้งแต่ 1 ม.ค. 69 - 31 ธ.ค. 69"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - VEJTHANI HOSPITAL VISA SIGNATURE
   name_en: KTC - VEJTHANI HOSPITAL VISA SIGNATURE
@@ -817,6 +2087,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/creditcard/2024/image/JUL23-375_CARD_Co_Brand_Packshot_2023_KTC_-_VEJTHANI_VISA_SIGNATURE.webp
   verified: true
 - key: ktc-vejthani-hospital-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-vejthani-hospital-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "รับส่วนลด 50% ค่าบริการรถพยาบาลฉุกเฉิน"
+    - type: other
+      text: "รับส่วนลด 20% โปรแกรมตรวจสุขภาพประจำปี"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - VEJTHANI HOSPITAL PLATINUM MASTERCARD
   name_en: KTC - VEJTHANI HOSPITAL PLATINUM MASTERCARD
@@ -827,6 +2116,23 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-VEJTHANI-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-chula-engineer-alumni-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/affinity/ktc-chula-engineer-alumni-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "คะแนนแทนเงินบริจาคเข้าสมาคมศิษย์เก่าวิศวกรรมศาสตร์แห่งจุฬาลงกรณ์มหาวิทยาลัย"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - CHULA ENGINEER ALUMNI PLATINUM MASTERCARD
   name_en: KTC - CHULA ENGINEER ALUMNI PLATINUM MASTERCARD
@@ -837,6 +2143,23 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-CHULA-ENGINEER-ALUMNI-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-national-defence-studies-institute-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/affinity/ktc-national-defence-studies-institute-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - NATIONAL DEFENCE STUDIES INSTITUTE PLATINUM MASTERCARD
   name_en: KTC - NATIONAL DEFENCE STUDIES INSTITUTE PLATINUM MASTERCARD
@@ -847,6 +2170,23 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-NATIONAL-DEFENCE-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-thai-pilot-association-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/affinity/ktc-thai-pilot-association-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "คะแนนแทนเงินบริจาคเข้าสมาคมนักบินไทย"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC - THAI PILOT ASSOCIATION VISA PLATINUM
   name_en: KTC - THAI PILOT ASSOCIATION VISA PLATINUM
@@ -857,6 +2197,21 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-THAI-PILOT-ASSOCIATION-VISA-PLATINUM.webp
   verified: true
 - key: ktc-thai-red-cross-national-blood-center-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/affinity/ktc-thai-red-cross-national-blood-centre-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: other
+      text: "ยอดใช้จ่ายแทนเงินบริจาคสมทบทุนศูนย์บริการโลหิตแห่งชาติสภากาชาดไทย"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC - THAI RED CROSS NATIONAL BLOOD CENTER PLATINUM MASTERCARD
   name_en: KTC - THAI RED CROSS NATIONAL BLOOD CENTER PLATINUM MASTERCARD
@@ -867,6 +2222,21 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/generic/KTC-THAI-RED-CROSS-MASTERCARD.webp
   verified: true
 - key: ktc-gmm-grammy-visa
+  details_url: https://www.ktc.co.th/credit-card/co-branded/ktc-gmm-grammy-visa
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 1,000,000 บาท"
+      amount: 1000000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ผ่อนชำระด้วยอัตราดอกเบี้ยพิเศษ 0.74% ต่อเดือน สูงสุด 10 เดือน ผ่านแอป KTC Mobile หรือ KTC PHONE"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับส่วนลดตลอดปีที่ห้องอาหารในโรงแรมชั้นนำทั่วไทย และใช้ง่ายสะดวกรอบโลก"
   bank: ktc
   name_th: KTC - GMM GRAMMY VISA
   name_en: KTC - GMM GRAMMY VISA
@@ -876,6 +2246,22 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-GMM-GRAMMY-VISA.webp
   verified: true
 - key: ktc-i-am-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-i-am-platinum-mastercard
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC I AM PLATINUM MASTERCARD
   name_en: KTC I AM PLATINUM MASTERCARD
@@ -886,6 +2272,23 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-I-AM-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-cash-back-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-cash-back-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: cashback
+      text: "รับเครดิตเงินคืนสูงสุด 0.8%"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC CASH BACK VISA PLATINUM
   name_en: KTC CASH BACK VISA PLATINUM
@@ -896,6 +2299,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/cards/KTC-CASH-BACK-PLATINUM-VISA.webp
   verified: true
 - key: ktc-cash-back-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-cash-back-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: cashback
+      text: "รับเครดิตเงินคืนสูงสุด 0.8%"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC CASH BACK PLATINUM MASTERCARD
   name_en: KTC CASH BACK PLATINUM MASTERCARD
@@ -906,6 +2328,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-CASH-BACK-PLATINUM-MASTERCARD.webp
   verified: true
 - key: ktc-senior-visa-platinum
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-senior-visa-platinum
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ผ่อนชำระด้วยอัตราดอกเบี้ยพิเศษ 0.74% ต่อเดือน สูงสุด 10 เดือน ผ่านแอป KTC Mobile หรือ KTC PHONE"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับส่วนลดที่ห้องอาหารโรงแรมชั้นนำทั่วไทย พร้อมสิทธิพิเศษช้อปออนไลน์ และสั่งอาหารเดลิเวอรี่ตลอดปี"
   bank: ktc
   name_th: KTC SENIOR VISA PLATINUM
   name_en: KTC SENIOR VISA PLATINUM
@@ -916,6 +2357,25 @@
   image_url: https://www.ktc.co.th/upload/pub/media/sites/creditcard/img/new-cards/KTC-SENIOR-VISA-PLATINUM_1.webp
   verified: true
 - key: ktc-senior-platinum-mastercard
+  details_url: https://www.ktc.co.th/credit-card/generic/ktc-senior-platinum-mastercard
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ไม่มีค่าธรรมเนียมแรกเข้าและรายปีตลอดชีพ"
+    - type: travel_insurance
+      text: "ประกันอุบัติเหตุการเดินทางทั้งในและต่างประเทศ 8,000,000 บาท"
+      amount: 8000000
+    - type: baggage_insurance
+      text: "ประกันกระเป๋าเดินทางสูญเสีย หรือเสียหายจากการเดินทาง 40,000 บาท"
+      amount: 40000
+    - type: points
+      text: "ทุก 25 บาท รับ 1 คะแนน KTC FOREVER"
+    - type: other
+      text: "ผ่อนชำระด้วยอัตราดอกเบี้ยพิเศษ 0.74% ต่อเดือน สูงสุด 10 เดือน ผ่านแอป KTC Mobile หรือ KTC PHONE"
+    - type: other
+      text: "ประกันการเดินทาง 8 ล้านบาท"
+    - type: other
+      text: "รับสิทธิพิเศษที่ร้านอาหารหรูทั่วไทยตลอดปี พร้อมข้อเสนอสุดพิเศษทั่วโลกกับ Mastercard Priceless Specials"
   bank: ktc
   name_th: KTC SENIOR PLATINUM MASTERCARD
   name_en: KTC SENIOR PLATINUM MASTERCARD
@@ -1251,6 +2711,15 @@
 # --- AEON (names as AEON's "บัตรที่ร่วมรายการ" lines write them; aliases cover the
 # spaced and unspaced spellings seen) ---
 - key: aeon-world-mastercard
+  details_url: https://www.aeon.co.th/aeon/cards/aeon-world-mastercard
+  apply_url: https://www.aeon.co.th/aeon/cards/aeon-world-mastercard
+  image_url: "https://www.aeon.co.th/aeon/cards/image/og/AEON-World-Mastercard.jpg"
+  min_income: 30000
+  benefits:
+    - type: points
+      text: "ใช้จ่ายครบทุก 30 บาท รับ 1 คะแนน AEON Happy Point"
+    - type: travel_insurance
+      text: "มีประกันภัยการเดินทาง (หน้าบัตรไม่ระบุวงเงิน ดูเงื่อนไขที่ลิงก์)"
   bank: aeon
   name_th: บัตรเครดิตอิออน เวิลด์ มาสเตอร์การ์ด
   name_en: AEON World Mastercard
@@ -1259,6 +2728,15 @@
   tier: world
   verified: true
 - key: aeon-visa-platinum
+  details_url: https://www.aeon.co.th/aeon/cards/aeon-visa-platinum-card
+  apply_url: https://www.aeon.co.th/aeon/cards/aeon-visa-platinum-card
+  image_url: "https://www.aeon.co.th/aeon/cards/image/og/AEON-Visa-Platinum-Card.jpg"
+  min_income: 15000
+  benefits:
+    - type: points
+      text: "ใช้จ่ายครบทุก 35 บาท รับ 1 คะแนน AEON Happy Point"
+    - type: travel_insurance
+      text: "มีประกันภัยการเดินทาง (หน้าบัตรไม่ระบุวงเงิน ดูเงื่อนไขที่ลิงก์)"
   bank: aeon
   name_th: บัตรเครดิตอิออน วีซ่า แพลทินัม
   name_en: AEON Visa Platinum
@@ -1267,6 +2745,13 @@
   tier: platinum
   verified: true
 - key: aeon-gold
+  details_url: https://www.aeon.co.th/aeon/cards/aeon-gold-card
+  apply_url: https://www.aeon.co.th/aeon/cards/aeon-gold-card
+  image_url: "https://www.aeon.co.th/aeon/cards/image/og/AEON-Gold-Card.jpg"
+  min_income: 20000
+  benefits:
+    - type: points
+      text: "ใช้จ่ายครบทุก 30 บาท รับ 1 คะแนน AEON Happy Point"
   bank: aeon
   name_th: บัตรเครดิตอิออน โกลด์
   name_en: AEON Gold
@@ -1274,6 +2759,13 @@
   network: visa
   tier: gold
 - key: aeon-classic
+  details_url: https://www.aeon.co.th/aeon/cards/aeon-classic-card
+  apply_url: https://www.aeon.co.th/aeon/cards/aeon-classic-card
+  image_url: "https://www.aeon.co.th/aeon/cards/image/AEON-Classic-Card.jpg"
+  min_income: 15000
+  benefits:
+    - type: points
+      text: "ใช้จ่ายครบทุก 35 บาท รับ 1 คะแนน AEON Happy Point"
   bank: aeon
   name_th: บัตรเครดิตอิออน คลาสสิค
   name_en: AEON Classic
@@ -1281,12 +2773,28 @@
   network: visa
   tier: classic
 - key: aeon-royal-orchid-plus
+  details_url: https://www.aeon.co.th/aeon/cards/aeon-rop-platinum-card
+  apply_url: https://www.aeon.co.th/aeon/cards/aeon-rop-platinum-card
+  image_url: "https://www.aeon.co.th/aeon/cards/image/og/AEON-Royal-Orchid-Plus-Platinum-Card.jpg"
+  benefits:
+    - type: lounge
+      text: "ห้องรับรองการบินไทย (Orchid Access Lounge สุวรรณภูมิ / Royal Orchid Lounge เชียงใหม่) 2 ครั้ง/ปี เมื่อเดินทางกับการบินไทย"
+      provider: "Orchid Access Lounge, Royal Orchid Lounge"
+      count: 2
+    - type: annual_fee
+      text: "ยกเว้นค่าธรรมเนียมรายปีปีถัดไป เมื่อบัตรหลักใช้จ่ายครบ 300,000 บาท/ปี หรือแลก 7,500 คะแนน"
+    - type: points
+      text: "อัตราสะสม 20, 40 หรือ 65 บาท ต่อ 1 คะแนน AEON Happy Point ตามเงื่อนไขที่กำหนด"
   bank: aeon
   name_th: บัตรเครดิตอิออน รอยัล ออร์คิด พลัส
   name_en: AEON Royal Orchid Plus
   aliases: [บัตรเครดิตอิออน รอยัล ออร์คิด พลัส]
   network: visa
 - key: aeon-wellness-platinum
+  details_url: https://www.aeon.co.th/aeon/cards/aeon-wellness-platinum-card
+  apply_url: https://www.aeon.co.th/aeon/cards/aeon-wellness-platinum-card
+  image_url: "https://www.aeon.co.th/aeon/cards/image/og/AEON-Wellness-Platinum-Card.jpg"
+  min_income: 15000
   bank: aeon
   name_th: บัตรเครดิตอิออน เวลล์เนส แพลทินัม
   name_en: AEON Wellness Platinum
@@ -1294,6 +2802,15 @@
   network: visa
   tier: platinum
 - key: aeon-j-premier-platinum
+  details_url: https://www.aeon.co.th/aeon/cards/aeon-j-premier-platinum
+  apply_url: https://www.aeon.co.th/aeon/cards/aeon-j-premier-platinum
+  image_url: "https://www.aeon.co.th/aeon/cards/image/og/AEON-J-Premier-Platinum-Card.jpg"
+  benefits:
+    - type: lounge
+      text: "JCB Lounge ในสนามบินกว่า 50 แห่งในเอเชีย และ JCB Plaza Lounge สำหรับผู้ถือบัตร"
+      provider: "JCB Lounge"
+    - type: travel_insurance
+      text: "มีแผนประกันภัยการเดินทาง ไม่ต้องสำรองจ่าย (หน้าบัตรไม่ระบุวงเงิน)"
   bank: aeon
   name_th: บัตรเครดิตอิออน เจ-พรีเมียร์ แพลทินัม
   name_en: AEON J-Premier Platinum
@@ -1301,6 +2818,13 @@
   network: jcb
   tier: platinum
 - key: aeon-rabbit-platinum
+  details_url: https://www.aeon.co.th/aeon/cards/aeon-rabbit-platinum-card
+  apply_url: https://www.aeon.co.th/aeon/cards/aeon-rabbit-platinum-card
+  image_url: "https://www.aeon.co.th/aeon/cards/image/og/AEON-Rabbit-Platinum-Card.jpg"
+  min_income: 15000
+  benefits:
+    - type: travel_insurance
+      text: "มีประกันภัยการเดินทาง (หน้าบัตรไม่ระบุวงเงิน ดูเงื่อนไขที่ลิงก์)"
   bank: aeon
   name_th: บัตรเครดิตอิออน แรบบิท แพลทินัม
   name_en: AEON Rabbit Platinum
@@ -1308,18 +2832,43 @@
   network: visa
   tier: platinum
 - key: aeon-petster
+  details_url: https://www.aeon.co.th/aeon/cards/aeon-petster-card
+  apply_url: https://www.aeon.co.th/aeon/cards/aeon-petster-card
+  image_url: "https://www.aeon.co.th/aeon/cards/image/og/OG-Petster-Card.jpg"
+  min_income: 15000
+  benefits:
+    - type: points
+      text: "ใช้จ่ายครบทุก 35 บาท รับ 1 คะแนน AEON Happy Point"
+    - type: annual_fee
+      text: "ฟรีค่าธรรมเนียมแรกเข้า ค่าธรรมเนียมรายปี 500 บาท"
+      amount: 500
   bank: aeon
   name_th: บัตรเครดิตอิออน เพ็ทสเตอร์
   name_en: AEON Petster
   aliases: [บัตรเครดิตอิออน เพ็ทสเตอร์]
   network: visa
 - key: aeon-mgen-visa
+  details_url: https://www.aeon.co.th/aeon/cards/m-gen-visa-card
+  apply_url: https://www.aeon.co.th/aeon/cards/m-gen-visa-card
+  image_url: "https://www.aeon.co.th/aeon/cards/image/og/AEON-M-GEN-VISA-Card.jpg"
+  min_income: 15000
+  benefits:
+    - type: annual_fee
+      text: "ค่าธรรมเนียมรายปี 200 บาท/ปี (ไม่รวมภาษี) ไม่รับคำขอยกเว้น"
+      amount: 200
   bank: aeon
   name_th: บัตรเครดิตอิออน เอ็มเจน วีซ่า
   name_en: AEON M Gen Visa
   aliases: [บัตรเครดิตอิออน เอ็มเจน วีซ่า]
   network: visa
 - key: aeon-b-quik-visa
+  details_url: https://www.aeon.co.th/aeon/cards/b-quik-visa-card
+  apply_url: https://www.aeon.co.th/aeon/cards/b-quik-visa-card
+  image_url: "https://www.aeon.co.th/aeon/cards/image/og/B-Quik-Visa-Card.jpg"
+  min_income: 15000
+  benefits:
+    - type: points
+      text: "ใช้จ่ายครบทุก 25 บาท รับ 1 คะแนน AEON Happy Point"
   bank: aeon
   name_th: บัตรเครดิตบี-ควิกวีซ่า
   name_en: B-Quik Visa

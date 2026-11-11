@@ -23,17 +23,32 @@ type Network struct {
 
 // Card is one credit card product.
 type Card struct {
-	Key      string   `yaml:"key"`
-	Bank     string   `yaml:"bank"`
-	NameTH   string   `yaml:"name_th"`
-	NameEN   string   `yaml:"name_en"`
-	Aliases  []string `yaml:"aliases"` // how banks write it in promotion text
-	Network  string   `yaml:"network"`
-	Tier     string   `yaml:"tier"`
-	CoBrand  string   `yaml:"co_brand"`
-	ApplyURL string   `yaml:"apply_url"`
-	ImageURL string   `yaml:"image_url"`
-	Verified bool     `yaml:"verified"` // network/tier checked against the bank's page
+	Key        string    `yaml:"key"`
+	Bank       string    `yaml:"bank"`
+	NameTH     string    `yaml:"name_th"`
+	NameEN     string    `yaml:"name_en"`
+	Aliases    []string  `yaml:"aliases"` // how banks write it in promotion text
+	Network    string    `yaml:"network"`
+	Tier       string    `yaml:"tier"`
+	CoBrand    string    `yaml:"co_brand"`
+	ApplyURL   string    `yaml:"apply_url"`
+	ImageURL   string    `yaml:"image_url"`
+	DetailsURL string    `yaml:"details_url"` // the bank's page for this card (benefits, full terms)
+	MinIncome  int       `yaml:"min_income"`  // baht/month to apply, 0 = unknown
+	Benefits   []Benefit `yaml:"benefits"`    // standing benefits, short; full terms at DetailsURL
+	Verified   bool      `yaml:"verified"`    // network/tier checked against the bank's page
+}
+
+// Benefit types: standing card benefits (not time-limited promotions).
+var benefitTypes = []string{"lounge", "travel_insurance", "baggage_insurance", "points", "annual_fee", "cashback", "other"}
+
+// Benefit is one standing benefit, summarized; the bank's own terms are at Card.DetailsURL.
+type Benefit struct {
+	Type     string `yaml:"type"`
+	Text     string `yaml:"text"`     // short summary with the key condition
+	Provider string `yaml:"provider"` // lounge network, insurer…, when the bank names it
+	Amount   int    `yaml:"amount"`   // baht (coverage, fee), 0 = none
+	Count    int    `yaml:"count"`    // visits/uses per year, 0 = none
 }
 
 // Merchant is a shop or brand promotions are tied to.
@@ -91,6 +106,11 @@ func Parse(cards, merchants []byte) (*Catalog, error) {
 			errs = append(errs, fmt.Errorf("card %s: unknown network %q", k.Key, k.Network))
 		case k.Tier != "" && c.TierIndex(k.Network, k.Tier) < 0:
 			errs = append(errs, fmt.Errorf("card %s: tier %q not in %s", k.Key, k.Tier, k.Network))
+		}
+		for _, b := range k.Benefits {
+			if !slices.Contains(benefitTypes, b.Type) {
+				errs = append(errs, fmt.Errorf("card %s: unknown benefit type %q", k.Key, b.Type))
+			}
 		}
 		seen[k.Key] = true
 	}

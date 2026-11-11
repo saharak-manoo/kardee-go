@@ -41,15 +41,26 @@ func parseAmount(s string) (n int, given bool, err error) {
 }
 
 type cardView struct {
-	Key      string `json:"key"`
-	Name     string `json:"name"`
-	Bank     string `json:"bank"`
-	BankName string `json:"bank_name"`
-	Network  string `json:"network"`
-	Tier     string `json:"tier,omitempty"`
-	ApplyURL string `json:"apply_url,omitempty"`
-	ImageURL string `json:"image_url,omitempty"`
-	Verified bool   `json:"verified"`
+	Key        string        `json:"key"`
+	Name       string        `json:"name"`
+	Bank       string        `json:"bank"`
+	BankName   string        `json:"bank_name"`
+	Network    string        `json:"network"`
+	Tier       string        `json:"tier,omitempty"`
+	ApplyURL   string        `json:"apply_url,omitempty"`
+	ImageURL   string        `json:"image_url,omitempty"`
+	Verified   bool          `json:"verified"`
+	DetailsURL string        `json:"details_url,omitempty"`
+	MinIncome  int           `json:"min_income,omitempty"`
+	Benefits   []benefitView `json:"benefits"`
+}
+
+type benefitView struct {
+	Type     string `json:"type"`
+	Text     string `json:"text"`
+	Provider string `json:"provider,omitempty"`
+	Amount   int    `json:"amount,omitempty"`
+	Count    int    `json:"count,omitempty"`
 }
 
 func viewCard(c catalog.Card, lang string) cardView {
@@ -57,6 +68,7 @@ func viewCard(c catalog.Card, lang string) cardView {
 		Key: c.Key, Name: models.Text(lang, c.NameTH, c.NameEN), Bank: c.Bank,
 		BankName: models.Banks[c.Bank].Get(lang), Network: c.Network, Tier: c.Tier,
 		ApplyURL: c.ApplyURL, ImageURL: c.ImageURL, Verified: c.Verified,
+		DetailsURL: c.DetailsURL, MinIncome: c.MinIncome, Benefits: viewBenefits(c.Benefits),
 	}
 }
 
@@ -223,4 +235,13 @@ func (s *Server) recommend(c fiber.Ctx) error {
 		"no_value":          viewItems(res.NoValue, lang),
 		"unknown_cards":     unknown,
 	})
+}
+
+// viewBenefits lists a card's standing benefits ([] rather than null when none).
+func viewBenefits(bs []catalog.Benefit) []benefitView {
+	out := make([]benefitView, len(bs))
+	for i, b := range bs {
+		out[i] = benefitView{Type: b.Type, Text: b.Text, Provider: b.Provider, Amount: b.Amount, Count: b.Count}
+	}
+	return out
 }
