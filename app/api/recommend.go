@@ -191,7 +191,16 @@ func (s *Server) recommend(c fiber.Ctx) error {
 		cands[i] = recommend.Candidate{Promotion: &rows[i], Match: match[rows[i].ID]}
 	}
 
-	res := recommend.Recommend(s.Catalog, recommend.Input{Cards: parseCards(c.Query("cards")), Amount: amount, Now: time.Now()}, cands)
+	cards := parseCards(c.Query("cards"))
+	if len(cards) == 0 {
+		if u, err := resolveUser(c, s.DB); err == nil && u != nil {
+			if saved, err := loadUserCardKeys(s.DB, u.ID); err == nil && len(saved) > 0 {
+				cards = saved
+			}
+		}
+	}
+
+	res := recommend.Recommend(s.Catalog, recommend.Input{Cards: cards, Amount: amount, Now: time.Now()}, cands)
 	apply := make([]suggestionView, len(res.ConsiderApplying))
 	for i, sg := range res.ConsiderApplying {
 		apply[i] = suggestionView{viewCard(sg.Card, lang), sg.ValueBaht, sg.ExtraVsBestHeld, View(sg.Promotion, lang, false)}

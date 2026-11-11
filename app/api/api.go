@@ -32,6 +32,8 @@ func (s *Server) Routes(app *fiber.App) {
 	v1.Get("/cards", s.cards)
 	v1.Get("/networks", s.networks)
 	v1.Get("/recommend", s.recommend)
+	v1.Get("/user/cards", s.getUserCards)
+	v1.Put("/user/cards", s.updateUserCards)
 }
 
 // Lang picks the response language: ?lang= first, then Accept-Language, else Thai.
